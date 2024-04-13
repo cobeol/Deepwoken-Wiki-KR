@@ -8,6 +8,26 @@ export const RareTalent = ({ children }) => (
             color: "#f2727f",
         }}
     >
+        <i>{children}</i>
+    </span>
+);
+
+export const AdvancedTalent = ({ children }) => (
+    <span
+        style={{
+            color: "#66ffcc",
+        }}
+    >
+        <i>{children}</i>
+    </span>
+);
+
+export const ColorText = ({ children, color }) => (
+    <span
+        style={{
+            color: color,
+        }}
+    >
         {children}
     </span>
 );
@@ -44,32 +64,114 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 -   Time To Go [Common Talent, Agility] - 몹을 죽이면 10초간 속도 버프를 얻습니다. 플레이어를 죽이면 지속 시간과 속도 버프를 2배로 얻습니다. (+1 Passive Agility)
 
 &emsp;&emsp; - 속도 버프를 받으면 눈이 붉게 빛이 납니다.<br/>
-&emsp;&emsp; - 전제 조건: 5 Agility<br/>
+&emsp;&emsp; - 요구사항: 5 Agility<br/>
 &emsp;&emsp; - 보스를 죽이면 속도가 엄청나게 향상됩니다. [Tested]<br/>
 
 -   Kick Off [Common Talent, Agility] - 낮은 곳에서 떨어지면 낙뎀을 받지 않고 첫번째 벽 점프가 높게 뛰어집니다. 벽을 넘으면 이속이 증가합니다. (+6 Passive Agility)
 
 &emsp;&emsp; - 쿨타임 3초<br/>
-&emsp;&emsp; - 전제 조건: 20 Agility<br/>
+&emsp;&emsp; - 요구사항: 20 Agility<br/>
 
 -   Steady Footing [Common Talent, Agility] - 밀려나는 것에 대한 저항력이 강해집니다. (+9 Carry Load, +2 Passive Agility)
 
 &emsp;&emsp; - 넉백 효과가 감소됩니다. 단, 빙상에 의한 마찰 감소는 저항되지 않습니다.<br/>
-&emsp;&emsp; - 전제 조건: 10 Agility, 10 Strength<br/><br/>
+&emsp;&emsp; - 요구사항: 10 Agility, 10 Strength<br/><br/>
 
 ## <u>Adaptive Arsenal</u>
 
 &emsp;&emsp;**"I seek the qualities of Adaptive Arsenal."**<br/>
 
-- Exposed Durability [Common Talent, Ironsing Exclusive] - Deal 10% more damage to opponents with no armor durability left.
+-   Exposed Durability [Common Talent, Ironsing Exclusive] - 옷 내구도가 없는 플레이어에게 10%의 추가 피해를 입힙니다.
 
-&emsp;&emsp; - Also affect players with no outfit (Stranded Outfit)<br/>
-&emsp;&emsp; - Prerequisite: 60 Ironsing<br/>
+&emsp;&emsp; - 옷이 없는 플레이어에게도 적용됩니다.<br/>
+&emsp;&emsp; - 요구사항: 60 Ironsing<br/>
 
-- An Ironsinger's Instinct [<RareTalent>Rare Talent</RareTalent>, Ironsing Exclusive] - Successfully dodging an attack coats you in metal and reduces the damage of the next attack taken.
+-   <RareTalent>An Ironsinger's Instinct</RareTalent> [Rare Talent, Ironsing Exclusive]
+    - 공격을 성공적으로 회피하면 다음 공격으로 받는 피해가 감소합니다.
 
-&emsp;&emsp; - Prerequisite: 75 Ironsing<br/>
+&emsp;&emsp; - 회피하면 몸이 금속으로 코팅됩니다.<br/>
+&emsp;&emsp; - 요구사항: 75 Ironsing<br/>
 
-- Phantom Edge [Rare Talent, Ironsing Exclusive] - Your weapon M1's have +0.25 range.
+-   <RareTalent>Phantom Edge</RareTalent> [Rare Talent, Ironsing Exclusive] - 기본
+    공격의 사거리가 0.25만큼 증가합니다
 
-&emsp;&emsp; - Prerequisite: 75 Ironsing<br/>
+&emsp;&emsp; - 요구사항: 75 Ironsing<br/><br/>
+
+## <u>Adept Caster</u>
+
+&emsp;&emsp;**"I fight from afar."**<br/>
+
+-   <RareTalent>Everchanging Aegis</RareTalent> [Rare Talent, Intelligence] - 상대의
+    마지막 공격과 같은 원소로 공격받으면 피해가 20% 감소되지만, 다른 원소는 10% 더
+    많은 피해를 입습니다 (+7 Carry Load, +2 Elemental Intensity)
+
+&emsp;&emsp; - 저항하는 원소 유형은 색상 방패로 표시되고, 동일 원소에 대한 지속 피해는 색상 윤곽선으로 표시됩니다.<br/>
+&emsp;&emsp;&emsp;&emsp; - <ColorText color="#DB4455">Flamecharm: Red</ColorText><br/>
+&emsp;&emsp;&emsp;&emsp; - <ColorText color="#4B89DC">Frostdraw: Blue</ColorText><br/>
+&emsp;&emsp;&emsp;&emsp; - <ColorText color="#F6BB43">Thundercall: Yellow</ColorText><br/>
+&emsp;&emsp;&emsp;&emsp; - <ColorText color="#8CC051">Galebreath: Green</ColorText><br/>
+&emsp;&emsp;&emsp;&emsp; - <ColorText color="#967BDC">Shadowcast: Purple</ColorText><br/>
+&emsp;&emsp;&emsp;&emsp; - <ColorText color="#AAB2BD">Ironsing: Grey</ColorText><br/>
+
+&emsp;&emsp; - 요구사항: 25 Intelligence<br/>
+&emsp;&emsp; - 반대: <RareTalent>Return to the Dark Ages</RareTalent><br/>
+
+-   <RareTalent>Overflowing Dam</RareTalent> [Rare Ta Intelligence] - 1.5초동안 최대
+    에테르를 유지하면 공격에 15% 추가 데미지를 주는 오라가 부여됩니다.
+
+&emsp;&emsp; - "최대 에테르"는 95%이상을 뜻합니다.<br/>
+&emsp;&emsp; - 요구사항: 40 Intelligence<br/>
+
+-   <RareTalent>Flash</RareTalent> [Rare Talent, Intelligence] - 체력이 95% 이상이면
+    만트라 피해가 25% 증가합니다. 단, 적이 멀리 있을 경우 10%만 증가합니다.
+
+&emsp;&emsp; - 요구사항: 25 Intelligence<br/>
+
+-   <AdvancedTalent>Neural Overload</AdvancedTalent> [Advanced Talent, Intelligence]
+    - 각 만트라 수정을 재료를 최대 4개까지 사용할 수 있습니다.
+
+&emsp;&emsp; - 요구사항: 85 Intelligence<br/><br/>
+
+## <u>Aerial Dancer</u>
+
+-   <RareTalent>Wyvern's Claw</RareTalent> [Rare Talent] - 에어본 상태에서 10% 추가
+    데미지를 줍니다.
+
+&emsp;&emsp; - 요구사항: 15 Strength, 25 Medium Weapon/25 Heavy Weapon/25 Light Weapon<br/><br/>
+
+## <u>Aeromancer</u>
+
+&emsp;&emsp;**"I am a master of the winds."**<br/>
+
+-   <RareTalent>Aerogliding</RareTalent> [Rare Talent, Galebreathe Exclusive] - 높은
+    곳에서 떨어질 때, 스페이스바를 길게 누르면 천천히 떨어집니다. (+2 Passive Agility,
+    +5 Elemental Intensity)
+
+&emsp;&emsp; - 5초 후에 자동으로 종료됩니다.<br/>
+&emsp;&emsp; - 요구사항: 35 Galebreathe, 30 Agility<br/><br/>
+
+-   Gale Trap [Common Talent, Galebreathe Exclusive] - 플레이어를 기절시키면 바람 함정이 생기고, 그 플레이어를 주우면 날아갑니다. 하지만 20초 동안 속도가 증가합니다. (+4 Elemental Intensity)<br/>
+
+&emsp;&emsp; - 요구사항: Wind Step<br/><br/>
+
+-   Aeronade [Common Talent, Galebreathe Exclusive] - Galetrap이 오브젝트에 닿으면 폭발합니다. (+2 Passive Agility, +5 Elemental Intensity)
+
+&emsp;&emsp; - 요구사항: Galetrap<br/><br/>
+
+-   Vacuum Punch [Common Talent, Galebreathe Exclusive] - Gale Punch를 사용하면 적을 공격하기 전에 끌어당깁니다.
+
+&emsp;&emsp; - 요구사항: 20 Galebreathe, Gale Punch<br/><br/>
+
+-   Suffocating Impact [Common Talent, Galebreathe Exclusive] - 적을 벽에 부딪히게 하면 적이 와인드와 질식에 걸립니다 감소합니다. (+2 Passive Agility, +5 Elemental Intensity)
+
+&emsp;&emsp; - 요구사항: 30 Strength, 35 Galebreathe<br/><br/>
+
+-   Gale Coil [Common Talent, Galebreathe Exclusive] - 적에게 주는 질식이 더 길게 유지됩니다. (+2 Passive Agility, +5 Elemental Intensity)
+
+&emsp;&emsp; - 요구사항: 30 Strength, 35 Galebreathe, Suffocating Impact<br/><br/>
+
+-   <RareTalent>Stifled Jump</RareTalent> [Rare Talent, Galebreathe Exclusive] -
+    질식 상태에서 점프하는 적은 기절합니다. (+2 Passive Agility, +5 Elemental
+    Intensity)
+
+&emsp;&emsp; - 요구사항: Suffocating Impact<br/><br/>

@@ -5,9 +5,8 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
 const config: Config = {
-    title: "My Site",
-    tagline: "Dinosaurs are cool",
-    favicon: "img/favicon.ico",
+    title: "Deepwoken Wiki",
+    favicon: "img/deepwoken.ico",
 
     // Set the production url of your site here
     url: "https://deepwoken.netlify.app",
@@ -27,8 +26,8 @@ const config: Config = {
     // useful metadata like html lang. For example, if your site is Chinese, you
     // may want to replace "en" with "zh-Hans".
     i18n: {
-        defaultLocale: "en",
-        locales: ["en"],
+        defaultLocale: "kr",
+        locales: ["kr"],
     },
 
     presets: [
@@ -62,12 +61,11 @@ const config: Config = {
 
     themeConfig: {
         // Replace with your project's social card
-        image: "img/docusaurus-social-card.jpg",
         navbar: {
-            title: "My Site",
+            title: "Deepwoken Wiki KR",
             logo: {
-                alt: "My Site Logo",
-                src: "img/logo.svg",
+                alt: "logo",
+                src: "img/deepwoken.jpg",
             },
             items: [
                 // {
@@ -76,7 +74,7 @@ const config: Config = {
                 //   position: 'left',
                 //   label: 'Tutorial',
                 // },
-                { to: "/talents", label: "재능", position: "left" },
+                { to: "/talents", label: "Talents", position: "left" },
                 {
                     href: "https://github.com/facebook/docusaurus",
                     label: "GitHub",
@@ -132,6 +130,11 @@ const config: Config = {
         prism: {
             theme: prismThemes.github,
             darkTheme: prismThemes.dracula,
+        },
+        colorMode: {
+            defaultMode: "dark",
+            disableSwitch: true,
+            respectPrefersColorScheme: false,
         },
     } satisfies Preset.ThemeConfig,
 };

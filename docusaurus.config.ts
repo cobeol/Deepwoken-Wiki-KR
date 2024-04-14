@@ -52,6 +52,7 @@ const config: Config = {
                     customCss: "./src/css/custom.css",
                 },
                 docs: {
+                    routeBasePath: '/',
                     remarkPlugins: [remarkMath],
                     rehypePlugins: [rehypeKatex],
                 },

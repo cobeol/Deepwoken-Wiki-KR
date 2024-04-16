@@ -34,8 +34,8 @@ const config: Config = {
         {
             src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4633932086986290",
             async: true,
-            crossorigin: "anonymous"
-        }
+            crossorigin: "anonymous",
+        },
     ],
 
     presets: [
@@ -72,7 +72,14 @@ const config: Config = {
         metadata: [
             { name: "google-site-verification", content: "deepwoken" },
             { name: "naver-site-verification", content: "deepwoken" },
-            { name: "google-adsense-account", content: "ca-pub-4633932086986290" }
+            {
+                name: "google-adsense-account",
+                content: "ca-pub-4633932086986290",
+            },
+            {
+                name: "google-site-verification",
+                content: "FPh5qZ9UrLBw6l0Z5KJX_bLHYrsYcmpStp9BWeDHWGA",
+            },
         ],
 
         // Replace with your project's social card

@@ -91,7 +91,7 @@ const config: Config = {
                 // },
                 { to: "/talents", label: "Talents", position: "left" },
                 {
-                    href: "https://github.com/facebook/docusaurus",
+                    href: "https://github.com/cobeol/Deepwoken-Wiki-KR",
                     label: "GitHub",
                     position: "right",
                 },

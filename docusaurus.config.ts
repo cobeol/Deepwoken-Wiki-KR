@@ -63,7 +63,8 @@ const config: Config = {
     themeConfig: {
         metadata: [
             { name: "google-site-verification", content: "deepwoken" },
-            { name: "naver-site-verification", content: "딥워큰" },
+            { name: "naver-site-verification", content: "deepwoken" },
+            { name: "google-adsense-account", content: "ca-pub-4633932086986290" }
         ],
 
         // Replace with your project's social card

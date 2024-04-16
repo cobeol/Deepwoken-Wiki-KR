@@ -30,6 +30,14 @@ const config: Config = {
         locales: ["kr"],
     },
 
+    scripts: [
+        {
+            src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4633932086986290",
+            async: true,
+            crossorigin: "anonymous"
+        }
+    ],
+
     presets: [
         [
             "classic",

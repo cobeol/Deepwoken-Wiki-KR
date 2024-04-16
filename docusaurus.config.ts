@@ -52,7 +52,7 @@ const config: Config = {
                     customCss: "./src/css/custom.css",
                 },
                 docs: {
-                    routeBasePath: '/',
+                    routeBasePath: "/",
                     remarkPlugins: [remarkMath],
                     rehypePlugins: [rehypeKatex],
                 },
@@ -61,6 +61,11 @@ const config: Config = {
     ],
 
     themeConfig: {
+        metadata: [
+            { name: "google-site-verification", content: "deepwoken" },
+            { name: "naver-site-verification", content: "딥워큰" },
+        ],
+
         // Replace with your project's social card
         navbar: {
             title: "Deepwoken Wiki KR",

@@ -22,6 +22,23 @@ export const AdvancedTalent = ({ children }) => (
     </span>
 );
 
+export const Oath = ({ children }) => (
+    <span
+        style={{
+            color: "#4783b8",
+        }}
+    >
+        {children}
+    </span>
+);
+
+
+export const UnlockableTalent = ({ children }) => (
+    <span>
+        <i>{children}</i>
+    </span>
+);
+
 export const ColorText = ({ children, color }) => (
     <span
         style={{
@@ -231,9 +248,9 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 ## <u>All-Knowing</u>
 
-emsp;&emsp;**"I seek the qualities of All-Knowing."&**<br/>
+&emsp;&emsp;**"I seek the qualities of All-Knowing."**<br/>
 
--   Approaching Singularity [Common Talent, Intelligence] - You now gain +1% Mantra PEN for every 10 point of Intelligence.
+-   Approaching Singularity [Common Talent, Intelligence] - 지능 10당, 만트라 PEN이 1% 증가합니다.
 
 &emsp;&emsp; - 요구사항: 80 Intelligence<br/><br/>
 
@@ -254,120 +271,113 @@ emsp;&emsp;**"I seek the qualities of All-Knowing."&**<br/>
 
 ## <u>Angler</u>
 
--   Fisher's Lure [Common Talent] - Fish are drawn to your line more quickly.
+-   Fisher's Lure [Common Talent] - 물고기가 더 빨리 낚입니다.
 
-&emsp;&emsp; - Obtained after fishing 50 times successfully.<br/>
-&emsp;&emsp; - Increase the rate of hooking something while fishing.<br/>
+&emsp;&emsp; - 보물을 낚을 확률이 높아집니다.<br/>
+&emsp;&emsp; - 요구사항: 낚시 50번 성공<br/>
 
--   Hook, Line, and Sinker [Common Talent] - Once something's caught your line, it's much harder to get loose. (+4 Carry Load)
+-   Hook, Line, and Sinker [Common Talent] - 무언가가 낚시줄에 걸리면 풀기 더 힘들어집니다 (+4 Carry Load)
 
-&emsp;&emsp; - Obtained after fishing 30 times successfully.<br/>
-&emsp;&emsp; - Reduces the chance of failure while fishing.<br/>
+&emsp;&emsp; - 낚시 실패 확률이 감소합니다.<br/>
+&emsp;&emsp; - 요구사항: 낚시 30번 성공<br/>
 
--   Proficient Baiting [Common Talent] - Casting your line excites ocean life, reducing the chances of fishing up trash.
+-   Proficient Baiting [Common Talent] - 낚시줄을 던지면 해양 생물을 자극하여, 쓰레기를 낚을 확률이 줄어듭니다.
 
-&emsp;&emsp; - Obtained after fishing 10 times successfully.<br/>
-&emsp;&emsp; - Reduces the likelihood of fishing up trash items such as Seaweed or Leather Boots.<br/><br/>
+&emsp;&emsp; - 해초나 가죽장화 같은 쓰레기를 낚을 확률이 감소합니다.<br/>
+&emsp;&emsp; - 요구사항: 낚시 10번 성공<br/><br/>
 
 ## <u>Annihilator</u>
 
 &emsp;&emsp;**"I seek the qualities of Annihilator."**<br/>
 
--   <AdvancedTalent>Collapsed Lung</AdvancedTalent> [Advanced Talent] - Block breaking an opponent closes off their ability to Vent for 3s.
+-   <AdvancedTalent>Collapsed Lung</AdvancedTalent> [Advanced Talent] - 상대를 블록 파괴하면 상대의 벤트를 3초 동안 차단합니다.
 
-&emsp;&emsp; - Having 75 STR will cause this to only last for ~2 seconds, as it scales based on your Strength up until its requirement.<br/>
+&emsp;&emsp; - 힘에 따라 지속 시간이 늘어납니다. (Ex: 75 STR이면 2초까지 지속됩니다)<br/>
 &emsp;&emsp; - 요구사항: 100 Strength<br/><br/>
 
 ## <u>Apex Predator</u>
 
 &emsp;&emsp;**"My hunt is inescapable."**<br/>
 
--   <RareTalent>Carnivore</RareTalent> [Rare Talent, Generic Talent] - In return for losing the ability to eat vegetation, sate your hunger by gripping monsters and people alike.
+-   <RareTalent>Carnivore</RareTalent> [Rare Talent, Generic Talent] - 육식주의자가 되는 대신, 몬스터와 사람을 잡아 배고픔을 채워보세요.
 
-&emsp;&emsp; - Gain hunger and thirst when you are credited for the death of a monster, NPC or player.<br/>
 &emsp;&emsp; - 요구사항: 5 Strength, 5 Willpower<br/>
 &emsp;&emsp; - 반대: Vegetarian, Herbivore.<br/>
 
--   Grand Feast [Common Talent, Generic Talent] - Regain tempo, ether, blood and health when gaining hunger from killing. (+1 Passive Agility)
+-   Grand Feast [Common Talent, Generic Talent] - 살인으로 패고픔을 채울 때, 템포, 에테르, 혈액, 체력이 채워집니다. (+1 Passive Agility)
 
-&emsp;&emsp; - Healing is negated in PVP combat.<br/>
 &emsp;&emsp; - 요구사항: Carnivore<br/>
 
--   Sunken Predator [Common Talent, Generic Talent] - Enemies you hit in the water or the depths have their speed buffs nullified and are slowed. (+1 Passive Agility)
+-   Sunken Predator [Common Talent, Generic Talent] - 물이나 심해에 부딪힌 적들은 속도 버프가 무효화되고 둔화됩니다. (+1 Passive Agility)
 
-&emsp;&emsp; - Monsters are greatly slowed for a few seconds and can be frozen in place with enough hits.<br/>
-&emsp;&emsp; - Players are only slowed a little bit for less time instead.<br/>
+&emsp;&emsp; - 몬스터는 몇 초 동안 크게 둔화되며 충분한 타격을 가하면 그 자리에 얼어붙을 수 있습니다.<br/>
+&emsp;&emsp; - 대신, 플레이어의 속도가 약간 느려집니다.<br/>
 &emsp;&emsp; - 요구사항: Power 11<br/><br/>
 
 ## <u>Artisan</u>
 
 &emsp;&emsp;**"I am an artist."**<br/>
 
--   Master Craftsman [Common Talent, Intelligence] - Your skills alone substitute the need for a Craft Station. (+5 Health)
-
-&emsp;&emsp; - You can make crafts that require a Craft Station without one.<br/>
+-   Master Craftsman [Common Talent, Intelligence] - 제작대 없이도 아이템을 만들 수 있습니다. (+5 Health)
 &emsp;&emsp; - 요구사항: 45 Intelligence<br/><br/>
 
 ## <u>Assassin</u>
 
 &emsp;&emsp;**"I prefer to attack unseen."**<br/>
 
--   Deep Wound [Common Talent, Light] - Assassinating a target applies anti-heal for 20s and gives you a speed boost for 6s. Assassination damage now scales with agility.
+-   Deep Wound [Common Talent, Light] - 대상을 암살하면 20초 동안 치유 방지 효과가 적용되고 6초 동안 속도 향상이 제공됩니다. 암살 피해는 이제 민첩성에 따라 증가합니다.
 
-&emsp;&emsp; - The damage increase granted from this talent is significantly high in PVE, allowing you to one shot some very tanky enemies like Authority Commander despite their 5000 HP.<br/>
-&emsp;&emsp; - The head equipment "Assassin's Hood" have this talent.<br/>
 &emsp;&emsp; - 요구사항: 35 Agility<br/>
 
--   Low Blow [Common Talent, Agility] - Those you assassinate are slowed and unable to jump for 3s. (+1 Passive Agility)
+-   Low Blow [Common Talent, Agility] - 당신이 암살한 적은 느려지고 3초 동안 점프할 수 없습니다. (+1 Passive Agility)
 
 &emsp;&emsp; - 요구사항: 60 Agility, Deep Wound<br/>
 
--   Lowstride [Common Talent, Agility] - You suffer much less speed decrease from crouching. (+1 Passive Agility)
+-   Lowstride [Common Talent, Agility] - 웅크리고 있으면 속도 감소 효과가 훨씬 줄어듭니다. (+1 Passive Agility)
 
-&emsp;&emsp; - Crouching is now as fast as walking.<br/>
+&emsp;&emsp; - 웅크리기 속도가 걷는 속도와 비슷해졌습니다.<br/>
 &emsp;&emsp; - 요구사항: 20 Agility<br/>
 
--   Lights Out [Common Talent, Agility] - Those you carry are blindfolded. Assassinating an opponent now blinds them for 5s. (+1 Passive Agility)
+-   Lights Out [Common Talent, Agility] - 자신이 들고 다니는 사람의 앞이 보이지 않게 됩니다. 하지만, 암살을 하면 5초 동안 앞이 보이지 않습니다. (+1 Passive Agility)
 
 &emsp;&emsp; - 요구사항: 55 Agility<br/>
 
--   Unseen Threat [Common Talent, Light] - You can assassinate those with weapons out provided you're not in combat yourself.
+-   Unseen Threat [Common Talent, Light] - 전투에 참여 중이지 않는다면 무기를 들고 있는 사람들을 암살할 수 있습니다.
 
-&emsp;&emsp; - Being in combat and having your weapon selected normally gives immunity to assassinations. This talent bypass this immunity.<br/>
+&emsp;&emsp; - 일반적으로 "in combat" 상황이면 암살에 면역 상태가 되지만 이 재능은 이를 무시할 수 있습니다.<br/>
 &emsp;&emsp; - 요구사항: 60 Agility<br/><br/>
 
 ## <u>Athlete</u>
 
 &emsp;&emsp;**"I am athletic."**<br/>
 
--   Triathlete [Common Talent] - You swim faster in water. (+2 Passive Agility)
+-   Triathlete [Common Talent] - 수영 속도가 빨라집니다. (+2 Passive Agility)
 
 &emsp;&emsp; - 요구사항: Power 1<br/>
 
--   Pitcher [Common Talent] - You can throw things further.
+-   Pitcher [Common Talent] - 물건을 더 멀리 던질 수 있습니다.
 
-&emsp;&emsp; - 요구사항: 5 Strength, 5 Agility, throw an object<br/>
-&emsp;&emsp; - The head equipment "Alchemist's Hat" and "Big Alchemist's Hat" have this talent.<br/><br/>
+&emsp;&emsp; - 요구사항: 5 Strength, 5 Agility, throw an object<br/><br/>
 
 ## <u>Authority Interrogator</u>
 
 &emsp;&emsp;**"I work for the Authority."**<br/>
 
--   Authority Intimidation [Common Talent, Thundercall Exclusive] - All moves that apply electricity slow the opponent more.
+-   Authority Intimidation [Common Talent, Thundercall Exclusive] - 전기를 적용하는 동작들은 상대를 더욱 느리게 만듭니다.
 
 &emsp;&emsp; - 요구사항: 60 Thundercall, Power 10<br/>
 
--   Second Interrogation [Thundercall Exclusive] - Electrified attacks do 50% less damage and posture damage to you.
+-   Second Interrogation [Thundercall Exclusive] - 전기 공격을 받으면 50% 적은 피해와 자세 피해를 받습니다.
 
 &emsp;&emsp; - 요구사항: 65 Thundercall, First Interrogation<br/>
 
--   Resolve Crusher [Thundercall Exclusive] - Lightning moves now have a chance to apply "Electrify", attacks from electrified opponents are converted into lightning damage, but will deal 10% less damage to you.
+-   Resolve Crusher [Thundercall Exclusive] - 이제 번개 동작에 "Electrify"가 적용될 확률이 있습니다. "Electrify" 상태인 상대의 공격은 번개 피해로 변환되지만 자신에게 주는 피해는 10% 감소합니다.
 
-&emsp;&emsp; - Electrified target have their physical attack deal lightning damage instead and deal 10% less damage.<br/>
-&emsp;&emsp; - 20% chance to apply Electrify.<br/>
+&emsp;&emsp; - "Electrify" 상태인 대상은 물리 공격 대신 번개 피해를 입히고 피해량이 10% 감소합니다.<br/>
+&emsp;&emsp; - 20% 확률로 적용됩니다.<br/>
 &emsp;&emsp; - 요구사항: 65 Thundercall<br/>
 
--   First Interrogation [Thundercall Exclusive] - Attacks from opponents who are Electrified will give you ether proportional to their initial damage.
+-   First Interrogation [Thundercall Exclusive] - "Electrify" 상태인 상대의 공격은 초기 피해에 비례하여 에테르를 제공합니다.
 
 &emsp;&emsp; - 요구사항: 65 Thundercall, Resolve Crusher<br/><br/>
 
@@ -375,113 +385,105 @@ emsp;&emsp;**"I seek the qualities of All-Knowing."&**<br/>
 
 &emsp;&emsp;**"I am an everlasting bastion."**<br/>
 
-These Talents are designed to make defensive gameplay easier by improving your defense, blocking, and posture.<br/>
-
--   Battle Tendency [Common Talent, Fortitude] - You can breathe more easily with +20% faster posture regen. (+2 Posture, +10 Sanity)
+-   Battle Tendency [Common Talent, Fortitude] - 자세가 20% 더 빨리 회복됩니다. (+2 Posture, +10 Sanity)
 
 &emsp;&emsp; - 요구사항: 15 Fortitude, 15 Willpower<br/>
 
--   Braced Collapse [Common Talent, Fortitude] - After being block broken, the next attack to hit you deals reduced damage.
+-   Braced Collapse [Common Talent, Fortitude] - 블록 파괴 후, 다음 공격은 감소된 피해로 받습니다.
 
 &emsp;&emsp; - 요구사항: 25 Fortitude<br/>
 
--   Firmly Planted [Common Talent, Fortitude] - All slow debuffs towards you are reduced by 30%. (+5 Sanity)
+-   Firmly Planted [Common Talent, Fortitude] - 모든 둔화 디버프가 30% 감소합니다. (+5 Sanity)
 
 &emsp;&emsp; - 요구사항: 15 Fortitude, 15 Willpower<br/>
 
--   Moving Fortress [Common Talent, Fortitude] - Blocking no longer slows you down as much. (+2 Posture)
+-   Moving Fortress [Common Talent, Fortitude] - 블록할 때, 속도가 느려지지 않습니다. (+2 Posture)
 
-&emsp;&emsp; - Negate movement speed penalty of blocking.<br/>
 &emsp;&emsp; - 요구사항: 5 Fortitude<br/>
 
--   Perseverance [Common Talent, Fortitude] - When you're knocked down, you get back up again more quickly. (+5 Sanity)
+-   Perseverance [Common Talent, Fortitude] - 넘어졌을 때 더 빨리 다시 일어설 수 있습니다. (+5 Sanity)
 
-&emsp;&emsp; - Amount of time you stay knocked is reduced from 10 seconds to 7 seconds. Further scales with willpower<br/>
+&emsp;&emsp; - 기절 상태를 유지하는 시간이 10초에서 7초로 감소됩니다. 의지력에 따라 더 감소됩니다.<br/>
 &emsp;&emsp; - 요구사항: 30 Fortitude, 30 Willpower<br/>
 
--   <AdvancedTalent>Reinforced Armor</AdvancedTalent> [Advanced Talent] - Incoming PEN is reduced by 40%. (+5 Health)
+-   <AdvancedTalent>Reinforced Armor</AdvancedTalent> [Advanced Talent] - 들어오는 PEN이 40% 감소합니다. (+5 Health)
 
-&emsp;&emsp; - Scales with investment up to it's requirement. With 65 FTD you only have 20% pen reduction and it scales up to the full 40% once you hit 90 FTD.<br/>
-&emsp;&emsp; - PEN calculation: incoming PEN \* 0.6 = reduced incoming PEN<br/>
+&emsp;&emsp; - 내구성에 따라 PEN 감소량이 최대 40%까지 증가합니다. (Ex: 65 FTD -> 20% 감소, 90 FTD -> 40% 감소)<br/>
 &emsp;&emsp; - 요구사항: 90 Fortitude, All common Bastion Talents<br/><br/>
 
-## <u>Blindseer</u>
+## <Oath><u>Blindseer</u></Oath>
 
--   All-Seeing Eye [Unlockable talent, Blindseer Exclusive]: The mystic eye through which you now see the world can perceive the imperceptible. Invisible foes are highlighted.<br/>
+-   <UnlockableTalent>All-Seeing Eye [Unlockable talent, <Oath>Blindseer</Oath> Exclusive]: 신비한 눈은 인식할 수 없는 것을 인식하게 됩니다. 보이지 않는 적들이 강조 표시됩니다.<br/></UnlockableTalent>
 
-&emsp;&emsp; - 요구사항: Save 4 Pathfinders from the depths without the help of other oath users.<br/><br/>
+&emsp;&emsp; - 요구사항: 다른 맹세 사용자의 도움 없이 심해에서 패스파인더 4명 구출<br/><br/>
 
 ## <u>Beast Slayer</u>
 
 &emsp;&emsp;**"I am a slayer of beasts."**<br/>
 
--   Giantslayer [Common Talent] - Deal more damage to larger foes. (+7 Sanity)
+-   Giantslayer [Common Talent] - 더 큰 적에게 많은 피해를 줍니다. (+7 Sanity)
 
-&emsp;&emsp; - Deal 10% more damage to larger foes.<br/>
-&emsp;&emsp; - "Larger foes" being anything that isn't a humanoid NPC. Essentially, anything in the monster category that is not a Mudskipper or Angel.<br/>
-&emsp;&emsp; - 요구사항: 20 Willpower<br/>
-&emsp;&emsp; - The head equipment "Dark Owl Chapeau" has this talent.<br/><br/>
+&emsp;&emsp; - 10%의 추가 피해를 입힙니다.<br/>
+&emsp;&emsp; - 인간형 NPC와 비슷한 크기가 아닌 모든 것에 해당합니다.<br/>
+&emsp;&emsp; - 요구사항: 20 Willpower<br/><br/>
 
 ## <u>Brawler</u>
 
 &emsp;&emsp;**"I do not need a weapon."**<br/>
 
--   Bruiser's Mixup [Common Talent] - Switching your Fist Style mid-fight makes your basic Fist attacks inflict bleed temporarily.
+-   Bruiser's Mixup [Common Talent] - 주먹 스타일을 전투 중에 바꾸면 기본 주먹 공격이 일시적으로 출혈을 발생시킵니다.
 
-&emsp;&emsp; - Procs by pressing Y (Works with one Fist Style)<br/>
 &emsp;&emsp; - 요구사항: Trained Fist<br/>
 
--   Trained Fist [Common Talent] - You can now equip Cestus.
+-   Trained Fist [Common Talent] - 이제 Cestus를 장착할 수 있습니다.
 
-&emsp;&emsp; - 요구사항: Completing Navaen Tribe Rescue Quest or Legion Kata Quest & using fists (0 Light Weapons)<br/>
+&emsp;&emsp; - 요구사항: 나벤 부족 구조 퀘스트 또는 군단 카타 퀘스트 완료 및 주먹 사용 (0 Light Weapons)<br/>
 
 ## <u>Bruiser</u>
 
 &emsp;&emsp;**"I am a master with my hands."**<br/>
 
--   Brazen Blow [Common Talent] - [Greataxes] Attacking an enemy slowed by your Greataxe grants you temporary hyperarmor. (20 second cooldown).<br/>
+-   Brazen Blow [Common Talent] - [Greataxes] 도끼로 느려진 적을 공격하면 임시 하이퍼아머가 부여됩니다. (쿨타임 20초).
 
-&emsp;&emsp; - 요구사항: Use a Greataxe, Impairing Blow, 30 Heavy Weapon<br/>
+&emsp;&emsp; - 요구사항: 도끼 사용, Impairing Blow, 30 Heavy Weapon<br/>
 
--   <RareTalent>Heavy Fatigue</RareTalent> [Rare Talent] - [Greataxes] Hitting an enemy slowed by your Greataxe temporarily reduces how far they can roll.
+-   <RareTalent>Heavy Fatigue</RareTalent> [Rare Talent] - [Greataxes] 도끼로 느려진 적을 공격하면 적의 구르기 거리가 일시적으로 줄어듭니다.
 
-&emsp;&emsp; - 요구사항: Use a Greataxe, Impairing Blow, 40 Heavy Weapon<br/>
+&emsp;&emsp; - 요구사항: 도끼 사용, Impairing Blow, 40 Heavy Weapon<br/>
 
--   Impairing Blow [Common Talent] - [Greataxes] Basic attacks will slightly slow your enemy for 2 seconds. Running attacks will slightly slow your enemy for 3 seconds. Gain +20% posture damage against enemies with speed boosts.
+-   Impairing Blow [Common Talent] - [Greataxes] 기본 공격으로 적의 속도가 2초 동안 약간 느려집니다. 달리는 공격은 3초 동안 적을 약간 둔화시킵니다. 속도 부스트를 사용하면 적에 대한 자세 피해가 20% 증가합니다.
 
-&emsp;&emsp; - 요구사항: Use a Greataxe, 30 Heavy Weapon<br/>
+&emsp;&emsp; - 요구사항: 도끼 사용, 30 Heavy Weapon<br/>
 
--   <RareTalent>Rending Impact</RareTalent> [Rare Talent] - [Greataxes] Block breaking an enemy applies knockdown.
+-   <RareTalent>Rending Impact</RareTalent> [Rare Talent] - [Greataxes] 상대의 블록을 파괴 시키면 상대에게 녹다운 효과가 적용됩니다.
 
-&emsp;&emsp; - 요구사항: Use a Greataxe, 40 Heavy Weapon<br/><br/>
+&emsp;&emsp; - 요구사항: 도끼 사용, 40 Heavy Weapon<br/><br/>
 
 ## <u>Butterfly</u>
 
 &emsp;&emsp;**"Light on my feet, I sting like a bee."**<br/>
 
-These Talents are designed to improve and/or reward your ability to roll out of danger.<br/>
-
--   Swift Rebound [Common Talent, Agility] - Move faster after successfully dodging an attack. (+1 Passive Agility)
+-   Swift Rebound [Common Talent, Agility] - 공격을 성공적으로 피한 후 더 빠르게 이동하세요. (+1 Passive Agility)
 
 &emsp;&emsp; - 요구사항: 15 Agility<br/>
 
--   <RareTalent>Evasive Expert</RareTalent> [Rare Talent] - Your speed boost granted from dodging is increased. (+1 Passive Agility)
+-   <RareTalent>Evasive Expert</RareTalent> [Rare Talent] - 회피로 인한 속도 증가가 증가합니다. (+1 Passive Agility)
 
 &emsp;&emsp; - 요구사항: 15 Agility, Swift Rebound<br/>
 
--   <RareTalent>Risky Moves</RareTalent> [Rare Talent, Agility] - When you successfully dodge, you'll automatically dodge the next attack. (+1 Passive Agility)
+-   <RareTalent>Risky Moves</RareTalent> [Rare Talent, Agility] - 회피에 성공하면 자동으로 다음 공격을 회피하게 됩니다. (+1 Passive Agility)
 
-&emsp;&emsp; - User is covered in a blue highlight when the effect is active.<br/>
-&emsp;&emsp; - Effect may inconsistently fail to manifest despite the visual effect. Attacking will cancel the effect early.<br/>
-&emsp;&emsp; - 20s Cooldown<br/>
+&emsp;&emsp; - 효과가 활성화되면 사용자는 파란색으로 강조 표시됩니다.<br/>
+&emsp;&emsp; - 공격하면 효과가 일찍 종료됩니다.<br/>
+&emsp;&emsp; - 쿨타임: 20초<br/>
 &emsp;&emsp; - 요구사항: 25 Agility<br/>
-&emsp;&emsp; - 반대: Leaf in the Wind Talents (Observation, Safety Dance)<br/><br/>
+&emsp;&emsp; - 반대: Leaf in the Wind Talents (<RareTalent>Observation</RareTalent>, <RareTalent>Safety Dance</RareTalent>)<br/><br/>
 
--   <AdvancedTalent>Ghost</AdvancedTalent> [Advanced Talent] - Dodging a move will briefly make you invisible or until you attack. (+5 Passive Agility)
+-   <AdvancedTalent>Ghost</AdvancedTalent> [Advanced Talent] - 회피하면 잠시 투명해집니다. (+5 Passive Agility)
 
-&emsp;&emsp; - Provides I-frames for the duration of the invisibility (2 seconds).<br/>
-&emsp;&emsp; - Has a 20 second cooldown.<br/>
-&emsp;&emsp; - You cannot parry attacks during the invisibility, which could trip up your muscle memory.<br/>
+&emsp;&emsp; - 회피 프레임이 2초간 증가합니다.<br/>
+&emsp;&emsp; - 투명 상태에서는 공격을 막을 수 없습니다.<br/>
+&emsp;&emsp; - 쿨타임: 20초.<br/>
 &emsp;&emsp; - 요구사항: 40 Agility, All Butterfly Talents<br/><br/>
 
 ## <u>Champion</u>
@@ -708,13 +710,13 @@ These Talents are designed to improve and/or reward your ability to roll out of 
 &emsp;&emsp; - 요구사항: 55 Shadowcast, Dark God<br/>
 &emsp;&emsp; - Deal damage around you whenever you steal ether.<br/><br/>
 
-## <u>Dawnwalker</u>
+## <Oath><u>Dawnwalker</u></Oath>
 
--   Absolute Radiance [Unlockable Talent, Dawnwalker Exclusive] - Dealing damage with Dawnwalker mantras briefly makes you immune to all elemental effects for a short period.
+-   <UnlockableTalent>Absolute Radiance [Unlockable Talent, <Oath>Dawnwalker</Oath> Exclusive] - Dealing damage with Dawnwalker mantras briefly makes you immune to all elemental effects for a short period.</UnlockableTalent>
 
--   Protagonist Syndrome [Unlockable Talent, Dawnwalker Exclusive] - The grasp of shadow is meaningless in the face of your blinding light. Your Dawnwalker mantras are empowered after getting hit by Shadowcast.
+-   <UnlockableTalent>Protagonist Syndrome [Unlockable Talent, <Oath>Dawnwalker</Oath> Exclusive] - The grasp of shadow is meaningless in the face of your blinding light. Your Dawnwalker mantras are empowered after getting hit by Shadowcast.</UnlockableTalent>
 
--   Luminous Flash [Unlockable Talent, Dawnwalker Exclusive] - After dealing a certain amount of damage in Absolute Radiance, gain a chance to empower your strikes with pure light.
+-   <UnlockableTalent>Luminous Flash [Unlockable Talent, <Oath>Dawnwalker</Oath> Exclusive] - After dealing a certain amount of damage in Absolute Radiance, gain a chance to empower your strikes with pure light.</UnlockableTalent>
 
 ## <u>Death Speaker</u>
 
@@ -1388,23 +1390,23 @@ These Talents are designed to improve and/or reward your ability to roll out of 
 
 &emsp;&emsp; - 요구사항: Grand Javelin, 60 Thundercall<br/><br/>
 
-## <u>Jetstriker</u>
+## <Oath><u>Jetstriker</u></Oath>
 
--   Decisive Winds [Unlockable Talent, Jetstriker Exclusive] - When damaged below 50% health, gain maximum sprint momentum temporarily, then this ability is put on cooldown.
+-   <UnlockableTalent>Decisive Winds [Unlockable Talent, <Oath>Jetstriker</Oath> Exclusive] - When damaged below 50% health, gain maximum sprint momentum temporarily, then this ability is put on cooldown.</UnlockableTalent>
 
--   Rush of ancients [Unlockable Talent, Jetstriker Exclusive] - Dashing at maximum sprint momentum makes you one with the wind itself. (+4 Passive Agility)
+-   <UnlockableTalent>Rush of ancients [Unlockable Talent, <Oath>Jetstriker</Oath> Exclusive] - Dashing at maximum sprint momentum makes you one with the wind itself. (+4 Passive Agility)</UnlockableTalent>
 
--   Stratos Step [Unlockable Talent, Jetstriker Exclusive] - Holding space while climbing will now let your perform Stratos Steps to get even higher. (+5 Health, +3 Passive Agility)
+-   <UnlockableTalent>Stratos Step [Unlockable Talent, <Oath>Jetstriker</Oath> Exclusive] - Holding space while climbing will now let your perform Stratos Steps to get even higher. (+5 Health, +3 Passive Agility)</UnlockableTalent>
 
 &emsp;&emsp; - Consumes Ether per step.<br/>
 &emsp;&emsp; - Stratos Steps will only proc twice before going on a cooldown.<br/>
 &emsp;&emsp; - Said cooldown applies to individual steps.<br/>
 
--   Jetstream pursuit [Unlockable Talent, Jetstriker Exclusive] - Upon a succesful flourish, teleport to the opponent when they stop moving. Receive a significant boost of momentum.
+-   <UnlockableTalent>Jetstream pursuit [Unlockable Talent, <Oath>Jetstriker</Oath> Exclusive] - Upon a succesful flourish, teleport to the opponent when they stop moving. Receive a significant boost of momentum.</UnlockableTalent>
 
 &emsp;&emsp; - When proccing on humanoid npcs, sends you to the center of the npc's hitbox.<br/>
 
--   Acceleration Points [Unlockable Talent, Jetstriker Exclusive] - Striking an opponent in the back with mobility mantras or basic attacks now steals and grants additional momentum.
+-   <UnlockableTalent>Acceleration Points [Unlockable Talent, <Oath>Jetstriker</Oath> Exclusive] - Striking an opponent in the back with mobility mantras or basic attacks now steals and grants additional momentum.</UnlockableTalent>
 
 ## <u>Justicar</u>
 
@@ -1746,15 +1748,15 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 &emsp;&emsp; - Affected targets takes 25% more damage and deals 15% less posture damage.<br/>
 &emsp;&emsp; - 요구사항: 40 Willpower, 15 Strength, Murmur: Ardour<br/>
 
--   Murmur: Ardour [Unlockable Talent] - An application of your Soul Murmur that enables one to channel the Murmur into raw strength. Press H.
+-   <UnlockableTalent>Murmur: Ardour [Unlockable Talent] - An application of your Soul Murmur that enables one to channel the Murmur into raw strength. Press H.</UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: Kill the Dread Serpent.<br/>
 
--   Murmur: Rhythm [Unlockable Talent] - An application of your Soul Murmur that enables the user to perceive the subtle murmur emanating from all things. Press G while crouched.
+-   <UnlockableTalent>Murmur: Rhythm [Unlockable Talent] - An application of your Soul Murmur that enables the user to perceive the subtle murmur emanating from all things. Press G while crouched.</UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: Quest in Eternal Gale.<br/>
 
--   Murmur: Tacet [Unlockable Talent] - An application of your Soul Murmur that enables the user to suppress their own murmur. Press T while crouched.
+-   <UnlockableTalent>Murmur: Tacet [Unlockable Talent] - An application of your Soul Murmur that enables the user to suppress their own murmur. Press T while crouched.</UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 10 Charisma and 5 Cestis Bounties or 5 Bounty Hunting Contracts<br/><br/>
 
@@ -1997,7 +1999,7 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp;**"I sabotage others."**<br/>
 
--   Family Recipe [Unlockable Talent] - You can now craft bombs at a crafting bench. (+2 Elemental Intensity)
+-   <UnlockableTalent>Family Recipe [Unlockable Talent] - You can now craft bombs at a crafting bench. (+2 Elemental Intensity)</UnlockableTalent>
 
 -   Incendiary Formula [Common Talent] - Bombs will set your enemies on fire upon detonation, as well as launch with more force. Bombs will deal increased damage to burning enemies
 
@@ -2022,15 +2024,15 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 ## <u>Saint of Blades</u>
 
--   Light Weapons Unbounded [Unlockable Talent] - You have gained the ability to surpass your limits and train your Light Weapons attribute to its fullest.
+-   <UnlockableTalent>Light Weapons Unbounded [Unlockable Talent] - You have gained the ability to surpass your limits and train your Light Weapons attribute to its fullest.</UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 75 Light Weapon<br/>
 
--   Medium Weapons Unbounded [Unlockable Talent] - You have gained the ability to surpass your limits and train your Medium Weapons attribute to its fullest.
+-   <UnlockableTalent>Medium Weapons Unbounded [Unlockable Talent] - You have gained the ability to surpass your limits and train your Medium Weapons attribute to its fullest.</UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 75 Medium Weapon<br/>
 
--   Heavy Weapons Unbounded [Unlockable Talent] - You have gained the ability to surpass your limits and train your Heavy Weapons attribute to its fullest.
+-   <UnlockableTalent>Heavy Weapons Unbounded [Unlockable Talent] - You have gained the ability to surpass your limits and train your Heavy Weapons attribute to its fullest.</UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 75 Heavy Weapon<br/><br/>
 
@@ -2098,7 +2100,7 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 ## <u>Shadowcast Master</u>
 
--   Shadowcast Unbounded [Unlockable Talent] - You have gained the ability to surpass your limits and train your Shadowcast to its fullest. (+10 Health)
+-   <UnlockableTalent>Shadowcast Unbounded [Unlockable Talent] - You have gained the ability to surpass your limits and train your Shadowcast to its fullest. (+10 Health)</UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 75 Shadowcast<br/><br/>
 
@@ -2106,7 +2108,7 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp;**"I speak to the shadows."**<br/>
 
--   Adept Shadowcaster [Unlockable Talent, Shadowcast Exclusive] - You can now obtain 1-star Leveled Shadowcaster Mantras.
+-   <UnlockableTalent>Adept Shadowcaster [Unlockable Talent, Shadowcast Exclusive] - You can now obtain 1-star Leveled Shadowcaster Mantras.</UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 20 Shadowcast<br/>
 
@@ -2114,7 +2116,7 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp; - 요구사항: Shadow Roar<br/>
 
--   Expert Shadowcaster [Unlockable Talent, Shadowcast Exclusive] - You can now obtain 2-star Leveled Shadowcaster Mantras.
+-   <UnlockableTalent>Expert Shadowcaster [Unlockable Talent, Shadowcast Exclusive] - You can now obtain 2-star Leveled Shadowcaster Mantras.</UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 30 Shadowcast<br/>
 
@@ -2126,7 +2128,7 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp; - 요구사항: 50 Shadowcast<br/>
 
--   Master Shadowcaster [Unlockable Talent, Shadowcast Exclusive] -You can now obtain 3-star Leveled Shadowcaster Mantras. (+5 Health)
+-   <UnlockableTalent>Master Shadowcaster [Unlockable Talent, Shadowcast Exclusive] -You can now obtain 3-star Leveled Shadowcaster Mantras. (+5 Health)</UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 50 Shadowcast<br/>
 
@@ -2134,7 +2136,7 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp; - 요구사항: 75 Shadowcast, Dark God<br/>
 
--   Shadowcaster [Unlockable Talent, Shadowcast Exclusive] - Grants you the ability to command shadows as a Shadowcaster.
+-   <UnlockableTalent>Shadowcaster [Unlockable Talent, Shadowcast Exclusive] - Grants you the ability to command shadows as a Shadowcaster.</UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: Shadowcast with Power 1 or obtain through Shadowcast trainer (Nostor)<br/>
 
@@ -2345,7 +2347,7 @@ These Talents are designed to let you survive longer against starvation and thir
 &emsp;&emsp; - 요구사항: Herbivore, 10 Fortitude, vomit once<br/>
 &emsp;&emsp; - The head equipment "Herbalist's Hat" and "Big Herbalist's Hat" have this talent.<br/>
 
--  Termite [Common Talent, Unlockable Talent] - You can eat things most would consider inedible.
+-  <UnlockableTalent>Termite [Common Talent, Unlockable Talent] - You can eat things most would consider inedible.</UnlockableTalent>
 
 &emsp;&emsp; - Unlock requirement: Wipe with the Iron Gut talent (can't be given by armor)<br/>
 &emsp;&emsp; - 요구사항: 20 Fortitude, 10 Willpower<br/>
@@ -2894,45 +2896,45 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp; - 요구사항: 75 Agility<br/><br/>
 
-## <u>Oath</u>
+## <Oath><u>Oath</u></Oath>
 
--  Oath: Arcwarder - You vow to be a shield for your comrades, to wear your regalia with pride and serve the greater collective. From each according to their ability, to each according to their needs.
+-  <Oath>Oath: Arcwarder</Oath> - You vow to be a shield for your comrades, to wear your regalia with pride and serve the greater collective. From each according to their ability, to each according to their needs.
 
 &emsp;&emsp; - 요구사항: 20 Fortitude, 20 Flamecharm, 20 Thundercall. Complete Alpha's quest.<br/>
 
--  Oath: Oathless - You vow to never be bound to any oath; to live your life free of restraint. If free will is an illusion, why not make it a convincing one? (+2 Wildcard Mantra Slots, +15% Oath Resistance, +10 Health)
+-  <Oath>Oath: Oathless</Oath> - You vow to never be bound to any oath; to live your life free of restraint. If free will is an illusion, why not make it a convincing one? (+2 Wildcard Mantra Slots, +15% Oath Resistance, +10 Health)
 
 &emsp;&emsp; - 요구사항: Talk to a Girl in cave near Miner's Landing docks.<br/>
 
--  Oath: Blindseer - You vow to not let the horrors of the world to pierce your tightly fashioned blindfold. Everything is simply as we choose to percieve it. (+10 Sanity, +1 Support Mantra Slot, +1 Wildcard Mantra Slot)
+-  <Oath>Oath: Blindseer</Oath> - You vow to not let the horrors of the world to pierce your tightly fashioned blindfold. Everything is simply as we choose to percieve it. (+10 Sanity, +1 Support Mantra Slot, +1 Wildcard Mantra Slot)
 
 &emsp;&emsp; - 요구사항: 40 Willpower, all 3 Mental Fortress talent, Blindfold and read the inscriptions in The Temple of the Forgotten Flame.<br/>
 
--  Oath: Dawnwalker - You vow to forever reach towards the brilliant Light. There's no shadow that your radiance cannot expunge. (+2 Combat Mantra Slots)
+-  <Oath>Oath: Dawnwalker</Oath> - You vow to forever reach towards the brilliant Light. There's no shadow that your radiance cannot expunge. (+2 Combat Mantra Slots)
 
 &emsp;&emsp; - 요구사항: Have 30 Kyrsan Medalions and speak to Klaris.<br/>
 
--  Oath: Visionshaper - You vow to only see that which you see. Reality itself is malleable, pliable to your deft hands. (+1 Support Mantra Slot, +2 Combat Mantra Slots)
+-  <Oath>Oath: Visionshaper</Oath> - You vow to only see that which you see. Reality itself is malleable, pliable to your deft hands. (+1 Support Mantra Slot, +2 Combat Mantra Slots)
 
 &emsp;&emsp; - 요구사항: 50 Charisma, Complete Aelita's Encounter, Bring a Dark Feather to Surge.<br/>
 
--  Oath: Linkstrider - You vow to give up your own life for the sake of others. Stepping out of the fray, you become a foundation of your allies' strength. (+2 Support Mantra Slots, +1 Wildcard Mantra Slot)
+-  <Oath>Oath: Linkstrider</Oath> - You vow to give up your own life for the sake of others. Stepping out of the fray, you become a foundation of your allies' strength. (+2 Support Mantra Slots, +1 Wildcard Mantra Slot)
 
 &emsp;&emsp; - 요구사항: Sacrifice 4 players with oaths in The Entropy Catalyst.<br/>
 
--  Oath: Jetstriker - You vow to flow with the song itself, drifting across where the trails may take you. If the song permeates everything, then let it be your conduit, and you its master. (+1 Wildcard Mantra, +1 Mobility Mantra, +8 Passive Agility)
+-  <Oath>Oath: Jetstriker</Oath> - You vow to flow with the song itself, drifting across where the trails may take you. If the song permeates everything, then let it be your conduit, and you its master. (+1 Wildcard Mantra, +1 Mobility Mantra, +8 Passive Agility)
 
 &emsp;&emsp; - 요구사항: 50 agility and beat Alirian in race.<br/>
 
--  Oath: Starkindred - You vow to feel the knowledge of all that is, all at once. Your heart beats with the world itself, as the Stars above watch over you. (+2 Combat Mantra Slots, +8 Health)
+-  <Oath>Oath: Starkindred</Oath> - You vow to feel the knowledge of all that is, all at once. Your heart beats with the world itself, as the Stars above watch over you. (+2 Combat Mantra Slots, +8 Health)
 
 &emsp;&emsp; - 요구사항: 40 strength, 1 player grip, talk to Samael in Derelict Church (Songseeker Wilds) and kill Iblis, The Fallen Angel then return to Samael.<br/>
 
--  Oath: Silentheart - You vow to reject the Worlds of the song, denying yourself of mantras in pursuit of your own path to true strength, no matter the cost. ( +10 Health, +5 Posture)
+-  <Oath>Oath: Silentheart</Oath> - You vow to reject the Worlds of the song, denying yourself of mantras in pursuit of your own path to true strength, no matter the cost. ( +10 Health, +5 Posture)
 
 &emsp;&emsp; - 요구사항: 40 Strength, 40 Agility OR 40 Charisma, 75 Weapon, be attunement-less, get gripped by any attunement user, go to Beloved Zofia and talk to The Dreadstar.<br/>
 
--  Oath: Contractor - Your heart is forever now eternally tied to Zi'eer, the 4th Prophet of the Ministry. You swear to serve under his will, no matter the cost.
+-  <Oath>Oath: Contractor</Oath> - Your heart is forever now eternally tied to Zi'eer, the 4th Prophet of the Ministry. You swear to serve under his will, no matter the cost.
 
 &emsp;&emsp; - Ministry Reputation, learn what happened from Yun'Shul then return to Lord Regent.<br/><br/>
 

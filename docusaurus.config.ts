@@ -100,6 +100,7 @@ const config: Config = {
                 {
                     href: "https://github.com/cobeol/Deepwoken-Wiki-KR",
                     label: "GitHub",
+                    className: "header-github-link",
                     position: "right",
                 },
             ],

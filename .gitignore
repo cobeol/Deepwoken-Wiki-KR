@@ -26,3 +26,6 @@ yarn-error.log*
 .netlify
 
 # 안녕 :D
+
+.env
+config.json

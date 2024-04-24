@@ -46,6 +46,7 @@ const config: Config = {
                     customCss: "./src/css/custom.css",
                 },
                 docs: {
+                    sidebarPath: "./sidebar.ts",
                     routeBasePath: "/",
                     remarkPlugins: [remarkMath],
                     rehypePlugins: [rehypeKatex],
@@ -76,7 +77,18 @@ const config: Config = {
                 src: "img/deepwoken.jpg",
             },
             items: [
-                { to: "/talents", label: "Talents", position: "left" },
+                {
+                    type: "doc",
+                    docId: "home/index",
+                    label: "Home",
+                    position: "left",
+                },
+                {
+                    type: "doc",
+                    docId: "talents/index",
+                    label: "Talents",
+                    position: "left",
+                },
                 {
                     href: "https://github.com/cobeol/Deepwoken-Wiki-KR",
                     label: "GitHub",

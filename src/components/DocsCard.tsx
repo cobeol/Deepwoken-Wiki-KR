@@ -11,15 +11,12 @@ export default function DocsCard({
 }) {
     return (
         <div className={styles.project}>
-            <div className={styles.flex}>
-                <span className={styles.projectGitHub}>{title}</span>
+            <Link to={url}>
+                <div className={styles.flex}>
+                    <span className={styles.projectGitHub}>{title}</span>
+                </div>  
                 <p>{desc}</p>
-            </div>
-            <div>
-                <Link className="button button--primary" to={url}>
-                    Go
-                </Link>
-            </div>
+            </Link>
         </div>
     );
 }

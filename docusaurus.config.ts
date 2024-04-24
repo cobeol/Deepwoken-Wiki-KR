@@ -57,8 +57,8 @@ const config: Config = {
     themeConfig: {
         algolia: {
             appId: "SI5JVT9518",
-            apiKey: "7ca1c034df6dcfcbfd786e51d1910797",
-            indexName: "deepwoken_wiki",
+            apiKey: "c87518184cd75d68e7a160647f8f63b6",
+            indexName: "deepwoken_wiki",    
         },
         metadata: [
             {

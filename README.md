@@ -1,41 +1,26 @@
-# Website
+# Deepwoken Wiki KR
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
-
-### Installation
+### 설치
 
 ```
-$ yarn
+$ npm i --save
 ```
 
-### Local Development
+### 로컬 개발 서버 실행
 
 ```
-$ yarn start
+$ npm start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
+### 빌드
 
 ```
-$ yarn build
+$ npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## 수정 가이드
 
-### Deployment
+src -> pages -> ** 
 
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+사이트 구조 = 폴더명과 동일<br/>
+(Ex: https://deepwoken.netlify.app/talents = src/pages/talents/index.md)

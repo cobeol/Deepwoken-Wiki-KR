@@ -42,20 +42,6 @@ const config: Config = {
         [
             "classic",
             {
-                // docs: {
-                //   sidebarPath: './sidebars.ts',
-                //   // Please change this to your repo.
-                //   // Remove this to remove the "edit this page" links.
-                //   editUrl:
-                //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-                // },
-                // blog: {
-                //   showReadingTime: true,
-                //   // Please change this to your repo.
-                //   // Remove this to remove the "edit this page" links.
-                //   editUrl:
-                //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-                // },
                 theme: {
                     customCss: "./src/css/custom.css",
                 },
@@ -70,8 +56,10 @@ const config: Config = {
 
     themeConfig: {
         metadata: [
-            { name: "google-site-verification", content: "deepwoken" },
-            { name: "naver-site-verification", content: "deepwoken" },
+            {
+                name: "keywords",
+                content: "deepwoken, 딥워큰, deepwoken wiki, 딥워큰 위키",
+            },
             {
                 name: "google-adsense-account",
                 content: "ca-pub-4633932086986290",
@@ -81,8 +69,6 @@ const config: Config = {
                 content: "FPh5qZ9UrLBw6l0Z5KJX_bLHYrsYcmpStp9BWeDHWGA",
             },
         ],
-
-        // Replace with your project's social card
         navbar: {
             title: "Deepwoken Wiki KR",
             logo: {
@@ -90,12 +76,6 @@ const config: Config = {
                 src: "img/deepwoken.jpg",
             },
             items: [
-                // {
-                //   type: 'docSidebar',
-                //   sidebarId: 'sidebar',
-                //   position: 'left',
-                //   label: 'Tutorial',
-                // },
                 { to: "/talents", label: "Talents", position: "left" },
                 {
                     href: "https://github.com/cobeol/Deepwoken-Wiki-KR",
@@ -105,51 +85,6 @@ const config: Config = {
                 },
             ],
         },
-        // footer: {
-        //   style: 'dark',
-        //   links: [
-        //     {
-        //       title: 'Docs',
-        //       items: [
-        //         {
-        //           label: 'Tutorial',
-        //           to: '/docs/intro',
-        //         },
-        //       ],
-        //     },
-        //     {
-        //       title: 'Community',
-        //       items: [
-        //         {
-        //           label: 'Stack Overflow',
-        //           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-        //         },
-        //         {
-        //           label: 'Discord',
-        //           href: 'https://discordapp.com/invite/docusaurus',
-        //         },
-        //         {
-        //           label: 'Twitter',
-        //           href: 'https://twitter.com/docusaurus',
-        //         },
-        //       ],
-        //     },
-        //     {
-        //       title: 'More',
-        //       items: [
-        //         {
-        //           label: 'Blog',
-        //           to: '/blog',
-        //         },
-        //         {
-        //           label: 'GitHub',
-        //           href: 'https://github.com/facebook/docusaurus',
-        //         },
-        //       ],
-        //     },
-        //   ],
-        //   //copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-        // },
         prism: {
             theme: prismThemes.github,
             darkTheme: prismThemes.dracula,

@@ -15,16 +15,11 @@ function HomepageHeader() {
                     {siteConfig.title} KR
                 </Heading>
                 <p className="hero__subtitle">
-                    <a href="https://deepwoken.fandom.com/wiki/Deepwoken_Wiki">Deepwoken Wiki</a>를 참고하여 만들어진 사이트입니다!!
+                    <a href="https://deepwoken.fandom.com/wiki/Deepwoken_Wiki">
+                        Deepwoken Wiki
+                    </a>
+                    를 참고하여 만들어진 사이트입니다!!
                 </p>
-
-                {/* <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div> */}
             </div>
         </header>
     );

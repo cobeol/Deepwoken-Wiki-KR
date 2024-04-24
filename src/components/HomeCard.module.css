@@ -5,7 +5,8 @@
     align-items: center;
 }
 
-.wrapper > div, .wrapper > button {
+.wrapper > div,
+.wrapper > button {
     width: 600px;
     max-width: 95vw;
 }

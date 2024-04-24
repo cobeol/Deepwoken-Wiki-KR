@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 export const RareTalent = ({ children }) => (
     <span
         style={{
@@ -31,7 +27,6 @@ export const Oath = ({ children }) => (
         {children}
     </span>
 );
-
 
 export const UnlockableTalent = ({ children }) => (
     <span>
@@ -266,7 +261,7 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 -   Last Laugh [Common Talent, Flamecharm Exclusive] - 자신을 불태우는 힘을 얻으세요. (+5 Elemental Intensity)
 
-&emsp;&emsp; - 기절 상태에서  Flame Within 사용이 가능해집니다. (<AdvancedTalent>Phoenix Flames</AdvancedTalent>와 연계를 위한 재능)<br/>
+&emsp;&emsp; - 기절 상태에서 Flame Within 사용이 가능해집니다. (<AdvancedTalent>Phoenix Flames</AdvancedTalent>와 연계를 위한 재능)<br/>
 &emsp;&emsp; - 요구사항: 30 Flamecharm, Flame Within<br/><br/>
 
 ## <u>Angler</u>
@@ -290,7 +285,8 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp;**"I seek the qualities of Annihilator."**<br/>
 
--   <AdvancedTalent>Collapsed Lung</AdvancedTalent> [Advanced Talent] - 상대를 블록 파괴하면 상대의 벤트를 3초 동안 차단합니다.
+-   <AdvancedTalent>Collapsed Lung</AdvancedTalent> [Advanced Talent] - 상대를 블록
+    파괴하면 상대의 벤트를 3초 동안 차단합니다.
 
 &emsp;&emsp; - 힘에 따라 지속 시간이 늘어납니다. (Ex: 75 STR이면 2초까지 지속됩니다)<br/>
 &emsp;&emsp; - 요구사항: 100 Strength<br/><br/>
@@ -299,7 +295,8 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp;**"My hunt is inescapable."**<br/>
 
--   <RareTalent>Carnivore</RareTalent> [Rare Talent, Generic Talent] - 육식주의자가 되는 대신, 몬스터와 사람을 잡아 배고픔을 채워보세요.
+-   <RareTalent>Carnivore</RareTalent> [Rare Talent, Generic Talent] - 육식주의자가
+    되는 대신, 몬스터와 사람을 잡아 배고픔을 채워보세요.
 
 &emsp;&emsp; - 요구사항: 5 Strength, 5 Willpower<br/>
 &emsp;&emsp; - 반대: Vegetarian, Herbivore.<br/>
@@ -319,8 +316,8 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 &emsp;&emsp;**"I am an artist."**<br/>
 
 -   Master Craftsman [Common Talent, Intelligence] - 제작대 없이도 아이템을 만들 수 있습니다. (+5 Health)
-
-&emsp;&emsp; - 요구사항: 45 Intelligence<br/><br/>
+    q
+    &emsp;&emsp; - 요구사항: 45 Intelligence<br/><br/>
 
 ## <u>Assassin</u>
 
@@ -407,14 +404,20 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 &emsp;&emsp; - 기절 상태를 유지하는 시간이 10초에서 7초로 감소됩니다. 의지력에 따라 더 감소됩니다.<br/>
 &emsp;&emsp; - 요구사항: 30 Fortitude, 30 Willpower<br/>
 
--   <AdvancedTalent>Reinforced Armor</AdvancedTalent> [Advanced Talent] - 들어오는 PEN이 40% 감소합니다. (+5 Health)
+-   <AdvancedTalent>Reinforced Armor</AdvancedTalent> [Advanced Talent] - 들어오는
+    PEN이 40% 감소합니다. (+5 Health)
 
 &emsp;&emsp; - 내구성에 따라 PEN 감소량이 최대 40%까지 증가합니다. (Ex: 65 FTD -> 20% 감소, 90 FTD -> 40% 감소)<br/>
 &emsp;&emsp; - 요구사항: 90 Fortitude, All common Bastion Talents<br/><br/>
 
 ## <Oath><u>Blindseer</u></Oath>
 
--   <UnlockableTalent>All-Seeing Eye [Unlockable talent, <Oath>Blindseer</Oath> Exclusive]: 신비한 눈은 인식할 수 없는 것을 인식하게 됩니다. 보이지 않는 적들이 강조 표시됩니다.<br/></UnlockableTalent>
+-   <UnlockableTalent>
+        All-Seeing Eye [Unlockable talent, <Oath>Blindseer</Oath> Exclusive]:
+        신비한 눈은 인식할 수 없는 것을 인식하게 됩니다. 보이지 않는 적들이 강조
+        표시됩니다.
+        <br />
+    </UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 다른 맹세 사용자의 도움 없이 심해에서 패스파인더 4명 구출<br/><br/>
 
@@ -444,21 +447,23 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp;**"I am a master with my hands."**<br/>
 
--   Brazen Blow [Common Talent] - [Greataxes] 도끼로 느려진 적을 공격하면 임시 하이퍼아머가 부여됩니다. (쿨타임 20초).
+-   Brazen Blow [Common Talent] - [Greataxes] 대형도끼로 느려진 적을 공격하면 임시 하이퍼아머가 부여됩니다. (쿨타임 20초).
 
-&emsp;&emsp; - 요구사항: 도끼 사용, Impairing Blow, 30 Heavy Weapon<br/>
+&emsp;&emsp; - 요구사항: 대형도끼 사용, Impairing Blow, 30 Heavy Weapon<br/>
 
--   <RareTalent>Heavy Fatigue</RareTalent> [Rare Talent] - [Greataxes] 도끼로 느려진 적을 공격하면 적의 구르기 거리가 일시적으로 줄어듭니다.
+-   <RareTalent>Heavy Fatigue</RareTalent> [Rare Talent] - [Greataxes] 대형도끼로
+    느려진 적을 공격하면 적의 구르기 거리가 일시적으로 줄어듭니다.
 
-&emsp;&emsp; - 요구사항: 도끼 사용, Impairing Blow, 40 Heavy Weapon<br/>
+&emsp;&emsp; - 요구사항: 대형도끼 사용, Impairing Blow, 40 Heavy Weapon<br/>
 
 -   Impairing Blow [Common Talent] - [Greataxes] 기본 공격으로 적의 속도가 2초 동안 약간 느려집니다. 달리는 공격은 3초 동안 적을 약간 둔화시킵니다. 속도 부스트를 사용하면 적에 대한 자세 피해가 20% 증가합니다.
 
-&emsp;&emsp; - 요구사항: 도끼 사용, 30 Heavy Weapon<br/>
+&emsp;&emsp; - 요구사항: 대형도끼 사용, 30 Heavy Weapon<br/>
 
--   <RareTalent>Rending Impact</RareTalent> [Rare Talent] - [Greataxes] 상대의 블록을 파괴 시키면 상대에게 녹다운 효과가 적용됩니다.
+-   <RareTalent>Rending Impact</RareTalent> [Rare Talent] - [Greataxes] 상대의 블록을
+    파괴 시키면 상대에게 녹다운 효과가 적용됩니다.
 
-&emsp;&emsp; - 요구사항: 도끼 사용, 40 Heavy Weapon<br/><br/>
+&emsp;&emsp; - 요구사항: 대형도끼 사용, 40 Heavy Weapon<br/><br/>
 
 ## <u>Butterfly</u>
 
@@ -468,11 +473,13 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp; - 요구사항: 15 Agility<br/>
 
--   <RareTalent>Evasive Expert</RareTalent> [Rare Talent] - 회피로 인한 속도 증가가 증가합니다. (+1 Passive Agility)
+-   <RareTalent>Evasive Expert</RareTalent> [Rare Talent] - 회피로 인한 속도 증가가
+    증가합니다. (+1 Passive Agility)
 
 &emsp;&emsp; - 요구사항: 15 Agility, Swift Rebound<br/>
 
--   <RareTalent>Risky Moves</RareTalent> [Rare Talent, Agility] - 회피에 성공하면 자동으로 다음 공격을 회피하게 됩니다. (+1 Passive Agility)
+-   <RareTalent>Risky Moves</RareTalent> [Rare Talent, Agility] - 회피에 성공하면
+    자동으로 다음 공격을 회피하게 됩니다. (+1 Passive Agility)
 
 &emsp;&emsp; - 효과가 활성화되면 사용자는 파란색으로 강조 표시됩니다.<br/>
 &emsp;&emsp; - 공격하면 효과가 일찍 종료됩니다.<br/>
@@ -480,7 +487,8 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 &emsp;&emsp; - 요구사항: 25 Agility<br/>
 &emsp;&emsp; - 반대: Leaf in the Wind Talents (<RareTalent>Observation</RareTalent>, <RareTalent>Safety Dance</RareTalent>)<br/><br/>
 
--   <AdvancedTalent>Ghost</AdvancedTalent> [Advanced Talent] - 회피하면 잠시 투명해집니다. (+5 Passive Agility)
+-   <AdvancedTalent>Ghost</AdvancedTalent> [Advanced Talent] - 회피하면 잠시 투명해집니다.
+    (+5 Passive Agility)
 
 &emsp;&emsp; - 회피 프레임이 2초간 증가합니다.<br/>
 &emsp;&emsp; - 투명 상태에서는 공격을 막을 수 없습니다.<br/>
@@ -491,70 +499,71 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp;**"I have never lost."**<br/>
 
--   Underdog [Common Talent] - You deal 3% more damage to those with higher HP than you.
+-   Underdog [Common Talent] - 자신보다 HP가 높은 적에게는 3% 더 많은 피해를 입힙니다.
 
-&emsp;&emsp; - "Higher HP" refers to max HP. Due to this, this Talent is always active in PvE.<br/>
 &emsp;&emsp; - 요구사항: 50 Willpower<br/>
 
--   <RareTalent>Champion's Regalia</RareTalent> [Rare Talent] - Flourishing an opponent grants you 1.5x posture damage for 10 seconds. (+1 Carry Load)
+-   <RareTalent>Champion's Regalia</RareTalent> [Rare Talent] - 적을 밀치면 10초
+    동안 자세 피해가 1.5배 증가합니다. (+1 Carry Load)
 
-&emsp;&emsp; - Indicated by a gold cell-shade outline on your character.<br/>
-&emsp;&emsp; - Does not work on non humanoid Monsters.<br/>
+&emsp;&emsp; - 캐릭터에 금색 윤곽선으로 표시됩니다.<br/>
+&emsp;&emsp; - 인간형 몹이 아니면 적용되지 않습니다.<br/>
 &emsp;&emsp; - 요구사항: 25 Strength<br/>
 
--   <RareTalent>Defiance</RareTalent> [Rare Talent] - Negative status effects are half as effective when you are below 35% HP.
+-   <RareTalent>Defiance</RareTalent> [Rare Talent] - 부정적인 상태 효과가 HP 35%
+    미만일 때 절반으로 줄어듭니다.
 
-&emsp;&emsp; - 요구사항: 70 Willpower<br/>
-&emsp;&emsp; - The Innate Talent of Etrean's has a similar effect, but is applied to all buffs and debuffs.<br/><br/>
+&emsp;&emsp; - 요구사항: 70 Willpower<br/><br/>
 
 ## <u>Charm Caster</u>
 
 &emsp;&emsp;**"I use the song to charm others."**<br/>
 
--   Chaotic Charm [Common Talent, Charisma] - When attacked at low health enemies deal less damage to you and more to anyone else.
+-   Chaotic Charm [Common Talent, Charisma] - 체력이 낮은 적에게 공격을 받으면 자신에게는 피해가 줄어들고 다른 사람에게는 피해가 더 커집니다.
 
-&emsp;&emsp; - 요구사항: 55 Charisma, Charismatic Cast<br/>
-&emsp;&emsp; - When below 25% HP, Every hit taken will apply Chaotic Charm to the opponent, reducing your incoming damage by 20%, and increasing their damage by 20% to players that aren't you.<br/>
-&emsp;&emsp; - Effect Lasts 15s<br/>
-&emsp;&emsp; - Proc Cooldown: 0.25s<br/>
-
--   Morale Booster [Common Talent, Charisma] - Allies recover twice as fast from being knocked when charmed by you.
-
-&emsp;&emsp; - 요구사항: 25 Charisma<br/>
-&emsp;&emsp; - Allies who are charmed get up in 5 seconds instead of the usual 10 when knocked.<br/>
-
--   Charismatic Cast [Common Talent, Charisma] - Landing mantras on enemies charms them reducing damage done to you.
-
-&emsp;&emsp; - 요구사항: 25 Charisma<br/>
-
--   Lasting Charisma [Common Talent, Charisma] - Enemies charmed by your mantras are charmed longer.
-
+&emsp;&emsp; - HP가 25% 미만일 때, 공격할 때마다 적에게 매력이 적용되어 자신이 받는 피해는 20% 감소하지만 다른 사람이 받는 피해는 20% 증가합니다.<br/>
+&emsp;&emsp; - 15초 동안 유지됩니다. <br/>
+&emsp;&emsp; - 쿨타임: 0.25s<br/>
 &emsp;&emsp; - 요구사항: 55 Charisma, Charismatic Cast<br/>
 
--   Tough Love [Common Talent, Charisma] - Deal 10% more damage to enemies charmed by you. Being hit by someone the same race or oath as you charms them briefly.
+-   Morale Booster [Common Talent, Charisma] - 자신에게 매혹된 아군은 두 배 빠른 속도로 일어납니다.
+
+&emsp;&emsp; - 일반적으로 매혹된 아군이 기절했을 때, 10초가 아닌 5초 만에 일어납니다.<br/>
+&emsp;&emsp; - 요구사항: 25 Charisma<br/>
+
+-   Charismatic Cast [Common Talent, Charisma] - 적에게 만트라를 맞추면 적으로부터 받는 피해가 감소합니다.
+
+&emsp;&emsp; - 요구사항: 25 Charisma<br/>
+
+-   Lasting Charisma [Common Talent, Charisma] - 적에게 거는 매료가 더 오래 유지됩니다.
+
+&emsp;&emsp; - 요구사항: 55 Charisma, Charismatic Cast<br/>
+
+-   Tough Love [Common Talent, Charisma] - 자신에게 매료된 적에게 10% 추가 피해를 줍니다. 같은 종족 맹세를 한 사람에게 맞으면 잠시 동안 매료됩니다.
 
 &emsp;&emsp; - 요구사항: 25 Charisma, Charismatic Cast<br/>
-&emsp;&emsp; - Only works on M1s, not mantras (tested)<br/>
+&emsp;&emsp; - M1 공격만 작동합니다.<br/>
 &emsp;&emsp; - 반대: Narcissist<br/>
 
--   <AdvancedTalent>Dazing Finisher</AdvancedTalent> [Advanced Talent, Charisma] - Flourishing enemies that are charmed by you cause them to not be knocked back and dazed instead.
+-   <AdvancedTalent>Dazing Finisher</AdvancedTalent> [Advanced Talent, Charisma]
+    - 적이 매료된 상태에서 밀쳐지면 밀려나는 대신 잠시 멍해집니다.
 
 &emsp;&emsp; - 요구사항: 1 Charisma, All Charm Caster Talents<br/>
-&emsp;&emsp; - 반대: Bulldozer<br/><br/>
+&emsp;&emsp; - 반대: <RareTalent>Bulldozer</RareTalent><br/><br/>
 
 ## <u>Christmas Miracle</u>
 
--   Christmas Miracle [Common Talent] - Christmas Mod Shop rewards. Regens hunger and thirst. "Thank you so much K1!" Heh, no problem guys. All in a day's work.
+-   Christmas Miracle [Common Talent] - 크리스마스 모드 상점 보상. 배고픔과 갈증을 회복합니다. “K1, 정말 고마워요!”
 
-&emsp;&emsp; - Using it creates a large Christmas tree that plays an instrumental of We Wish You a Merry Christmas.<br/>
-&emsp;&emsp; - Exclusive to Deepwoken moderators, bought from the Mod Shop using Mod Points.<br/>
+&emsp;&emsp; - 이를 사용하면 "We Wish You a Merry Christmas"의 악기를 연주하는 큰 크리스마스 트리가 만들어집니다.<br/>
+&emsp;&emsp; - 모드 상점에서 구입하는 딥워커 관리자 전용 아이템입니다.<br/>
 &emsp;&emsp; - 요구사항: MODSHOPREWARD<br/><br/>
 
 ## <u>Cold Phantom</u>
 
 &emsp;&emsp;**"I seek the qualities of Cold Phantom."**<br/>
 
--   Freezing Wight [Common Talent, Dual Attunement] - Your Haunted Gale now procs Chilled. (+5 Elemental Intensity)
+-   Freezing Wight [Common Talent, Dual Attunement] - 이제 Haunted Gale이 "Chilled" 상태를 입힙니다. (+5 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: Haunted Gale, 40 Frostdraw<br/><br/>
 
@@ -562,34 +571,37 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp;**"I stand far above others, an insurmountable challenge."**<br/>
 
--   <RareTalent>Destructive Recovery</RareTalent> [Rare Talent] - [Greatsword] Causes your enemies to regenerate significantly less posture when they parry you. (+1 Posture, +2 Carry Load)
+-   <RareTalent>Destructive Recovery</RareTalent> [Rare Talent] - [Greatsword] 적이
+    패링을 성공했을 때, 받는 자세 회복을 감소시킵니다. (+1 Posture, +2 Carry Load)
 
-&emsp;&emsp; - 요구사항: 25 Strength & 40 Heavy Weapon, Harsh Response, Use a Greatsword<br/>
+&emsp;&emsp; - 요구사항: 25 Strength & 40 Heavy Weapon, Harsh Response, 대검 사용<br/>
 
--   Harsh Response [Common Talent] - Enemies receive less posture back when parrying your attacks.
+-   Harsh Response [Common Talent] - 적이 공격을 패링할 때 자세를 덜 취하게 됩니다.
 
 &emsp;&emsp; - 요구사항: 25 Strength<br/>
 
--   Heavy Hitter [Common Talent] - [Heavy Weapons] Your posture damage is increased by 25%.
+-   Heavy Hitter [Common Talent] - [Heavy Weapons] 자세 데미지가 25% 증가합니다.
 
 &emsp;&emsp; - 요구사항: 25 Heavy Weapon, 15 Strength<br/><br/>
 
 ## <u>Comrade</u>
 
--   <RareTalent>Lord's Tithe</RareTalent> [Rare Talent] - Allies and enemies you Reinforce are drained of their Ether until you are fully charged.
+-   <RareTalent>Lord's Tithe</RareTalent> [Rare Talent] - 내가 강화하는 아군과 적은
+    완전히 충전될 때까지 에테르가 소모됩니다.
 
-&emsp;&emsp; - While the effect is active, victims can hold block to reduce the ether steal by half.<br/>
-&emsp;&emsp; - 요구사항: Reinforce, 40 Shadowcast, 40 Fortitude (Note that reinforce requires 50 fortitude despite the requirement for the talent being 40)<br/>
+&emsp;&emsp; - 효과가 활성화되는 동안 블록을 유지하여 에테르 소모를 절반으로 줄일 수 있습니다.<br/>
+&emsp;&emsp; - 요구사항: Reinforce, 40 Shadowcast, 40 Fortitude<br/>
 
--   <RareTalent>Grand Support</RareTalent> [Rare Talent] - Everyone you buff with Reinforce is healed lightly. You're healed slightly if you heal others.
+-   <RareTalent>Grand Support</RareTalent> [Rare Talent] - Reinforce로 버프를 받은
+    모든 사람은 약간 치유됩니다. 다른 사람을 치료하면 자신도 약간 치유됩니다.
 
-&emsp;&emsp; - 요구사항: Reinforce, 40 Fortitude (Note that reinforce requires 50 fortitude despite the requirement for the talent being 40)<br/><br/>
+&emsp;&emsp; - 요구사항: Reinforce, 40 Fortitude<br/><br/>
 
 ## <u>Cosmic Wind</u>
 
 &emsp;&emsp;**"I seek the qualities of Cosmic Wind."**<br/>
 
--   Pressure Detonation [Common Talent, Dual Attunement] - Block breaking an opponent with a shadow mantra generates a small vacuum that suffocates those hit.
+-   Pressure Detonation [Common Talent, Dual Attunement] - 어둠 만트라로 상대를 블록 파괴하면 질식시킵니다.
 
 &emsp;&emsp; - 요구사항: 40 Shadowcast, 60 Galebreathe<br/><br/>
 
@@ -597,82 +609,78 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp;**"I am a master of creating openings."**<br/>
 
--   <RareTalent>Knife's Journey</RareTalent> [Rare Talent, Light] - Cancelling an enemy's Mantra windup with your basic attacks now deals 15% more damage
+-   <RareTalent>Knife's Journey</RareTalent> [Rare Talent, Light] - 기본 공격으로
+    적의 만트라를 취소시키면 피해가 15% 더 증가합니다.
 
-&emsp;&emsp; - Only works on daggers.<br/>
+&emsp;&emsp; - 단검에만 적용됩니다.<br/>
 &emsp;&emsp; - 요구사항: 30 Light Weapon<br/>
 
--   Decisive Blow [Common Talent, Light] - Hitting an enemy with your Critical Attack immediately after they dodge now procs Knife's Journey. Your Knife's Journey procs do 2x Armor damage
+-   Decisive Blow [Common Talent, Light] - 적이 회피한 직후 치명타 공격으로 적을 공격하면 <RareTalent>Knife's Journey</RareTalent>가 발동합니다. 발동된 동안, 방어구 피해가 2배 증가합니다.
 
-&emsp;&emsp; - While the effect is active, gain a red trail on your weapon.<br/>
-&emsp;&emsp; - The red trail will show up on non-daggers, but will have no effect.<br/><br/>
-&emsp;&emsp; - 요구사항: Knife's Journey
+&emsp;&emsp; - 효과가 활성화되는 동안 무기에 빨간색 흔적이 생깁니다<br/>
+&emsp;&emsp; - 단검이 아닌 무기는 흔적만 생기고 효과가 적용되지 않습니다.<br/>
+&emsp;&emsp; - 요구사항: <RareTalent>Knife's Journey</RareTalent><br/><br/>
 
 ## <u>Cryomancer</u>
 
 &emsp;&emsp;**"I command the cold."**<br/>
 
--   Fragile Freeze [Common Talent, Frostdraw Exclusive] - Your ice Mantras will freeze opponents upon blockbreaking them. (+3 Elemental Intensity)
+-   Fragile Freeze [Common Talent, Frostdraw Exclusive] - 얼음 만트라로 블록을 파괴하면 적을 얼립니다. (+3 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 60 Frostdraw.<br/>
-&emsp;&emsp; - You can spam F to get out of Freeze<br/>
 
--   Chilling Flourish [Common Talent, Frostdraw Exclusive] - When flourishing an enemy, they leave behind a trail of ice in the direction you send them. (+4 Elemental Intensity)
+-   Chilling Flourish [Common Talent, Frostdraw Exclusive] - 적을 밀치면 공격하는 방향으로 얼음의 흔적을 남깁니다. (+4 Elemental Intensity)
 
-&emsp;&emsp; - Leaves 3-4 ice patches on the ground.<br/>
+&emsp;&emsp; - 3~4개의 얼음 조각을 남깁니다.<br/>
 &emsp;&emsp; - 요구사항: 30 Frostdraw<br/>
 
--   Spike Traps [Common Talent, Frostdraw Exclusive] - Press [F] during the wind up of your Ice Spikes to create traps around you instead of spawning a spike in the normal spot.
+-   Spike Traps [Common Talent, Frostdraw Exclusive] - Ice Spikes 사용 중에 [F]를 누르면 스파이크 대신 지뢰가 생성됩니다.
 
 &emsp;&emsp; - 요구사항: Ice Spikes, 30 Frostdraw<br/>
 
--   Condensation Drip [Common Talent, Frostdraw Exclusive] - Passively collect condensation from the air, greatly reducing your thirst. (+2 Elemental intensity)
+-   Condensation Drip [Common Talent, Frostdraw Exclusive] - 공기 중의 수분을 이용해 갈증을 크게 줄여줍니다. (+2 Elemental intensity)
 
-&emsp;&emsp; - Slows thirst drain by approximately 3 times.<br/>
+&emsp;&emsp; - 갈증 감소가 3배 느려집니다.<br/>
 &emsp;&emsp; - 요구사항: 20 Intelligence, 15 Frostdraw<br/>
 
--   Cool Head [Common Talent, Frostdraw Exclusive] - If set on fire while on ice, immediately put it out and enter a state of chill. During this state, you cannot be lit on fire (+2 Elemental Intensity)
+-   Cool Head [Common Talent, Frostdraw Exclusive] - 얼음 위에서 불이 붙으면 즉시 불을 끄고 냉기 상태에 들어가세요. 이 상태에서는 불이 붙지 않습니다. (+2 Elemental Intensity)
 
-&emsp;&emsp; - If you were to catch fire while on ice, gain total immunity to the burning status effect.<br/>
-&emsp;&emsp; - While the effect is active, the user breathes cold air.<br/>
 &emsp;&emsp; - 요구사항: 30 Frostdraw<br/><br/>
 
 ## <u>Cryoni</u>
 
 &emsp;&emsp;**"Those that step on my ice know that they have made a grave error."**<br/>
 
--   Cryostasis [Common Talent, Frostdraw Exclusive] - When block broken, fragile freeze yourself, negating the damage of the next attack. (+3 Elemental Intensity)
+-   Cryostasis [Common Talent, Frostdraw Exclusive] - 자신의 블록이 깨지면 동결 상태에 들어가 공격 피해를 무효화합니다. (+3 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: Fragile Freeze, 20 Fortitude.<br/>
 
--   Rude Awakening [Common Talent, Frostdraw Exclusive] - When hit in Cryostasis inflict frost damage to the enemy who hit you. (+3 Elemental Intensity)
+-   Rude Awakening [Common Talent, Frostdraw Exclusive] - Cryostasis에 맞으면 냉기 피해를 입힙니다. (+3 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: Cryostasis<br/>
 
--   <RareTalent>Preceding Chill</RareTalent> [Rare Talent, Frostdraw Exclusive] - Enemies hit during the last moments of your ice beam are frozen. (+3 Elemental Intensity)
+-   <RareTalent>Preceding Chill</RareTalent> [Rare Talent, Frostdraw Exclusive] -
+    Ice Beam 마지막 순간에 적중당한 적들은 얼어붙습니다. (+3 Elemental Intensity)
 
-&emsp;&emsp; - 요구사항: Ice Beam, 60 Frostdraw.<br/>
-&emsp;&emsp; - If the user has Crystallization, this talent no longer freezes but applies another crystal.<br/><br/>
+&emsp;&emsp; - 요구사항: Ice Beam, 60 Frostdraw.<br/><br/>
 
 ## <u>Cutthroat</u>
 
 &emsp;&emsp;**"I am ruthless. A knife for hire."**<br/>
 
--   Blood Thirsty [Common Talent, Agility] - Gain a speed boost after causing an opponent heavy blood loss. (+1 Passive Agility)
+-   Blood Thirsty [Common Talent, Agility] - 상대에게 큰 출혈을 일으킨 후 속도 향상을 얻습니다. (+1 Passive Agility)
 
-&emsp;&emsp; - "Heavy Bloodloss" refers to a guard break.<br/>
+&emsp;&emsp; - 블록 파괴에 적용됩니다.<br/>
 &emsp;&emsp; - 요구사항: 45 Agility<br/>
 
--   In a Hurry [Common Talent, Agility] - You grip faster with a movement speed boost.
+-   In a Hurry [Common Talent, Agility] - 이동 속도 부스트 상태에서 처형을 더 빠르게 합니다.
 
-&emsp;&emsp; - Reduce grip time by 0.5 seconds (16.67% faster)<br/>
-&emsp;&emsp; - Speed boost from parkouring do not count. It must be an actual speed boost.<br/>
+&emsp;&emsp; - 처형 시간 0.5초 감소 (16.67% 빨라짐)<br/>
 &emsp;&emsp; - 요구사항: 30 Agility<br/>
 
--   Muffled Screams [Common Talent, Agility] - You quiten the cries of help of those you execute, reducing the distance at which their allies will hear it and come to assist, and reducing the effectiveness of talents that slow your executions. (+1 Passive Agility)
+-   Muffled Screams [Common Talent, Agility] - 처형 당하는 자의 도움의 외침을 잠재우고, 동료들이 그것을 도우러 오는 범위를 줄이며 처형을 느리게 하는 특성들의 효과를 감소시킵니다. (+1 Passive Agility)
 
-&emsp;&emsp; - NPCs have a shortened aggro range from gripping allies in proximity.<br/>
-&emsp;&emsp; - Defiant Until The End and Last Second Negotiation affect your grip speed less.<br/>
+&emsp;&emsp; - NPC들의 처형 감지 범위를 줄입니다.<br/>
 &emsp;&emsp; - 요구사항: 50 Agility<br/><br/>
 
 ## <u>Darksiphon</u>
@@ -692,7 +700,10 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp; - 요구사항: 50 Shadowcast, 25 Intelligence, Dark God<br/>
 
--   <RareTalent>Dark Rift</RareTalent> [Rare Talent, Shadowcast Exclusive] Enter a rifted state when you successfully dodge, where you can't be damaged until its duration ends. Can be cancelled with feinting or attacking. (+4 Elemental Intensity)
+-   <RareTalent>Dark Rift</RareTalent> [Rare Talent, Shadowcast Exclusive] Enter
+    a rifted state when you successfully dodge, where you can't be damaged until
+    its duration ends. Can be cancelled with feinting or attacking. (+4 Elemental
+    Intensity)
 
 &emsp;&emsp; - 요구사항: 60 Shadowcast, Dark Hours<br/>
 &emsp;&emsp; - You hover with shadowy particles while the rifted state is active.<br/>
@@ -713,11 +724,24 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 ## <Oath><u>Dawnwalker</u></Oath>
 
--   <UnlockableTalent>Absolute Radiance [Unlockable Talent, <Oath>Dawnwalker</Oath> Exclusive] - Dealing damage with Dawnwalker mantras briefly makes you immune to all elemental effects for a short period.</UnlockableTalent>
+-   <UnlockableTalent>
+        Absolute Radiance [Unlockable Talent, <Oath>Dawnwalker</Oath> Exclusive]
+        - Dealing damage with Dawnwalker mantras briefly makes you immune to all
+        elemental effects for a short period.
+    </UnlockableTalent>
 
--   <UnlockableTalent>Protagonist Syndrome [Unlockable Talent, <Oath>Dawnwalker</Oath> Exclusive] - The grasp of shadow is meaningless in the face of your blinding light. Your Dawnwalker mantras are empowered after getting hit by Shadowcast.</UnlockableTalent>
+-   <UnlockableTalent>
+        Protagonist Syndrome [Unlockable Talent, <Oath>Dawnwalker</Oath>{" "}
+        Exclusive] - The grasp of shadow is meaningless in the face of your
+        blinding light. Your Dawnwalker mantras are empowered after getting hit
+        by Shadowcast.
+    </UnlockableTalent>
 
--   <UnlockableTalent>Luminous Flash [Unlockable Talent, <Oath>Dawnwalker</Oath> Exclusive] - After dealing a certain amount of damage in Absolute Radiance, gain a chance to empower your strikes with pure light.</UnlockableTalent>
+-   <UnlockableTalent>
+        Luminous Flash [Unlockable Talent, <Oath>Dawnwalker</Oath> Exclusive] -
+        After dealing a certain amount of damage in Absolute Radiance, gain a
+        chance to empower your strikes with pure light.
+    </UnlockableTalent>
 
 ## <u>Death Speaker</u>
 
@@ -767,7 +791,9 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp;**"I am a competent duelist."**<br/>
 
--   <RareTalent>Concussion</RareTalent> [Rare Talent] - Enemies you flourish into walls have their vision altered for a short duration and are dazed longer than usual. (+8 Carry Load)
+-   <RareTalent>Concussion</RareTalent> [Rare Talent] - Enemies you flourish into
+    walls have their vision altered for a short duration and are dazed longer than
+    usual. (+8 Carry Load)
 
 &emsp;&emsp; - 요구사항: 20 Strength, 15 Fortitude<br/>
 
@@ -787,7 +813,9 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 &emsp;&emsp; - 요구사항: 25 Strength, 15 Agility<br/>
 &emsp;&emsp; - The head equipment "Phalanx Helmet" has this talent.<br/>
 
--   <RareTalent>Spine Cutter</RareTalent> [Rare Talent] - Hitting an enemy in the back after a roll cancel will initiate a second slash that deals your weapon's raw damage. ( +6 Carry Load, +2 Passive Agility)
+-   <RareTalent>Spine Cutter</RareTalent> [Rare Talent] - Hitting an enemy in the
+    back after a roll cancel will initiate a second slash that deals your weapon's
+    raw damage. ( +6 Carry Load, +2 Passive Agility)
 
 &emsp;&emsp; - Deals true damage.<br/>
 &emsp;&emsp; - You deal damage equivalent to 100% of your base damage, unaffected by any modifiers, essentially dealing another fresh hit for free.<br/>
@@ -804,11 +832,14 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 &emsp;&emsp; - 요구사항: 30 Strength, 30 Medium Weapon<br/>
 &emsp;&emsp; - The head equipments "Authority Helm" and "Bulwark Helm" have this talent.<br/>
 
--   <RareTalent>Strong Stern</RareTalent> [Rare Talent] - The duration you are dazed from wall bangs is cut in half (+9 Carry Load)
+-   <RareTalent>Strong Stern</RareTalent> [Rare Talent] - The duration you are dazed
+    from wall bangs is cut in half (+9 Carry Load)
 
 &emsp;&emsp; - 요구사항: 15 Strength, 25 Fortitude<br/>
 
--   <RareTalent>Tap Dancer</RareTalent> [Rare Talent, Agility] - Roll immediately after a roll-cancel no longer puts your roll on a longer cooldown. (+1 Passive Agility)
+-   <RareTalent>Tap Dancer</RareTalent> [Rare Talent, Agility] - Roll immediately
+    after a roll-cancel no longer puts your roll on a longer cooldown. (+1 Passive
+    Agility)
 
 &emsp;&emsp; - Negate the extra half a second cooldown added to the roll following a roll-cancel.<br/>
 &emsp;&emsp; - 요구사항: 60 Agility<br/><br/>
@@ -826,13 +857,16 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp;**"I seek the qualities of Elementalist."**<br/>
 
--   <AdvancedTalent>Ether Overdrive</AdvancedTalent> [Advanced Talent, Attunement Exclusive] - Gain 5% extra PEN and remove the cap on your PEN. Go beyond your limits.
+-   <AdvancedTalent>Ether Overdrive</AdvancedTalent> [Advanced Talent, Attunement
+    Exclusive] - Gain 5% extra PEN and remove the cap on your PEN. Go beyond your
+    limits.
 
 &emsp;&emsp; - Like Million Ton Piercer, removes 50% mantra and physical PEN cap.<br/>
 &emsp;&emsp; - 요구사항: 20 Element, 90 Intelligence<br/>
 &emsp;&emsp; - 반대: Million Ton Piercer<br/>
 
--   <RareTalent>Elemental Rebound</RareTalent> [Rare Talent] - Elemental mantras now grant extra tempo upon landing (+3 Elemental Intensity).
+-   <RareTalent>Elemental Rebound</RareTalent> [Rare Talent] - Elemental mantras
+    now grant extra tempo upon landing (+3 Elemental Intensity).
 
 요구사항: 60 Element<br/><br/>
 
@@ -881,7 +915,8 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp; - 요구사항: 30 Intelligence<br/>
 
--   <RareTalent>Eureka</RareTalent> [Rare Talent, Intelligence] - Receive ether back on every successful perfect cast. (+7 Carry Load, +2 Elemental Intensity)
+-   <RareTalent>Eureka</RareTalent> [Rare Talent, Intelligence] - Receive ether back
+    on every successful perfect cast. (+7 Carry Load, +2 Elemental Intensity)
 
 &emsp;&emsp; - Refunds the ether cost of a mantra proportionate to your INT.<br/>
 &emsp;&emsp; - 요구사항: 30 Intelligence<br/>
@@ -914,7 +949,9 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp;**"I enjoy sea food."**<br/>
 
--   <RareTalent>Fishman</RareTalent> [Generic Talent, Rare Talent] - You can execute enemies in water. Gain additional healing from knocking others in water. (+5 health)
+-   <RareTalent>Fishman</RareTalent> [Generic Talent, Rare Talent] - You can execute
+    enemies in water. Gain additional healing from knocking others in water. (+5
+    health)
 
 ## <u>Flame dancer</u>
 
@@ -924,11 +961,14 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp; - 요구사항: 35 Flamecharm, Power 8<br/>
 
--   <RareTalent>Graceful Steps</RareTalent> [Rare Talent, Flamecharm Exclusive] - Your dancing step now give a faster speed boost (+3 Elemental Intensity).
+-   <RareTalent>Graceful Steps</RareTalent> [Rare Talent, Flamecharm Exclusive] -
+    Your dancing step now give a faster speed boost (+3 Elemental Intensity).
 
 &emsp;&emsp; - 요구사항: 80 Flamecharm, Power 13, Dancing Steps<br/>
 
--   <RareTalent>The Final Act</RareTalent> [Rare Talent, Flamecharm Exclusive] - Landing a fire mantra immediately after flourishing an opponent will cause them to explode. (+3 Elemental Intensity)
+-   <RareTalent>The Final Act</RareTalent> [Rare Talent, Flamecharm Exclusive] -
+    Landing a fire mantra immediately after flourishing an opponent will cause them
+    to explode. (+3 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 60 Flamecharm, Power 13<br/>
 &emsp;&emsp; - 반대: Eruption Path: Lava Serpent<br/><br/>
@@ -949,7 +989,10 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp; - 요구사항: 35 Flamecharm, Fire Forge (Flamecharm Mantra)<br/>
 
--   <RareTalent>Warding Radiance</RareTalent> [Rare Talent, Flamecharm Exclusive] - Every fire mantra builds up one halo stack. At 3 stacks a halo appears that allows you to slide further. Hell's Partisan is also triggered passively while this is active. (+1 Passive Agility, +3 Elemental Intensity)
+-   <RareTalent>Warding Radiance</RareTalent> [Rare Talent, Flamecharm Exclusive]
+    - Every fire mantra builds up one halo stack. At 3 stacks a halo appears that
+    allows you to slide further. Hell's Partisan is also triggered passively while
+    this is active. (+1 Passive Agility, +3 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 20 Agility, 30 Flamecharm, Hell's Partisan<br/><br/>
 
@@ -1003,13 +1046,16 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 "I'm built different" - Cannot Give Talents
 
--   <RareTalent>Exoskeleton</RareTalent> [Rare Talent] - You have a layer of fortified Natural Armor that replenishes when you rest. Your Natural Armor will resist 10% Physical Damage when active. (+10 Health)
+-   <RareTalent>Exoskeleton</RareTalent> [Rare Talent] - You have a layer of fortified
+    Natural Armor that replenishes when you rest. Your Natural Armor will resist
+    10% Physical Damage when active. (+10 Health)
 
 &emsp;&emsp; - Vesperians will only gain 8% armor from this talent, totalling to 13% with their own natural armor.<br/>
 &emsp;&emsp; - Natural Armors can be affected by PEN, but its effectiveness is reduced by 75%.<br/>
 &emsp;&emsp; - 요구사항: 40 Fortitude.<br/>
 
--   <RareTalent>To the Finish</RareTalent> [Rare Talent] - You take 10% less damage when below 30% health.
+-   <RareTalent>To the Finish</RareTalent> [Rare Talent] - You take 10% less damage
+    when below 30% health.
 
 &emsp;&emsp; - 요구사항: 50 Fortitude<br/><br/>
 
@@ -1070,7 +1116,8 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 ## <u>Frozen Warrior</u>
 
--   <RareTalent>Frozen Legs</RareTalent> [Rare Talent, Frostdraw Exclusive] - Your slow effect prevents your opponents from rolling. (+5 Elemental Intensity)
+-   <RareTalent>Frozen Legs</RareTalent> [Rare Talent, Frostdraw Exclusive] - Your
+    slow effect prevents your opponents from rolling. (+5 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 60 Frostdraw<br/>
 &emsp;&emsp; - Works with Crystallization<br/>
@@ -1131,7 +1178,9 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp;**"My brains are my strength."**<br/>
 
--   <RareTalent>Neuroplasticity</RareTalent> [Rare Talent] - Your mind is a pliable, flexible substance. The Ether cost of additional modifications to your Mantras is now reduced by 20%. (+1 Wildcard Mantra Slot)
+-   <RareTalent>Neuroplasticity</RareTalent> [Rare Talent] - Your mind is a pliable,
+    flexible substance. The Ether cost of additional modifications to your Mantras
+    is now reduced by 20%. (+1 Wildcard Mantra Slot)
 
 &emsp;&emsp; - The increased Ether Cost from Modified Mantras is reduced by 20% (ether cost increase for tier 1 modifications is reduced from 10 Ether to 8, for tier 2 - from 20 Ether to 16).<br/>
 &emsp;&emsp; - Does not apply retroactively to previously modified mantras. You must reset your mantras with an Amnesic Driftwood and mod the mantra again to benefit from the reduced cost.<br/>
@@ -1165,7 +1214,8 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp;**"I always shoot first."**<br/>
 
--   <RareTalent>Armor Piercing</RareTalent> [Rare Talent] - Your bullets now ignore 20% of an opponent's physical armor.
+-   <RareTalent>Armor Piercing</RareTalent> [Rare Talent] - Your bullets now ignore
+    20% of an opponent's physical armor.
 
 &emsp;&emsp; - 요구사항: 30 Medium/Light Weapon and have completed the Trig quest. (helping The Summer Company)<br/>
 
@@ -1178,7 +1228,8 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 &emsp;&emsp; - Allows the user to instantly start attacking with their offhand gun after attacking with their main weapon<br/>
 &emsp;&emsp; - 요구사항: 55 Light Weapon, Using a Gun<br/>
 
--   <RareTalent>True Ether Bullets</RareTalent> [Rare Talent] - [Guns] Using Ether Bullets applies elemental damage of your highest investment.
+-   <RareTalent>True Ether Bullets</RareTalent> [Rare Talent] - [Guns] Using Ether
+    Bullets applies elemental damage of your highest investment.
 
 &emsp;&emsp; - 요구사항: 30 Intelligence and 20 light/medium weapon, Use a Gun / Rifle<br/>
 &emsp;&emsp; - Landing 3 shots will make the 3rd shot deal elemental damage. Goes on a ??? second cooldown afterward.<br/>
@@ -1205,7 +1256,8 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 "I do not hold the beliefs of the common people."
 
--   <RareTalent>All the Dead Gods</RareTalent> [Rare Talent] - Your M1's now apply anti-heal for 8s. (+7 Sanity)
+-   <RareTalent>All the Dead Gods</RareTalent> [Rare Talent] - Your M1's now apply
+    anti-heal for 8s. (+7 Sanity)
 
 &emsp;&emsp; - Whenever you land an M1, you disable every source of your opponent's healing for 8 seconds.<br/>
 &emsp;&emsp; - Scales with investment up to its requirement, so if you have less WLL/INT than the req it procs less antiheal the lower your WLL/INT is. The antiheal proc still prevents passive regen.<br/>
@@ -1225,14 +1277,17 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp;**"I seek the qualities of Human Architecture."**<br/>
 
--   <AdvancedTalent>Brick Wall</AdvancedTalent> [Advanced Talent] - You refuse. You cannot be knocked off your feet until you are knocked completely unconscious. (+5 Health)
+-   <AdvancedTalent>Brick Wall</AdvancedTalent> [Advanced Talent] - You refuse. You
+    cannot be knocked off your feet until you are knocked completely unconscious.
+    (+5 Health)
 
 &emsp;&emsp; - Gain total immunity to ragdoll, only being pushed back instead from moves that would normally ragdoll.<br/>
 &emsp;&emsp; - By extension, this makes you more resistant to knockback as a whole as the lack of ragdoll means you retain air friction.<br/>
 &emsp;&emsp; - Gain total immunity to knockdowns (Heavy critical, Starkindred's Ascension etc...)<br/>
 &emsp;&emsp; - 요구사항: 100 Fortitude, 100 Willpower, Perseverance<br/>
 
--   <AdvancedTalent>Not a Scratch</AdvancedTalent> [Advanced Talent] - You don't show any signs of damage. (+2 Posture)
+-   <AdvancedTalent>Not a Scratch</AdvancedTalent> [Advanced Talent] - You don't
+    show any signs of damage. (+2 Posture)
 
 &emsp;&emsp; - Your character no longer shows any signs of damage no matter how low their HP is. No cuts, no scratches, no torn clothing, etc.<br/>
 &emsp;&emsp; - Spotter Talent no longer shows how much health your character has.<br/>
@@ -1240,7 +1295,8 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 ## <u>Hunter</u>
 
--   <RareTalent>Peripheral Vision</RareTalent> [Rare Talent] - Your glare now ignores if your opponent is facing you. (+5 Sanity)
+-   <RareTalent>Peripheral Vision</RareTalent> [Rare Talent] - Your glare now ignores
+    if your opponent is facing you. (+5 Sanity)
 
 &emsp;&emsp; - 요구사항: 40 Willpower, Glare<br/><br/>
 
@@ -1268,18 +1324,24 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 &emsp;&emsp; - 요구사항: 25 Frostdraw<br/>
 &emsp;&emsp; - Works with Crystallization<br/>
 
--   <RareTalent>Frozen Pin-Cushion</RareTalent> [Rare Talent, Frostdraw Exclusive] - Ice Daggers now freeze opponents. (+3 Elemental Intensity)
+-   <RareTalent>Frozen Pin-Cushion</RareTalent> [Rare Talent, Frostdraw Exclusive]
+    - Ice Daggers now freeze opponents. (+3 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: Ice Daggers, 60 Frostdraw.<br/>
 &emsp;&emsp; - Instantly procs Crystallization upon landing on the target, knocking them backwards and deal more damage<br/>
 
--   <RareTalent>Saint Jay</RareTalent> [Rare Talent, Frostdraw Exclusive] - When a chilled enemy receives a heal it's then redirected to you instead. While this is active and they are on ice your rate of healing is increased. (+5 Elemental Intensity)
+-   <RareTalent>Saint Jay</RareTalent> [Rare Talent, Frostdraw Exclusive] - When
+    a chilled enemy receives a heal it's then redirected to you instead. While this
+    is active and they are on ice your rate of healing is increased. (+5 Elemental
+    Intensity)
 
 &emsp;&emsp; - The user doesn't steal healing from others if the user was the one that procced the healing (via Revitalizing Hair Product, Grand Support talent etc.).<br/>
 &emsp;&emsp; - If using Glass Path: Crystallization then every crystal applied will proc Saint Jay for 2 seconds. (Doesn't stack)<br/>
 &emsp;&emsp; - 요구사항: Frostbite<br/>
 
--   <AdvancedTalent>Unyielding Frost</AdvancedTalent> [Advanced Talent, Frostdraw Exclusive] - Your Chill can proc through block, with blocked Chilling proc lasting 80% of the duration. (+5 Elemental Intensity)
+-   <AdvancedTalent>Unyielding Frost</AdvancedTalent> [Advanced Talent, Frostdraw
+    Exclusive] - Your Chill can proc through block, with blocked Chilling proc lasting
+    80% of the duration. (+5 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 100 Frostdraw<br/>
 &emsp;&emsp; - 반대: Glass Path: Crystallization<br/><br/>
@@ -1297,7 +1359,9 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 &emsp;&emsp; - "Self-Inflicted flames" include Flame Within, Agitating Spark you spread and environmental burns created by you.<br/>
 &emsp;&emsp; - 요구사항: Agitating Spark, 40 Flamecharm<br/>
 
--   <AdvancedTalent>Phoenix Flames</AdvancedTalent> [Flamecharm Exclusive, Advanced Talent] - Any time you would burn to death, you instead rise again with 50% of your health restored. Has a 60 second cooldown. (+2 Elemental Intensity)
+-   <AdvancedTalent>Phoenix Flames</AdvancedTalent> [Flamecharm Exclusive, Advanced
+    Talent] - Any time you would burn to death, you instead rise again with 50% of
+    your health restored. Has a 60 second cooldown. (+2 Elemental Intensity)
 
 &emsp;&emsp; - If you burn to death through the use of Last Laugh, the healing is reduced to 25%.<br/>
 &emsp;&emsp; - 요구사항: All Immolator Talents<br/>
@@ -1328,7 +1392,9 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp;**"I obtained the lost art of Ironsinging."**<br/>
 
--   <AdvancedTalent>Alloyblood</AdvancedTalent> [Advanced Talent, Ironsing Exclusive] - You don't bleed like others do. Bleed damage is halved. Blood loss is reduced by 75%.
+-   <AdvancedTalent>Alloyblood</AdvancedTalent> [Advanced Talent, Ironsing Exclusive]
+    - You don't bleed like others do. Bleed damage is halved. Blood loss is reduced
+    by 75%.
 
 &emsp;&emsp; - Bleed damage now only deals 15% more damage.<br/>
 &emsp;&emsp; - Blood loss reduction is less effective if using Curse of the No Life King.<br/>
@@ -1387,27 +1453,48 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 ## <u>Javelin Lord</u>
 
--   <RareTalent>Grand Skewer</RareTalent> [Thundercall Exclusive, Rare Talent] - Your Grand Javelin now carries opponents through the air.
+-   <RareTalent>Grand Skewer</RareTalent> [Thundercall Exclusive, Rare Talent] -
+    Your Grand Javelin now carries opponents through the air.
 
 &emsp;&emsp; - 요구사항: Grand Javelin, 60 Thundercall<br/><br/>
 
 ## <Oath><u>Jetstriker</u></Oath>
 
--   <UnlockableTalent>Decisive Winds [Unlockable Talent, <Oath>Jetstriker</Oath> Exclusive] - When damaged below 50% health, gain maximum sprint momentum temporarily, then this ability is put on cooldown.</UnlockableTalent>
+-   <UnlockableTalent>
+        Decisive Winds [Unlockable Talent, <Oath>Jetstriker</Oath> Exclusive] -
+        When damaged below 50% health, gain maximum sprint momentum temporarily,
+        then this ability is put on cooldown.
+    </UnlockableTalent>
 
--   <UnlockableTalent>Rush of ancients [Unlockable Talent, <Oath>Jetstriker</Oath> Exclusive] - Dashing at maximum sprint momentum makes you one with the wind itself. (+4 Passive Agility)</UnlockableTalent>
+-   <UnlockableTalent>
+        Rush of ancients [Unlockable Talent, <Oath>Jetstriker</Oath> Exclusive]
+        - Dashing at maximum sprint momentum makes you one with the wind itself.
+        (+4 Passive Agility)
+    </UnlockableTalent>
 
--   <UnlockableTalent>Stratos Step [Unlockable Talent, <Oath>Jetstriker</Oath> Exclusive] - Holding space while climbing will now let your perform Stratos Steps to get even higher. (+5 Health, +3 Passive Agility)</UnlockableTalent>
+-   <UnlockableTalent>
+        Stratos Step [Unlockable Talent, <Oath>Jetstriker</Oath> Exclusive] -
+        Holding space while climbing will now let your perform Stratos Steps to
+        get even higher. (+5 Health, +3 Passive Agility)
+    </UnlockableTalent>
 
 &emsp;&emsp; - Consumes Ether per step.<br/>
 &emsp;&emsp; - Stratos Steps will only proc twice before going on a cooldown.<br/>
 &emsp;&emsp; - Said cooldown applies to individual steps.<br/>
 
--   <UnlockableTalent>Jetstream pursuit [Unlockable Talent, <Oath>Jetstriker</Oath> Exclusive] - Upon a succesful flourish, teleport to the opponent when they stop moving. Receive a significant boost of momentum.</UnlockableTalent>
+-   <UnlockableTalent>
+        Jetstream pursuit [Unlockable Talent, <Oath>Jetstriker</Oath> Exclusive]
+        - Upon a succesful flourish, teleport to the opponent when they stop
+        moving. Receive a significant boost of momentum.
+    </UnlockableTalent>
 
 &emsp;&emsp; - When proccing on humanoid npcs, sends you to the center of the npc's hitbox.<br/>
 
--   <UnlockableTalent>Acceleration Points [Unlockable Talent, <Oath>Jetstriker</Oath> Exclusive] - Striking an opponent in the back with mobility mantras or basic attacks now steals and grants additional momentum.</UnlockableTalent>
+-   <UnlockableTalent>
+        Acceleration Points [Unlockable Talent, <Oath>Jetstriker</Oath>{" "}
+        Exclusive] - Striking an opponent in the back with mobility mantras or
+        basic attacks now steals and grants additional momentum.
+    </UnlockableTalent>
 
 ## <u>Justicar</u>
 
@@ -1485,7 +1572,8 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp; - 요구사항: Eruption Path: Lava Serpent, 75 Flamecharm<br/>
 
--   <AdvancedTalent>The Floor is Lava</AdvancedTalent> [Advanced Talent, Flamecharm & Eruption Exclusive] - Your Eruptions leave lethal pools of lava beneath them.
+-   <AdvancedTalent>The Floor is Lava</AdvancedTalent> [Advanced Talent, Flamecharm
+    & Eruption Exclusive] - Your Eruptions leave lethal pools of lava beneath them.
 
 &emsp;&emsp; - 요구사항: All Eruption Path: Lava Serpent Talents, 100 Flamecharm<br/><br/>
 
@@ -1503,13 +1591,15 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 ## <u>Leaf in the Wind</u>
 
--   <RareTalent>Observation</RareTalent> [Rare Talent, Agility] Dodge frames are larger if you cancel your roll immediately. (+1 Passive Agility)
+-   <RareTalent>Observation</RareTalent> [Rare Talent, Agility] Dodge frames are
+    larger if you cancel your roll immediately. (+1 Passive Agility)
 
 &emsp;&emsp; - Cancelling your roll quickly will grant dodge frames equals to the length of a regular roll.<br/>
 &emsp;&emsp; - 요구사항: 20 Agility<br/>
 &emsp;&emsp; - 반대: Risky Moves<br/>
 
--   <RareTalent>Safety Dance</RareTalent> [Rare Talent] - Your base dodge frames are increased by 25%. (+1 Passive Agility)
+-   <RareTalent>Safety Dance</RareTalent> [Rare Talent] - Your base dodge frames
+    are increased by 25%. (+1 Passive Agility)
 
 &emsp;&emsp; - You gain more invincibility frames while dodging, granting you longer immunity to damage.<br/>
 &emsp;&emsp; - 요구사항: 15 Agility, Power 13<br/>
@@ -1578,13 +1668,15 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 &emsp;&emsp; - Red particles appear around your shoulders while the Talent is active.<br/>
 &emsp;&emsp; - 요구사항: 35 Willpower<br/>
 
--   <RareTalent>Lose your Mind</RareTalent> [Rare Talent] - Deal more damage the more insane you are. Grants +15% damage at maximum insanity. (+5 Sanity)
+-   <RareTalent>Lose your Mind</RareTalent> [Rare Talent] - Deal more damage the
+    more insane you are. Grants +15% damage at maximum insanity. (+5 Sanity)
 
 &emsp;&emsp; - Grant 15% extra damage when below 70% Insanity.<br/>
 &emsp;&emsp; - Deepbound's Sanity gain from killing mobs in the Depths is reduced.<br/>
 &emsp;&emsp; - 요구사항: 30 Fortitude, 30 Strength<br/>
 
--   <RareTalent>Piercing Will</RareTalent> [Rare Talent, Willpower] - When your sanity is at stake gain +15% PEN on your attacks.
+-   <RareTalent>Piercing Will</RareTalent> [Rare Talent, Willpower] - When your sanity
+    is at stake gain +15% PEN on your attacks.
 
 &emsp;&emsp; - The bonus PEN is applied starting from Tier 1 Insanity (33% sanity)<br/>
 &emsp;&emsp; - 요구사항: 80 Willpower<br/>
@@ -1614,7 +1706,8 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp; - 요구사항: 20 Willpower<br/>
 
--   <RareTalent>Thresher Claws</RareTalent> [Rare Talent] - All of your attacks have 10% more PEN.
+-   <RareTalent>Thresher Claws</RareTalent> [Rare Talent] - All of your attacks have
+    10% more PEN.
 
 &emsp;&emsp; - Mantras receive only 5% more PEN.<br/>
 &emsp;&emsp; - 요구사항: Power 13<br/>
@@ -1635,7 +1728,8 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 ## <u>Meditative Trance</u>
 
--   <RareTalent>Warrior's Respite</RareTalent> [Rare Talent] - Standing still for 15 seconds in order to initiate healing.
+-   <RareTalent>Warrior's Respite</RareTalent> [Rare Talent] - Standing still for
+    15 seconds in order to initiate healing.
 
 &emsp;&emsp; - Any action, be it blocking, moving, attacking, dodging (except instant roll cancelling) or getting pushed around will cancel the effect. (This was not the case a long time ago, and was overpowered)<br/>
 &emsp;&emsp; - Does not activate when on moving ships.<br/>
@@ -1714,7 +1808,8 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 &emsp;&emsp; - Chain of Perfection isn't applied to every slot after unlock. You have to wipe to get it on another slot.<br/>
 &emsp;&emsp; - Requirement: Power 2<br/>
 
--   <RareTalent>Lootskipper</RareTalent> [Rare Talent] - Mobs have a much higher chance to drop their rarest loot when slain. (+4 Carry Load)
+-   <RareTalent>Lootskipper</RareTalent> [Rare Talent] - Mobs have a much higher
+    chance to drop their rarest loot when slain. (+4 Carry Load)
 
 &emsp;&emsp; - Increases the odds of the item with the lowest rate appearing.<br/>
 &emsp;&emsp; - This applies to the mob DROP and not the chest they spawn.<br/>
@@ -1749,15 +1844,26 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 &emsp;&emsp; - Affected targets takes 25% more damage and deals 15% less posture damage.<br/>
 &emsp;&emsp; - 요구사항: 40 Willpower, 15 Strength, Murmur: Ardour<br/>
 
--   <UnlockableTalent>Murmur: Ardour [Unlockable Talent] - An application of your Soul Murmur that enables one to channel the Murmur into raw strength. Press H.</UnlockableTalent>
+-   <UnlockableTalent>
+        Murmur: Ardour [Unlockable Talent] - An application of your Soul Murmur
+        that enables one to channel the Murmur into raw strength. Press H.
+    </UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: Kill the Dread Serpent.<br/>
 
--   <UnlockableTalent>Murmur: Rhythm [Unlockable Talent] - An application of your Soul Murmur that enables the user to perceive the subtle murmur emanating from all things. Press G while crouched.</UnlockableTalent>
+-   <UnlockableTalent>
+        Murmur: Rhythm [Unlockable Talent] - An application of your Soul Murmur
+        that enables the user to perceive the subtle murmur emanating from all
+        things. Press G while crouched.
+    </UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: Quest in Eternal Gale.<br/>
 
--   <UnlockableTalent>Murmur: Tacet [Unlockable Talent] - An application of your Soul Murmur that enables the user to suppress their own murmur. Press T while crouched.</UnlockableTalent>
+-   <UnlockableTalent>
+        Murmur: Tacet [Unlockable Talent] - An application of your Soul Murmur
+        that enables the user to suppress their own murmur. Press T while
+        crouched.
+    </UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 10 Charisma and 5 Cestis Bounties or 5 Bounty Hunting Contracts<br/><br/>
 
@@ -1783,7 +1889,9 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 &emsp;&emsp; - Works with Jus Karita and Light's Final Toll despite not using "fists" as a weapon.<br/>
 &emsp;&emsp; - Despite the talent description saying "With a shield", blocking without a shield equipped will still make the talent work, thus removing slowdown on blocking completely.<br/>
 
--   <RareTalent>Fists of Fortitude</RareTalent> [Rare Talent] - Every 6 light attacks with fist builds up a shield of endurance (Ether Shield) reducing incoming damage by 15%. (+1 Carry Load)
+-   <RareTalent>Fists of Fortitude</RareTalent> [Rare Talent] - Every 6 light attacks
+    with fist builds up a shield of endurance (Ether Shield) reducing incoming damage
+    by 15%. (+1 Carry Load)
 
 &emsp;&emsp; - 요구사항: Fists, 20 Fortitude<br/>
 &emsp;&emsp; - You must land 6 hits on your opponent for Fists of Fortitude to activate.<br/>
@@ -1817,7 +1925,8 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp; - 요구사항: 20 Agility<br/>
 
--   <RareTalent>Lightspeed Reflexes</RareTalent> [Rare Talent, Agility] - Feinting gives a very brief auto-parry window. (+1 Passive Agility)
+-   <RareTalent>Lightspeed Reflexes</RareTalent> [Rare Talent, Agility] - Feinting
+    gives a very brief auto-parry window. (+1 Passive Agility)
 
 &emsp;&emsp; - 요구사항: 20 Agility, 20 Intelligence<br/><br/>
 
@@ -1829,7 +1938,8 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp; - 요구사항: 75 Intelligence<br/>
 
--   <RareTalent>All Knowing</RareTalent> [Rare Talent] - your prediction now ignores the range requirement to reflect attacks. (+3 Elemental Intensity)
+-   <RareTalent>All Knowing</RareTalent> [Rare Talent] - your prediction now ignores
+    the range requirement to reflect attacks. (+3 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 60 Intelligence, Prediction (Intelligence Mantra)<b/>
 
@@ -1924,7 +2034,9 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp;**"I seek the qualities of Pyroclast."**<br/>
 
--   <AdvancedTalent>Volcanic Glass</AdvancedTalent> [Advanced Talent, Flamecharm & Frostdraw Exclusive, Dual Attunement] - Detonating crystals causes an eruption soon after. (+5 Elemental Intensity)
+-   <AdvancedTalent>Volcanic Glass</AdvancedTalent> [Advanced Talent, Flamecharm
+    & Frostdraw Exclusive, Dual Attunement] - Detonating crystals causes an eruption
+    soon after. (+5 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: Eruption Path: Lava Serpent, Glass Path: Crystallization<br/><br/>
 
@@ -1940,7 +2052,8 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp;**"My attack is unstoppable."**<br/>
 
--   <RareTalent>Bulldozer</RareTalent> [Rare Talent] - Enemies you flourish into a wall have a chance of breaking the wall and are guard broken on impact.
+-   <RareTalent>Bulldozer</RareTalent> [Rare Talent] - Enemies you flourish into
+    a wall have a chance of breaking the wall and are guard broken on impact.
 
 &emsp;&emsp; - 요구사항: 25 Strength<br/>
 &emsp;&emsp; - 반대: Dazing Finisher<br/><br/>
@@ -1949,7 +2062,8 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp;**"I seek the qualities of Rampaging Brute."**<br/>
 
--   <AdvancedTalent>Million Ton Piercer</AdvancedTalent> [Advanced Talent] - Gain 5% extra PEN and remove the cap on your PEN. Go beyond your limits.
+-   <AdvancedTalent>Million Ton Piercer</AdvancedTalent> [Advanced Talent] - Gain
+    5% extra PEN and remove the cap on your PEN. Go beyond your limits.
 
 &emsp;&emsp; - Like Ether Overdrive, removes 50% mantra and physical PEN cap.<br/>
 &emsp;&emsp; - 요구사항: 90 Strength, All Rampaging Brute Talents<br/>
@@ -1978,18 +2092,24 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp; - 요구사항: Rending Needle: Conductor<br/>
 
--   <RareTalent>Rending Impact: Impaler</RareTalent> [Rare Talent, Ironsing Exclusive] - If an enemy is affected by 5 or more metal rods, your Ironsing Pull instead pulls out all of the rods for massive damage.
+-   <RareTalent>Rending Impact: Impaler</RareTalent> [Rare Talent, Ironsing Exclusive]
+    - If an enemy is affected by 5 or more metal rods, your Ironsing Pull instead
+    pulls out all of the rods for massive damage.
 
 &emsp;&emsp; - Ironsing Pull is activated by pressing X.<br/>
 &emsp;&emsp; - 요구사항: Master Ironsinger, 75 Ironsing<br/>
 &emsp;&emsp; - 반대: Rending Needle: Conductor, Rending Needle: Jailer<br/>
 
--   <RareTalent>Rending Needle: Conductor</RareTalent> [Rare Talent, Ironsing Exclusive] - 5 metal rods will combine into a conductor rod. If an enemy uses a non-Ironsing elemental mantra, they're dealt with their element back in return.
+-   <RareTalent>Rending Needle: Conductor</RareTalent> [Rare Talent, Ironsing Exclusive]
+    - 5 metal rods will combine into a conductor rod. If an enemy uses a non-Ironsing
+    elemental mantra, they're dealt with their element back in return.
 
 &emsp;&emsp; - 요구사항: Master Ironsinger, 75 Ironsing<br/>
 &emsp;&emsp; - 반대: Rending Impact: Impaler, Rending Needle: Jailer<br/>
 
--   <RareTalent>Rending Needle: Jailer</RareTalent> [Rare Talent, Ironsing Exclusive] - If an enemy has 5 or more rods, your Ironsing Pull will restrain them instead of pulling them.
+-   <RareTalent>Rending Needle: Jailer</RareTalent> [Rare Talent, Ironsing Exclusive]
+    - If an enemy has 5 or more rods, your Ironsing Pull will restrain them instead
+    of pulling them.
 
 &emsp;&emsp; - Once restrained, makes the target unable to react in any way. (Venting is enabled)<br/>
 &emsp;&emsp; - Enemies have damage reduced by 30% when Metal Jailed.<br/>
@@ -2000,7 +2120,10 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp;**"I sabotage others."**<br/>
 
--   <UnlockableTalent>Family Recipe [Unlockable Talent] - You can now craft bombs at a crafting bench. (+2 Elemental Intensity)</UnlockableTalent>
+-   <UnlockableTalent>
+        Family Recipe [Unlockable Talent] - You can now craft bombs at a
+        crafting bench. (+2 Elemental Intensity)
+    </UnlockableTalent>
 
 -   Incendiary Formula [Common Talent] - Bombs will set your enemies on fire upon detonation, as well as launch with more force. Bombs will deal increased damage to burning enemies
 
@@ -2025,15 +2148,27 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 ## <u>Saint of Blades</u>
 
--   <UnlockableTalent>Light Weapons Unbounded [Unlockable Talent] - You have gained the ability to surpass your limits and train your Light Weapons attribute to its fullest.</UnlockableTalent>
+-   <UnlockableTalent>
+        Light Weapons Unbounded [Unlockable Talent] - You have gained the
+        ability to surpass your limits and train your Light Weapons attribute to
+        its fullest.
+    </UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 75 Light Weapon<br/>
 
--   <UnlockableTalent>Medium Weapons Unbounded [Unlockable Talent] - You have gained the ability to surpass your limits and train your Medium Weapons attribute to its fullest.</UnlockableTalent>
+-   <UnlockableTalent>
+        Medium Weapons Unbounded [Unlockable Talent] - You have gained the
+        ability to surpass your limits and train your Medium Weapons attribute
+        to its fullest.
+    </UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 75 Medium Weapon<br/>
 
--   <UnlockableTalent>Heavy Weapons Unbounded [Unlockable Talent] - You have gained the ability to surpass your limits and train your Heavy Weapons attribute to its fullest.</UnlockableTalent>
+-   <UnlockableTalent>
+        Heavy Weapons Unbounded [Unlockable Talent] - You have gained the
+        ability to surpass your limits and train your Heavy Weapons attribute to
+        its fullest.
+    </UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 75 Heavy Weapon<br/><br/>
 
@@ -2064,11 +2199,15 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp; - 요구사항: Gilded Path: Scrapsinger, 50 Ironsing<br/>
 
--   <RareTalent>Masterwork</RareTalent> [Rare Talent, Ironsing Exclusive] Successful hits from Artisan's Blades will proc metal rods and deal slightly more damage.
+-   <RareTalent>Masterwork</RareTalent> [Rare Talent, Ironsing Exclusive] Successful
+    hits from Artisan's Blades will proc metal rods and deal slightly more damage.
 
 &emsp;&emsp; - 요구사항: Artisan's Blade, 60 Ironsing<br/>
 
--   <AdvancedTalent>Reshape and Remold</AdvancedTalent> [Advanced Talent, Ironsing Exclusive] - Successful procs of Scrapsinger will increase the amount of armor damage your opponent takes. After hitting the cap, the opponent will take +5% damage.
+-   <AdvancedTalent>Reshape and Remold</AdvancedTalent> [Advanced Talent, Ironsing
+    Exclusive] - Successful procs of Scrapsinger will increase the amount of armor
+    damage your opponent takes. After hitting the cap, the opponent will take +5%
+    damage.
 
 &emsp;&emsp; - 요구사항: 70 Ironsing, All Scrapsinger Talents<br/><br/>
 
@@ -2101,7 +2240,11 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 ## <u>Shadowcast Master</u>
 
--   <UnlockableTalent>Shadowcast Unbounded [Unlockable Talent] - You have gained the ability to surpass your limits and train your Shadowcast to its fullest. (+10 Health)</UnlockableTalent>
+-   <UnlockableTalent>
+        Shadowcast Unbounded [Unlockable Talent] - You have gained the ability
+        to surpass your limits and train your Shadowcast to its fullest. (+10
+        Health)
+    </UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 75 Shadowcast<br/><br/>
 
@@ -2109,7 +2252,10 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp;**"I speak to the shadows."**<br/>
 
--   <UnlockableTalent>Adept Shadowcaster [Unlockable Talent, Shadowcast Exclusive] - You can now obtain 1-star Leveled Shadowcaster Mantras.</UnlockableTalent>
+-   <UnlockableTalent>
+        Adept Shadowcaster [Unlockable Talent, Shadowcast Exclusive] - You can
+        now obtain 1-star Leveled Shadowcaster Mantras.
+    </UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 20 Shadowcast<br/>
 
@@ -2117,7 +2263,10 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp; - 요구사항: Shadow Roar<br/>
 
--   <UnlockableTalent>Expert Shadowcaster [Unlockable Talent, Shadowcast Exclusive] - You can now obtain 2-star Leveled Shadowcaster Mantras.</UnlockableTalent>
+-   <UnlockableTalent>
+        Expert Shadowcaster [Unlockable Talent, Shadowcast Exclusive] - You can
+        now obtain 2-star Leveled Shadowcaster Mantras.
+    </UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 30 Shadowcast<br/>
 
@@ -2129,15 +2278,23 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp; - 요구사항: 50 Shadowcast<br/>
 
--   <UnlockableTalent>Master Shadowcaster [Unlockable Talent, Shadowcast Exclusive] -You can now obtain 3-star Leveled Shadowcaster Mantras. (+5 Health)</UnlockableTalent>
+-   <UnlockableTalent>
+        Master Shadowcaster [Unlockable Talent, Shadowcast Exclusive] -You can
+        now obtain 3-star Leveled Shadowcaster Mantras. (+5 Health)
+    </UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: 50 Shadowcast<br/>
 
--   <RareTalent>Shadow Travel</RareTalent> [Rare Talent, Shadowcast Exclusive] - Teleport to a location in exchange for Ether cost. Certain ranges will require a health sacrifice. Be careful as this technique can prove lethal to the user.
+-   <RareTalent>Shadow Travel</RareTalent> [Rare Talent, Shadowcast Exclusive] -
+    Teleport to a location in exchange for Ether cost. Certain ranges will require
+    a health sacrifice. Be careful as this technique can prove lethal to the user.
 
 &emsp;&emsp; - 요구사항: 75 Shadowcast, Dark God<br/>
 
--   <UnlockableTalent>Shadowcaster [Unlockable Talent, Shadowcast Exclusive] - Grants you the ability to command shadows as a Shadowcaster.</UnlockableTalent>
+-   <UnlockableTalent>
+        Shadowcaster [Unlockable Talent, Shadowcast Exclusive] - Grants you the
+        ability to command shadows as a Shadowcaster.
+    </UnlockableTalent>
 
 &emsp;&emsp; - 요구사항: Shadowcast with Power 1 or obtain through Shadowcast trainer (Nostor)<br/>
 
@@ -2186,12 +2343,16 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp;**"The song shall be silenced."**<br/>
 
--   <RareTalent>Silencer's Blade</RareTalent> [Galebreathe Exclusive, Rare Talent] Meleeing a 'Suffocated' opponent will extend the duration of the Suffocation and grant a speed boost. (+1 Elemental Intensity)
+-   <RareTalent>Silencer's Blade</RareTalent> [Galebreathe Exclusive, Rare Talent]
+    Meleeing a 'Suffocated' opponent will extend the duration of the Suffocation
+    and grant a speed boost. (+1 Elemental Intensity)
 
 &emsp;&emsp; - Landing M1 attacks on suffocated targets apply a new stack of suffocation.<br/>
 &emsp;&emsp; - 요구사항: 60 Galebreathe, Power 10<br/>
 
--   <AdvancedTalent>A World Without Song</AdvancedTalent> [Galebreathe Exclusive, Advanced Talent] - Every 3 hits with a Wind Mantra now procs Suffocate. (+1 Elemental Intensity)
+-   <AdvancedTalent>A World Without Song</AdvancedTalent> [Galebreathe Exclusive,
+    Advanced Talent] - Every 3 hits with a Wind Mantra now procs Suffocate. (+1 Elemental
+    Intensity)
 
 &emsp;&emsp; - Suffocation prevent the victim from casting mantras and deal damage overtime.<br/>
 &emsp;&emsp; - 요구사항: 75 Galebreathe, Silencer's Blade<br/><br/>
@@ -2206,7 +2367,8 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp; - Whenever you are knocked by town guards from a faction in which you have good reputation, the town guards will scold you instead of gripping you, letting you live.<br/>
 
--   <RareTalent>Golden Tongue</RareTalent> [Rare Talent] - Typing gives a random buff to you and those around you. (60 second cooldown)
+-   <RareTalent>Golden Tongue</RareTalent> [Rare Talent] - Typing gives a random
+    buff to you and those around you. (60 second cooldown)
 
 &emsp;&emsp; - One gives a Reinforce-like buff without healing, the other grants ~33% Ether.<br/>
 &emsp;&emsp; - The buff is random for each person affected.<br/>
@@ -2227,7 +2389,8 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 ## <u>Soul Converter</u>
 
--   <RareTalent>Bloodiron Spirit</RareTalent> [Rare Talent] - You regain some Armor upon killing enemies. (+5 Health)
+-   <RareTalent>Bloodiron Spirit</RareTalent> [Rare Talent] - You regain some Armor
+    upon killing enemies. (+5 Health)
 
 ## <u>Soverign of Slaughter</u>
 
@@ -2251,11 +2414,16 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp; - 요구사항: Haunted Path: Specter, 55 Galebreathe<br/>
 
--   <RareTalent>Vanishing Wraith</RareTalent> [Rare Talent, Galebreathe Exclusive] - Your 'Aerial Attacks' while in Phantom Step will now teleport you behind your target
+-   <RareTalent>Vanishing Wraith</RareTalent> [Rare Talent, Galebreathe Exclusive]
+    - Your 'Aerial Attacks' while in Phantom Step will now teleport you behind your
+    target
 
 &emsp;&emsp; - 요구사항: Phantom Step, 60 Galebreathe<br/>
 
--   <AdvancedTalent>Possession</AdvancedTalent> [Advanced Talent, Galebreathe Exclusive] - After an apparition hits an enemy, receive 30% posture damage on all Galebreath attacks for 6 seconds. If the apparition hits while you have Phantom Step activated, receive a 15% chip damage buff as well for the same duration.
+-   <AdvancedTalent>Possession</AdvancedTalent> [Advanced Talent, Galebreathe Exclusive]
+    - After an apparition hits an enemy, receive 30% posture damage on all Galebreath
+    attacks for 6 seconds. If the apparition hits while you have Phantom Step activated,
+    receive a 15% chip damage buff as well for the same duration.
 
 &emsp;&emsp; - 요구사항: Haunted Path: Specter, 75 Galebreathe<br/><br/>
 
@@ -2300,7 +2468,7 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp;**"I seek the qualities of Stormcaller."**<br/>
 
--  Storm Link [Common Talent, Dual Attunement] - While you have a Static Link on someone, your Wind mantras that hit them are imbued with flashes of Lightning.
+-   Storm Link [Common Talent, Dual Attunement] - While you have a Static Link on someone, your Wind mantras that hit them are imbued with flashes of Lightning.
 
 &emsp;&emsp; - 요구사항: Static Link, 60 Thundercall, 50 Galebreathe<br/><br/>
 
@@ -2308,13 +2476,13 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp;**"My will stands strong."**<br/>
 
--  Grasp on Reality [Common Talent] - Damage taken from insanity is reduced.
+-   Grasp on Reality [Common Talent] - Damage taken from insanity is reduced.
 
 &emsp;&emsp; - Reduce damage taken from the Tier 2 insanity, Scratching.<br/>
 &emsp;&emsp; - 요구사항: 25 Fortitude, 5 Willpower<br/>
 &emsp;&emsp; - The head equipment "Celtor Commander Helm" has this talent.<br/>
 
--  Unfazed [Common Talent] - You are more resilient to the side effects of going insane. You no longer Shiver and you Panic with less severity.
+-   Unfazed [Common Talent] - You are more resilient to the side effects of going insane. You no longer Shiver and you Panic with less severity.
 
 &emsp;&emsp; - Contrary to the card's description, effect of insanities are delayed by a full tier.<br/>
 &emsp;&emsp; - You now Shiver at Tier 2 insanity instead of Tier 1.<br/>
@@ -2326,29 +2494,32 @@ Flying Swiftkick [Common Talent] - Hitting a Jus Karita critical attack while Sw
 
 &emsp;&emsp;**"I seek the qualities of Superconductor."**<br/>
 
--  Voltaic Conductor [Common Talent, Dual Attunement] - Your Thundercall Mantras deal 20% chip damage against enemies with conductor rods.
+-   Voltaic Conductor [Common Talent, Dual Attunement] - Your Thundercall Mantras deal 20% chip damage against enemies with conductor rods.
 
 &emsp;&emsp; - 요구사항: Rending Needle: Conductor, 40 Thundercall, 75 Ironsing<br/>
 &emsp;&emsp; - Doesn't work on Iron tether because it goes through guard.<br/><br/>
 
--  Survival Instinct## <u></u>
+-   Survival Instinct## <u></u>
 
 &emsp;&emsp;**"I will not fall to the elements."**<br/>
 
 These Talents are designed to let you survive longer against starvation and thirst by making living off of Mother Nature easier.
 
--  Herbivore [Common Talent] - You gain more nutrition from eating plants.
+-   Herbivore [Common Talent] - You gain more nutrition from eating plants.
 
 &emsp;&emsp; - 요구사항: 8 Fortitude<br/>
 &emsp;&emsp; - Mutually Exclusive: Carnivore<br/>
 &emsp;&emsp; - The head equipment "Herbalist's Hat" and "Big Herbalist's Hat" have this talent.<br/>
 
--  Iron Gut [Common Talent] - You have resistance against being poisoned by foods.
+-   Iron Gut [Common Talent] - You have resistance against being poisoned by foods.
 
 &emsp;&emsp; - 요구사항: Herbivore, 10 Fortitude, vomit once<br/>
 &emsp;&emsp; - The head equipment "Herbalist's Hat" and "Big Herbalist's Hat" have this talent.<br/>
 
--  <UnlockableTalent>Termite [Common Talent, Unlockable Talent] - You can eat things most would consider inedible.</UnlockableTalent>
+-   <UnlockableTalent>
+        Termite [Common Talent, Unlockable Talent] - You can eat things most
+        would consider inedible.
+    </UnlockableTalent>
 
 &emsp;&emsp; - Unlock requirement: Wipe with the Iron Gut talent (can't be given by armor)<br/>
 &emsp;&emsp; - 요구사항: 20 Fortitude, 10 Willpower<br/>
@@ -2358,7 +2529,7 @@ These Talents are designed to let you survive longer against starvation and thir
 
 &emsp;&emsp;**"In nature, I am at home."**<br/>
 
--  Winter's Protection [Common Talent, Equipment Exclusive] - Your tightly-bound winter gear negates elemental damage buffs from weather on damage against you. Also seems to provide some resistance to the Gale.
+-   Winter's Protection [Common Talent, Equipment Exclusive] - Your tightly-bound winter gear negates elemental damage buffs from weather on damage against you. Also seems to provide some resistance to the Gale.
 
 &emsp;&emsp; - Obtained by equipping Winter Corps Parka.<br/>
 &emsp;&emsp; - Increases the time it takes for parasites to kill you.<br/><br/>
@@ -2367,22 +2538,23 @@ These Talents are designed to let you survive longer against starvation and thir
 
 &emsp;&emsp;**"I seek the qualities of Swiftshade."**<br/>
 
--  Pursuit [Common Talent, Agility Exclusive] - If you land your Revenge, clear the cooldown immediately. (25s cooldown) (+1 Passive Agility)
+-   Pursuit [Common Talent, Agility Exclusive] - If you land your Revenge, clear the cooldown immediately. (25s cooldown) (+1 Passive Agility)
 
 &emsp;&emsp; - 요구사항: Revenge (Agility Mantra), Shared Demise, 90 Agility<br/>
 
--  Dustlunge [Common Talent, Agility Exclusive] - You can now assassinate your enemies from much farther, shadestepping to their location if they're too far. (+1 Passive Agility)
+-   Dustlunge [Common Talent, Agility Exclusive] - You can now assassinate your enemies from much farther, shadestepping to their location if they're too far. (+1 Passive Agility)
 
 &emsp;&emsp; - Your assassination range is greatly extended, teleporting you to your target when outside the standard assassination range.<br/>
 &emsp;&emsp; - 요구사항: Shared Demise, 90 Agility<br/>
 
--  None Left Behind [ Common Talent, Agility] - You can now shadestep to pick up knocked humanoids far away from you. (+1 Passive Agility)
+-   None Left Behind [ Common Talent, Agility] - You can now shadestep to pick up knocked humanoids far away from you. (+1 Passive Agility)
 
 &emsp;&emsp; - Pressing the V key on a knocked entity who's in close/medium range teleports you to them.<br/>
 &emsp;&emsp; - Can be used to go through walls if you can aim at the knocked entity through it.<br/>
 &emsp;&emsp; - 요구사항: Shared Demise, 100 Agility<br/>
 
--  <AdvancedTalent>Shared Demise</AdvancedTalent> [Advanced Talent, Agility] - Assassinating an enemy will automatically assassinate other nearby enemies. (+3 Passive Agility)
+-   <AdvancedTalent>Shared Demise</AdvancedTalent> [Advanced Talent, Agility] - Assassinating
+    an enemy will automatically assassinate other nearby enemies. (+3 Passive Agility)
 
 &emsp;&emsp; - When you assassinate a player, everyone else nearby gets backstabbed by a shadow. These apply all your backstab talents.<br/>
 &emsp;&emsp; - 요구사항: 85 Agility, All Assassin Talents<br/><br/>
@@ -2391,24 +2563,25 @@ These Talents are designed to let you survive longer against starvation and thir
 
 &emsp;&emsp;**"I think before I fight."**<br/>
 
--  Hard Read [Common Talent] - Hitting your opponent during a feint will cause them to be dazed.
+-   Hard Read [Common Talent] - Hitting your opponent during a feint will cause them to be dazed.
 
 &emsp;&emsp; - 요구사항: 20 Intelligence<br/>
 
--  <RareTalent>Punishing Blow</RareTalent> [Rare Talent] - You now daze swinging opponents when hitting them with an M1 with a heavy weapon.
+-   <RareTalent>Punishing Blow</RareTalent> [Rare Talent] - You now daze swinging
+    opponents when hitting them with an M1 with a heavy weapon.
 
 &emsp;&emsp; - 요구사항: 20 Heavy Weapon<br/>
 
--  Target Switch [Common Talent] - Parrying an opponent while hitting someone else makes your next mantra free.
+-   Target Switch [Common Talent] - Parrying an opponent while hitting someone else makes your next mantra free.
 
 &emsp;&emsp; - This effect is signaled by a yellow halo.<br/>
 &emsp;&emsp; - 요구사항: 20 Intelligence<br/>
 
--  Foolish Outburst [Common Talent] - Blocking or parrying a vent will absorb the Tempo cost of the vent. A Tactician steadies the course of battle.
+-   Foolish Outburst [Common Talent] - Blocking or parrying a vent will absorb the Tempo cost of the vent. A Tactician steadies the course of battle.
 
 &emsp;&emsp; - 요구사항: 50 Intelligence<br/>
 
--  Water off a Duck's Back [Common Talent] - Venting will shift any elemental status effects affecting you onto those hit by your vent.
+-   Water off a Duck's Back [Common Talent] - Venting will shift any elemental status effects affecting you onto those hit by your vent.
 
 &emsp;&emsp; - 요구사항: 50 Intelligence<br/><br/>
 
@@ -2416,7 +2589,7 @@ These Talents are designed to let you survive longer against starvation and thir
 
 &emsp;&emsp;**"I seek the qualities of Tamed Flame."**<br/>
 
--  Controlled Combustion [Common Talent, Flamecharm Exclusive] - Your Agitating Spark no longer spreads to your allies.
+-   Controlled Combustion [Common Talent, Flamecharm Exclusive] - Your Agitating Spark no longer spreads to your allies.
 
 &emsp;&emsp; - 요구사항: Agitating Spark, 40 Charisma<br/>
 &emsp;&emsp; - Note: Your Agitating Spark no longer spreads to yourself too. In some places, such as Duke's Dungeon, this talent doesn’t work well, spreading to your allies if they are too close to the target.<br/>
@@ -2426,12 +2599,12 @@ These Talents are designed to let you survive longer against starvation and thir
 
 &emsp;&emsp;**"I enjoy a good meal."**<br/>
 
--  Artisan Chef [Common Talent] - The food you cook now becomes Artisan food, increasing its hunger and thirst gained by +30%. (+3 Elemental Intensity)
+-   Artisan Chef [Common Talent] - The food you cook now becomes Artisan food, increasing its hunger and thirst gained by +30%. (+3 Elemental Intensity)
 
 &emsp;&emsp; - Increases food nutritional value by 25%.<br/>
 &emsp;&emsp; - Confirmed 요구사항: 25 Intelligence, 15 Charisma, Cooked 50 Dishes<br/>
 
--  Master Chef [Common Talent] - Buffs applied by food you cook now have their buff effects amplified by +30%. (+5 Elemental Intensity)
+-   Master Chef [Common Talent] - Buffs applied by food you cook now have their buff effects amplified by +30%. (+5 Elemental Intensity)
 
 &emsp;&emsp; - Increases food boosts by 30%.<br/>
 &emsp;&emsp; - Confirmed 요구사항: 25 Intelligence, 15 Charisma, Cooked 50 Dishes<br/><br/>
@@ -2440,11 +2613,11 @@ These Talents are designed to let you survive longer against starvation and thir
 
 &emsp;&emsp;**"My unholy blade works for no man."**<br/>
 
--  Explosive Finish [Common Talent, Flamecharm Exclusive] - If an enemy is on fire when you flourish, blast them away with a fire blast. (+2 Elemental Intensity)
+-   Explosive Finish [Common Talent, Flamecharm Exclusive] - If an enemy is on fire when you flourish, blast them away with a fire blast. (+2 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 45 Flamecharm<br/>
 
--  Flaming Flourish [Common Talent , Flamecharm Exclusive] - Set enemies on fire when you flourish or uppercut them. (+2 Elemental Intensity)
+-   Flaming Flourish [Common Talent , Flamecharm Exclusive] - Set enemies on fire when you flourish or uppercut them. (+2 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 30 Flamecharm<br/><br/>
 
@@ -2452,11 +2625,13 @@ These Talents are designed to let you survive longer against starvation and thir
 
 &emsp;&emsp;**"My blade burns through my foes."**<br/>
 
--  Emperor Flame [Common Talent, Flamecharm Exclusive] - Absorb fire produced by you, once you reach 5 stacks your next attack will be an automatic explosive finish flourish.
+-   Emperor Flame [Common Talent, Flamecharm Exclusive] - Absorb fire produced by you, once you reach 5 stacks your next attack will be an automatic explosive finish flourish.
 
 &emsp;&emsp; - 요구사항: Agitating Spark, 75 Flamecharm<br/>
 
--  <RareTalent>Mirage Clone</RareTalent> [Rare Talent, Flamecharm Exclusive] - Successfully dodging leaves behind a heat mirage clone that sets enemies that swung at you on fire. (+4 Elemental Intensity)
+-   <RareTalent>Mirage Clone</RareTalent> [Rare Talent, Flamecharm Exclusive] - Successfully
+    dodging leaves behind a heat mirage clone that sets enemies that swung at you
+    on fire. (+4 Elemental Intensity)
 
 &emsp;&emsp; - Has a 20s Cooldown<br/>
 &emsp;&emsp; - 요구사항: 65 Flamecharm<br/>
@@ -2465,7 +2640,7 @@ These Talents are designed to let you survive longer against starvation and thir
 
 &emsp;&emsp;**"I can talk myself out of any situation."**<br/>
 
--  Last Second Negotiation [Common Talent] - Most enemies will hesitate a moment longer to execute you.
+-   Last Second Negotiation [Common Talent] - Most enemies will hesitate a moment longer to execute you.
 
 &emsp;&emsp; - Whenever you are getting gripped, your character will say "WAIT WAIT WAIT WAIT!!!", which has a chance to automatically cancel the grip attempt, forcing the target to attempt a grip again. This also slightly slows down the grip attempt.<br/>
 &emsp;&emsp; - Does not work in PVE.<br/>
@@ -2477,23 +2652,24 @@ These Talents are designed to let you survive longer against starvation and thir
 
 These Talents are meant to reap the reward of your latest hunt or trick your enemies.
 
--  Cap Artist [Common Talent, Agility] - Pressing [R] while crouching allows you to fake being dead. (+2 Passive Agility)
+-   Cap Artist [Common Talent, Agility] - Pressing [R] while crouching allows you to fake being dead. (+2 Passive Agility)
 
 &emsp;&emsp; - Your eyes are still open, your name is still visible and you do not leave a loot bag.<br/>
 &emsp;&emsp; - Cancelled by pressing [R] again.<br/>
 &emsp;&emsp; - Using Cap artist in the depths makes you have normal gravity<br/>
 &emsp;&emsp; - 요구사항: 25 Agility, 5 Charisma<br/>
 
--  Master Thief [Common Talent, Agility, Charisma] - Gain more notes when mugging a player.
+-   Master Thief [Common Talent, Agility, Charisma] - Gain more notes when mugging a player.
 
 &emsp;&emsp; - 요구사항: Pickpocket, 25 Charisma<br/>
 
--  Pickpocket [Common Talent, Agility, Charisma] - Gain the ability to pickpocket by pressing "N". (+2 Passive Agility)
+-   Pickpocket [Common Talent, Agility, Charisma] - Gain the ability to pickpocket by pressing "N". (+2 Passive Agility)
 
 &emsp;&emsp; - The target need to be knocked to be able to pickpocket them.<br/>
 &emsp;&emsp; - 요구사항: 5 Agility, 10 Charisma<br/>
 
--  <AdvancedTalent>Another Man's Trash</AdvancedTalent> [Advanced Talent] - Take unequipped equipment when mugging a player. (+2 Passive Agility)
+-   <AdvancedTalent>Another Man's Trash</AdvancedTalent> [Advanced Talent] - Take
+    unequipped equipment when mugging a player. (+2 Passive Agility)
 
 &emsp;&emsp; - 요구사항: 10 Agility, 35 Charisma, All Thief talents<br/>
 &emsp;&emsp; - Cap Artist requires 25 Agility despite the 10 Agility requirement of this Talent.<br/>
@@ -2504,11 +2680,11 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;**"My fists are imbued with lighting."**<br/>
 
--  Discharge [Common Talent, Thundercall Exclusive] - On 5th successful attack you will discharge static dealing lightning damage to those nearby. (+2 Elemental Intensity)
+-   Discharge [Common Talent, Thundercall Exclusive] - On 5th successful attack you will discharge static dealing lightning damage to those nearby. (+2 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 20 Light Weapon, 15 Thundercall<br/>
 
--  Volt Kick [Common Talent, Thundercall Exclusive] - After landing a lightning kick, press [F] to follow up on your opponent with a less potent kick. (+2 Elemental Intensity)
+-   Volt Kick [Common Talent, Thundercall Exclusive] - After landing a lightning kick, press [F] to follow up on your opponent with a less potent kick. (+2 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 30 Thundercall, Thunder Kick<br/><br/>
 
@@ -2516,11 +2692,11 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;**"I electrocute my foes from afar."**<br/>
 
--  Jolt Cast [Common Talent, Thundercall Exclusive] - Every Perfect Casted Thundercall Mantra builds a stack of Jolt Cast. At 3 stacks, your next Lightning Mantra will take less time to cast. (+7 Carry Load, +2 Elemental Intensity)
+-   Jolt Cast [Common Talent, Thundercall Exclusive] - Every Perfect Casted Thundercall Mantra builds a stack of Jolt Cast. At 3 stacks, your next Lightning Mantra will take less time to cast. (+7 Carry Load, +2 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 30 Thundercall, 30 Intelligence<br/>
 
--  Rain of Static [Common Talent, Thundercall Exclusive] - After successfully casting lightning impact, strike down countless thunder at those below. In return your Lightning Impact will require more time to cast. (+7 Carry Load, +2 Elemental Intensity)
+-   Rain of Static [Common Talent, Thundercall Exclusive] - After successfully casting lightning impact, strike down countless thunder at those below. In return your Lightning Impact will require more time to cast. (+7 Carry Load, +2 Elemental Intensity)
 
 &emsp;&emsp; - When casting Lightning Impact, hover above the ground and fire multiple projectiles. Afterward, you strike down normally.<br/>
 &emsp;&emsp; - 요구사항: Lightning Impact (Mantra)<br/><br/>
@@ -2529,15 +2705,15 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;**"My blade conducts the skies wrath."**<br/>
 
--  Gathering Electricity [Common Talent, Thundercall Exclusive] - Reaching 5 Static Blade charges will now consume the stacks and apply a lightning buff to your blade. 60 second cooldown. (+10 Carry Load, +4 Elemental Intensity)
+-   Gathering Electricity [Common Talent, Thundercall Exclusive] - Reaching 5 Static Blade charges will now consume the stacks and apply a lightning buff to your blade. 60 second cooldown. (+10 Carry Load, +4 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 65 Thundercall, 25 Strength / 25 Agility, Static Blade, Any Medium Weapon (Cannot obtain with Rifle)<br/>
 
--  Overcharge [Common Talent, Thundercall Exclusive] - Your next dash after activating Static Blade is enhanced by lightning (+2 Elemental Intensity)
+-   Overcharge [Common Talent, Thundercall Exclusive] - Your next dash after activating Static Blade is enhanced by lightning (+2 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: Gathering Electricity<br/>
 
--  Static Blade [Common Talent, Thundercall Exclusive] - Hitting blocks, blocking or parrying hits will now generate an electric charge in your blade, granting a small speed buff. Charges can stack up to 5 times. (+3 Elemental Intensity)
+-   Static Blade [Common Talent, Thundercall Exclusive] - Hitting blocks, blocking or parrying hits will now generate an electric charge in your blade, granting a small speed buff. Charges can stack up to 5 times. (+3 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 40 Thundercall, 20 Medium Weapon<br/><br/>
 
@@ -2545,54 +2721,56 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;**"I speak to lightning."**<br/>
 
--  Adept Thundercaller [Common Talent, Thundercall Exclusive] - You can now obtain 1-star Thundercaller mantras. ( +5 Elemental Intensity)
+-   Adept Thundercaller [Common Talent, Thundercall Exclusive] - You can now obtain 1-star Thundercaller mantras. ( +5 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 20 Thundercall<br/>
 
--  Discovery Of Fire [Common Talent, Thundercall Exclusive] - Flints and Flamecharm are for simpletons.
+-   Discovery Of Fire [Common Talent, Thundercall Exclusive] - Flints and Flamecharm are for simpletons.
 
 &emsp;&emsp; - Grants the tool "Discovery of Fire", which uses ether to light up all nearby campfires.<br/>
 &emsp;&emsp; - Using this ability will light nearby downed enemies aflame.<br/>
 &emsp;&emsp; - 요구사항: 50 Thundercall<br/>
 
--  Expert Thundercaller [Common Talent, Thundercall Exclusive] - You can now obtain 2-star Thundercaller mantras. ( +1 Elemental Intensity)
+-   Expert Thundercaller [Common Talent, Thundercall Exclusive] - You can now obtain 2-star Thundercaller mantras. ( +1 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 30 Thundercall<br/>
 
--  Master Thundercaller [Common Talent, Thundercall Exclusive] - You can now obtain 3-star Thundercaller mantras. (+4 Elemental Intensity)
+-   Master Thundercaller [Common Talent, Thundercall Exclusive] - You can now obtain 3-star Thundercaller mantras. (+4 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 50 Thundercall<br/>
 
--  Kickstart [Common Talent, Thundercall Exclusive] - Play the resurrector. Use your lightning to defibrillate your allies on the battlefield.
+-   Kickstart [Common Talent, Thundercall Exclusive] - Play the resurrector. Use your lightning to defibrillate your allies on the battlefield.
 
 &emsp;&emsp; - Use kickstart on a knocked target to bring them back up in 3 seconds at the cost of some ether.<br/>
 &emsp;&emsp; - Default knock time is 10 seconds, so you can make your friends get back into the fight over 3 times faster.<br/>
 &emsp;&emsp; - Requires an animation, stunlocking yourself.<br/>
 &emsp;&emsp; - 요구사항: 40 Fortitude or Charisma, 50 Thundercall<br/>
 
--  Shocking Finish [Common Talent, Thundercall Exclusive] - Following a flourish up with a lightning beam causes it to be casted instantly. (+3 Elemental Intensity)
+-   Shocking Finish [Common Talent, Thundercall Exclusive] - Following a flourish up with a lightning beam causes it to be casted instantly. (+3 Elemental Intensity)
 
 &emsp;&emsp; - Does not work on monsters<br/>
 &emsp;&emsp; - 요구사항: Lightning Beam<br/>
 
--  <RareTalent>Static Fakeout</RareTalent> [Rare Talent, Thundercall Exclusive] - Roll cancelling immediately after a parry will cause you to teleport behind your opponent. (+3 Elemental Intensity)
+-   <RareTalent>Static Fakeout</RareTalent> [Rare Talent, Thundercall Exclusive]
+    - Roll cancelling immediately after a parry will cause you to teleport behind
+    your opponent. (+3 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 30 Agility, 35 Thundercall<br/>
 
--  Static Flash Clone [Common Talent, Thundercall Exclusive] - When using lightning clones you instead disappear leaving behind a static clone for a short duration. (+3 Elemental Intensity, +1 Health)
+-   Static Flash Clone [Common Talent, Thundercall Exclusive] - When using lightning clones you instead disappear leaving behind a static clone for a short duration. (+3 Elemental Intensity, +1 Health)
 
 &emsp;&emsp; - 요구사항: Lightning Clones, 30 Agility, 35 Thunder<br/>
 
--  Static Withdraw [Common Talent, Thundercall Exclusive] - If you get knocked for the first time, if someone tries to carry you, you can discharge and damage them, goes on cooldown after use. Bodies of knocked enemies will be charged with electricity which will stun people who attempt to carry them.
+-   Static Withdraw [Common Talent, Thundercall Exclusive] - If you get knocked for the first time, if someone tries to carry you, you can discharge and damage them, goes on cooldown after use. Bodies of knocked enemies will be charged with electricity which will stun people who attempt to carry them.
 
 &emsp;&emsp; - Very tight activation window + delayed activation. If you successfully hit the shock the moment someone tries to carry you, you immediately get back up and trigger the related talents.<br/>
 &emsp;&emsp; - 요구사항: 25 Thundercall<br/>
 
--  Stratoshock [Common Talent, Thundercall Exclusive] - Your lightning deals more damage in the rain. (+4 Elemental Intensity)
+-   Stratoshock [Common Talent, Thundercall Exclusive] - Your lightning deals more damage in the rain. (+4 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 35 Thundercall<br/>
 
--  Thundercaller [Common Talent, Thundercall Exclusive] - Grants you the ability to command Lightning as a Thundercaller. (+3 Elemental Intensity, +1 Health)
+-   Thundercaller [Common Talent, Thundercall Exclusive] - Grants you the ability to command Lightning as a Thundercaller. (+3 Elemental Intensity, +1 Health)
 
 &emsp;&emsp; - 요구사항: Thundercall with Power 1 (1 Thundercall) or obtain from Thundercall trainer (Funke)<br/><br/>
 
@@ -2600,12 +2778,12 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;**"I seek the qualities of Toxic Personality."**<br/>
 
--  Manipulator [Common Talent, Charisma Exclusive] - Deal 20% more critical attack damage to charmed enemies, but the effect is removed on impact.
+-   Manipulator [Common Talent, Charisma Exclusive] - Deal 20% more critical attack damage to charmed enemies, but the effect is removed on impact.
 
 &emsp;&emsp; - Works insanely well with Talent "Unnecessary Theatrics" as it reapplies the charm.<br/>
 &emsp;&emsp; - 요구사항: Charismatic Cast, 60 Charisma<br/>
 
--  Narcissist [Common Talent, Charisma Exclusive] - Charming an already Charmed opponent Overcharms you briefly. Guess you really were always that great.
+-   Narcissist [Common Talent, Charisma Exclusive] - Charming an already Charmed opponent Overcharms you briefly. Guess you really were always that great.
 
 &emsp;&emsp; - 요구사항: Charismatic Cast, 60 Charisma<br/>
 &emsp;&emsp; - 반대: Tough Love<br/><br/>
@@ -2614,7 +2792,8 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;**"I often like to play pranks on others."**<br/>
 
--  <RareTalent>Cheap Shot</RareTalent> [Rare Talent, Agility] - Your attacks gain 10% PEN when you have an active speed boost. (+6 Passive Agility)
+-   <RareTalent>Cheap Shot</RareTalent> [Rare Talent, Agility] - Your attacks gain
+    10% PEN when you have an active speed boost. (+6 Passive Agility)
 
 &emsp;&emsp; - 요구사항: 65 Agility<br/><br/>
 
@@ -2622,23 +2801,25 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;**"I seek the qualities of twisted puppets."**<br/>
 
--  Burning Puppets [Common Talent, Dual Attunement] - Your puppets can now inflict burn and fire-based talents when they explode. (+4 Elemental Intensity)
+-   Burning Puppets [Common Talent, Dual Attunement] - Your puppets can now inflict burn and fire-based talents when they explode. (+4 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: Wraith Path: Twisted Puppets, 40 Flamecharm & 40 Shadowcast<br/>
 
--  <RareTalent>Burning Sacrifice</RareTalent> [Rare Talent, Dual Attunement] - Sacrifice puppets who have been alive for half of their lifetime and burn purple for Emperor Flame Stacks.
+-   <RareTalent>Burning Sacrifice</RareTalent> [Rare Talent, Dual Attunement] - Sacrifice
+    puppets who have been alive for half of their lifetime and burn purple for Emperor
+    Flame Stacks.
 
 &emsp;&emsp; - 요구사항: Wraith Path: Twisted Puppets, Emperor Flame<br/>
 
--  Explosive Rage [Common Talent, Dual Attunement] - Causing explosion will make your puppets go into a frenzy - speeding up and dealing slightly more damage. (+4 Elemental Intensity)
+-   Explosive Rage [Common Talent, Dual Attunement] - Causing explosion will make your puppets go into a frenzy - speeding up and dealing slightly more damage. (+4 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: Wraith Path: Twisted Puppets, 40 Flamecharm & 40 Shadowcast<br/>
 
--  Moths to a Flame [Common Talent, Dual Attunement] - You summon a puppet of black flames that homes onto enemies with black flames. (+4 Elemental Intensity)
+-   Moths to a Flame [Common Talent, Dual Attunement] - You summon a puppet of black flames that homes onto enemies with black flames. (+4 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: Wraith Path: Twisted Puppets, 40 Flamecharm & 40 Shadowcast<br/>
 
--  Wraith Path: Twisted Puppets [Common Talent, Dual Attunement] - Your Flamecharm mantras summon puppets of shadow and flame. Your flames are now black. (+4 Elemental Intensity)
+-   Wraith Path: Twisted Puppets [Common Talent, Dual Attunement] - Your Flamecharm mantras summon puppets of shadow and flame. Your flames are now black. (+4 Elemental Intensity)
 
 &emsp;&emsp; - Turns Hero Blade of Flame, Blazing, Railblade's criticals and all flame mantras black.<br/>
 &emsp;&emsp; - Burn from flame mantras deals no damage, but drains ether and spawn puppets instead; burn from shadow mantras deal slightly less damage than base burn and doesn't spawn puppets.<br/>
@@ -2650,28 +2831,33 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;**"I seek the qualities of Tyrant."**<br/>
 
--  <AdvancedTalent>Audacity</AdvancedTalent> [Advanced Talent] - Once you've brought down your prey, instill fear into all those who would separate you from claiming it. 25s cooldown. (+1 Posture)
+-   <AdvancedTalent>Audacity</AdvancedTalent> [Advanced Talent] - Once you've brought
+    down your prey, instill fear into all those who would separate you from claiming
+    it. 25s cooldown. (+1 Posture)
 
 &emsp;&emsp; - You create an AoE stun and slow around you when you start gripping someone.<br/>
 &emsp;&emsp; - Makes you immune to Defiant Until the End and Last Second Negotiation when it procs. (Bugged on NPCS)<br/>
 &emsp;&emsp; - 요구사항: 100 Charisma, 50 Strength<br/>
 
--  No Survivors [Common Talent, Charisma] - Your allies and yourself execute faster when affected by Overcharm.
+-   No Survivors [Common Talent, Charisma] - Your allies and yourself execute faster when affected by Overcharm.
 
 &emsp;&emsp; - 요구사항: 80 Charisma, 45 Strength<br/>
 
--  <RareTalent>Rule Through Fear</RareTalent> [Rare Talent, Charisma] - Executing an enemy applies Overcharm to nearby allies and yourself.
+-   <RareTalent>Rule Through Fear</RareTalent> [Rare Talent, Charisma] - Executing
+    an enemy applies Overcharm to nearby allies and yourself.
 
 &emsp;&emsp; - 요구사항: 85 Charisma, 50 Strength<br/><br/>
 
 ## <u>Scoundrel</u>
 
--  <RareTalent>Dirty Boxing</RareTalent> [Rare Talent] - Enemies hit after you feint them with your fist suffer slight bleed and have their vision obscured slightly. (+1 Passive Agility)
+-   <RareTalent>Dirty Boxing</RareTalent> [Rare Talent] - Enemies hit after you feint
+    them with your fist suffer slight bleed and have their vision obscured slightly.
+    (+1 Passive Agility)
 
 &emsp;&emsp; - 5 Second Cooldown.<br/>
 &emsp;&emsp; - 요구사항: Trained Fist, 25 Agility<br/>
 
--  Pocket Sand [Common Talent] - [Fist] Feinting into an uppercut blinds and dazes your opponent briefly. We're even now, right? 30s cooldown (+4 Carry Load)
+-   Pocket Sand [Common Talent] - [Fist] Feinting into an uppercut blinds and dazes your opponent briefly. We're even now, right? 30s cooldown (+4 Carry Load)
 
 &emsp;&emsp; - 요구사항: Trained Fist, 35 Light Weapon, 20 Strength<br/><br/>
 
@@ -2679,16 +2865,19 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;**"My spirit is forever burning."**<br/>
 
--  <RareTalent>Denial Repulse</RareTalent> [Rare Talent, Flamecharm Exclusive] - You now emit a delayed burst of flames after coming close to death. (+1 Elemental Intensity)
+-   <RareTalent>Denial Repulse</RareTalent> [Rare Talent, Flamecharm Exclusive] -
+    You now emit a delayed burst of flames after coming close to death. (+1 Elemental
+    Intensity)
 
 &emsp;&emsp; - When Flame of Denial activates, release an explosion around you.<br/>
 &emsp;&emsp; - 요구사항: Flame of Denial<br/>
 
--  <RareTalent>Undying Flame</RareTalent> [Rare Talent, Flamecharm Exclusive] - Your flame can be casted in the depths. (+1 Elemental Intensity)
+-   <RareTalent>Undying Flame</RareTalent> [Rare Talent, Flamecharm Exclusive] -
+    Your flame can be casted in the depths. (+1 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 40 Flamecharm, 40 Willpower, Graceful Flame<br/>
 
--  Soundness of Mind [Common Talent, Flamecharm Exclusive] - Standing close to your Graceful Flame will shield others from environmental insanity. (+1 Elemental Intensity)
+-   Soundness of Mind [Common Talent, Flamecharm Exclusive] - Standing close to your Graceful Flame will shield others from environmental insanity. (+1 Elemental Intensity)
 
 &emsp;&emsp; - Graceful Flame passively restores sanity and health to those around it. Stacks with sitting next to it.<br/>
 &emsp;&emsp; - 요구사항: 40 Flamecharm, 40 Willpower, Undying Flame<br/><br/>
@@ -2697,24 +2886,24 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;**"I seek to embrace the instability of lightning as a source of power."**<br/>
 
--  Catalytic Strike [Common Talent, Thundercall Exclusive] - Posture breaking an enemy will Overload their Surge stack.
+-   Catalytic Strike [Common Talent, Thundercall Exclusive] - Posture breaking an enemy will Overload their Surge stack.
 
 &emsp;&emsp; - 요구사항: Surge Path: Unstable Capacitor, 50 Thundercall<br/>
 
--  Closed Circuit [Common Talent, Thundercall Exclusive] - Surge Overloads that fail to arc to other opponents will deal additional damage to the Overloaded enemy.
+-   Closed Circuit [Common Talent, Thundercall Exclusive] - Surge Overloads that fail to arc to other opponents will deal additional damage to the Overloaded enemy.
 
 &emsp;&emsp; - 요구사항: Surge Path: Unstable Capacitor, 50 Thundercall<br/>
 
--  Fried Circuits [Common Talent, Thundercall Exclusive] - Overloading an enemy applies Sapped for 5s.
+-   Fried Circuits [Common Talent, Thundercall Exclusive] - Overloading an enemy applies Sapped for 5s.
 
 &emsp;&emsp; - Sapped effect causes the duration of mantra cooldowns to increase, which acts similar to Thunder Wisp.<br/>
 &emsp;&emsp; - 요구사항: Surge Path: Unstable Capacitor, 60 Thundercall<br/>
 
--  Human Battery [Common Talent, Thundercall Exclusive] - When you are out of Ether, convert the Surge stacks of nearby enemies into Ether to pay the cost of your Mantras.
+-   Human Battery [Common Talent, Thundercall Exclusive] - When you are out of Ether, convert the Surge stacks of nearby enemies into Ether to pay the cost of your Mantras.
 
 &emsp;&emsp; - 요구사항: Surge Path: Unstable Capacitor, 60 Thundercall<br/>
 
--  Surge Path: Unstable Capacitor [Common Talent, Thundercall Exclusive] - Your lightning no longer applies Shock, instead apply Surge. At maximum stacks of Surge, your opponents will Overload, sending arcs of lightning in every direction.
+-   Surge Path: Unstable Capacitor [Common Talent, Thundercall Exclusive] - Your lightning no longer applies Shock, instead apply Surge. At maximum stacks of Surge, your opponents will Overload, sending arcs of lightning in every direction.
 
 &emsp;&emsp; - Turns all Thundercall mantras, Jumpstart, Stormseye and Hero Blade of Lightning blurple. May affect Arcwarder in the future.<br/>
 &emsp;&emsp; - 요구사항: 40 Thundercall<br/><br/>
@@ -2723,27 +2912,31 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;**"I fight for Maestro Evengarde Rest."**<br/>
 
--  Bear Trap [Common Talent] - Landing a hit with your critical against an opponent makes your opponent unable to jump for a duration. Also slows your opponent. (+1 Passive Agility)
+-   Bear Trap [Common Talent] - Landing a hit with your critical against an opponent makes your opponent unable to jump for a duration. Also slows your opponent. (+1 Passive Agility)
 
 &emsp;&emsp; - The status effect is represented by blood pouring from the legs.<br/>
 &emsp;&emsp; - 요구사항: 20 Strength, 20 Agility<br/>
 
--  Blade Dancer [Common Talent] - Landing an M1 removes your roll cooldown. (+1 Passive Agility)
+-   Blade Dancer [Common Talent] - Landing an M1 removes your roll cooldown. (+1 Passive Agility)
 
 &emsp;&emsp; - 요구사항: 25 Agility<br/>
 
--  <RareTalent>Speed Demon</RareTalent> [Rare Talent] - Your attacks now inflict bleed while you have a speed boost. 1s cooldown. (+1 Passive Agility)
+-   <RareTalent>Speed Demon</RareTalent> [Rare Talent] - Your attacks now inflict
+    bleed while you have a speed boost. 1s cooldown. (+1 Passive Agility)
 
 &emsp;&emsp; - "Bleed" gives a 30% damage bonus, is not accounted for in the damage cap, and bypasses armor.<br/>
 &emsp;&emsp; - Works with M1s and criticals.<br/>
 &emsp;&emsp; - 요구사항: 25 Agility<br/>
 
--  <RareTalent>Air Counter</RareTalent> [Rare Talent] - You can now 'Aerial Attack' to catch enemies who have recently jumped in the air above you as an anti-air attack with reduced Light Attack damage. Upon hitting the opponent briefly hinder them. (+5 Passive Agility)
+-   <RareTalent>Air Counter</RareTalent> [Rare Talent] - You can now 'Aerial Attack'
+    to catch enemies who have recently jumped in the air above you as an anti-air
+    attack with reduced Light Attack damage. Upon hitting the opponent briefly hinder
+    them. (+5 Passive Agility)
 
 &emsp;&emsp; - 5 Seconds Cooldown.<br/>
 &emsp;&emsp; - 요구사항: 60 Agility<br/>
 
--  Spinning Swordsman [Common Talent] - Running attacks do +15% extra damage when you have a speed boost. (+1 Passive Agility)
+-   Spinning Swordsman [Common Talent] - Running attacks do +15% extra damage when you have a speed boost. (+1 Passive Agility)
 
 &emsp;&emsp; - 요구사항: 20 Agility<br/><br/>
 
@@ -2751,24 +2944,25 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;\*_"I survive from the teachings of Master Stratos."_<br/>
 
--  Maestro's Blade [Common Talent] - Inhaling a spell will cause the wind to be applied to your M1's. (+4 Elemental Intensity)
+-   Maestro's Blade [Common Talent] - Inhaling a spell will cause the wind to be applied to your M1's. (+4 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: Inhale, 60 Galebreathe<br/><br/>
 
 ## <u>Visionshaper</u>
 
--  Cheap Trick [Common Talent, Visionshaper Exclusive] - When hit below half health briefly disappear, leaving behind an illusion clone to keep your enemy occupied for a short duration. Briefly disappear after knocking an enemy.
+-   Cheap Trick [Common Talent, Visionshaper Exclusive] - When hit below half health briefly disappear, leaving behind an illusion clone to keep your enemy occupied for a short duration. Briefly disappear after knocking an enemy.
 
 ## <u>Vocalist</u>
 
--  <RareTalent>Encore</RareTalent> [Rare Talent, Charisma Exclusive] - Your sing will stun opponents who are already charmed.
+-   <RareTalent>Encore</RareTalent> [Rare Talent, Charisma Exclusive] - Your sing
+    will stun opponents who are already charmed.
 
 &emsp;&emsp; - On proc, apply 0.4s of "full stun".<br/>
 &emsp;&emsp; - Doesn't affect allies.<br/>
 &emsp;&emsp; - Additionally if this talent is used with Propagandist and an ally is affected by your sing then they will proc Encore with every basic attack hit.<br/>
 &emsp;&emsp; - 요구사항: 40 Charisma, Sing (Charisma Mantra)<br/>
 
--  Propagandist [Common Talent, Charisma Exclusive] - Your Sing will now stir your allies into a frenzy, causing them to become Overcharmed for 15s, applying Charmed to enemies they hit with basic attacks.
+-   Propagandist [Common Talent, Charisma Exclusive] - Your Sing will now stir your allies into a frenzy, causing them to become Overcharmed for 15s, applying Charmed to enemies they hit with basic attacks.
 
 &emsp;&emsp; - 요구사항: 75 Charisma, Sing (Charisma Mantra)<br/><br/>
 
@@ -2776,37 +2970,40 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;**"I create my own vows." **<br/>
 
--  Vow of Mastery [Common Talent] - The Vow of Mastery grants the Master the power to command their Subject. To initiate a vow you must ask the other player if they'd like to make the vow. e.g. "wanna make a vow of mastery?"
+-   Vow of Mastery [Common Talent] - The Vow of Mastery grants the Master the power to command their Subject. To initiate a vow you must ask the other player if they'd like to make the vow. e.g. "wanna make a vow of mastery?"
 
 &emsp;&emsp; - Players who take the vow are considered allies with their master and others who take the vow.<br/>
 &emsp;&emsp; - Commands Given: "Sleep", "Drop", "Eat", "Say (Text)", "Use", "Locate", "Leech"<br/>
 &emsp;&emsp; - 요구사항: 20 Charisma<br/>
 
--  Command: Fight [Common Talent] - Command your servants to fight for their master, granting them enhanced stats for a duration.
+-   Command: Fight [Common Talent] - Command your servants to fight for their master, granting them enhanced stats for a duration.
 
 &emsp;&emsp; - 요구사항: 50 Charisma, Vow of Mastery<br/>
 &emsp;&emsp; - Effect: Buff speed slightly and major power boost<br/>
 &emsp;&emsp; - 3 Minutes cooldown<br/>
 
--  <AdvancedTalent>Command: Live</AdvancedTalent> [Advanced Talent] - Once per hour, command a servant to defy all odds and obey your command - live.
+-   <AdvancedTalent>Command: Live</AdvancedTalent> [Advanced Talent] - Once per hour,
+    command a servant to defy all odds and obey your command - live.
 
 &emsp;&emsp; - 요구사항: 75 Charisma, other Vow of Mastery talents<br/>
 &emsp;&emsp; - Effect: Will fully heal your servant if they have lower than 40% hp<br/>
 &emsp;&emsp; - 40 Minutes cooldown.<br/>
 
--  <RareTalent>Command: Return</RareTalent> [Rare Talent] - Command your servant to obey your vow and return to your side.
+-   <RareTalent>Command: Return</RareTalent> [Rare Talent] - Command your servant
+    to obey your vow and return to your side.
 
 &emsp;&emsp; - 요구사항: 60 Charisma, Vow of Mastery<br/>
 &emsp;&emsp; - Effect: Pulls the subject to you even through walls and if they're knocked they get up immediately<br/>
 &emsp;&emsp; - 15 Seconds cooldown.<br/>
 
--  Command: Run [Common Talent] - Command your servant to run with all their might.
+-   Command: Run [Common Talent] - Command your servant to run with all their might.
 
 &emsp;&emsp; - 요구사항: 40 Charisma, Vow of Mastery<br/>
 &emsp;&emsp; - Effect: Make your subject run very fast, they can't stop running until the duration of effect ends.<br/>
 &emsp;&emsp; - 2 Minutes cooldown.<br/>
 
--  <RareTalent>Command: Sacrifice</RareTalent> [Rare Talent] - Sacrifice the health of a servant in order to restore your own.
+-   <RareTalent>Command: Sacrifice</RareTalent> [Rare Talent] - Sacrifice the health
+    of a servant in order to restore your own.
 
 &emsp;&emsp; - 요구사항: 50 Charisma, Vow of Mastery<br/>
 &emsp;&emsp; - Effect: Takes the hp of a servant until you are full hp<br/>
@@ -2814,15 +3011,16 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 ## <u>Warrior</u>
 
--  <RareTalent>Chronostasis</RareTalent> [Rare Talent] - Landing an M1 or Critical Strike puts target Resonance on cooldown for a short duration. (+1 Posture)
+-   <RareTalent>Chronostasis</RareTalent> [Rare Talent] - Landing an M1 or Critical
+    Strike puts target Resonance on cooldown for a short duration. (+1 Posture)
 
 &emsp;&emsp; - 요구사항: Power 13, Engage<br/>
 
--  Critical Attack [Common Talent] [Quest Talent] - Landing a hit with your critical restores 30% of your posture. (+1 Posture)
+-   Critical Attack [Common Talent] [Quest Talent] - Landing a hit with your critical restores 30% of your posture. (+1 Posture)
 
 &emsp;&emsp; - 요구사항: Arthur quest right outside of the Garden reservoir<br/>
 
--  Engage [Common Talent] [Quest Talent] - Landing an M1 slightly restores some of your Ether. (+1 Posture)
+-   Engage [Common Talent] [Quest Talent] - Landing an M1 slightly restores some of your Ether. (+1 Posture)
 
 &emsp;&emsp; - 요구사항: Arthur quest right outside of the Garden reservoir<br/><br/>
 
@@ -2830,11 +3028,12 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;**"Water is my home."**<br/>
 
--  Conditioned Swimmer [Common Talent] - You lose less hunger and thirst while swimming. (+1 Passive Agility)
+-   Conditioned Swimmer [Common Talent] - You lose less hunger and thirst while swimming. (+1 Passive Agility)
 
 &emsp;&emsp; - 요구사항: Power 1<br/>
 
--  <RareTalent>Scuba Drowner</RareTalent> [Rare Talent] - You won't always drown to death when downed in water. (+3 Passive Agility, +5 Health)
+-   <RareTalent>Scuba Drowner</RareTalent> [Rare Talent] - You won't always drown
+    to death when downed in water. (+3 Passive Agility, +5 Health)
 
 &emsp;&emsp; - Prevent death by drowning.<br/>
 &emsp;&emsp; - 요구사항: Power 5<br/><br/>
@@ -2843,41 +3042,43 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;**"I am a master of all weapons."**<br/>
 
--  Aerial Assault [Common Talent] - Allows you to move quickly when you dodge mid-air. (+2 Passive Agility)
+-   Aerial Assault [Common Talent] - Allows you to move quickly when you dodge mid-air. (+2 Passive Agility)
 
 &emsp;&emsp; - 요구사항: [name] quest at the Pathfinders Respite<br/>
 
--  Brutal Momentum [Common Talent] - [Greatswords/Greathammers] Successfully dodging will give your next swing hyperarmor. ( )
+-   Brutal Momentum [Common Talent] - [Greatswords/Greathammers] Successfully dodging will give your next swing hyperarmor. ( )
 
 &emsp;&emsp; - 요구사항: 50 Heavy Weapon, Greatsword/Greathammer equipped<br/>
 
--  Finishing Touch [Common Talent] - [Dagger] Instantly execute enemies finished with the critical attack of your dagger.
+-   Finishing Touch [Common Talent] - [Dagger] Instantly execute enemies finished with the critical attack of your dagger.
 
 &emsp;&emsp; - 요구사항: 50 Agility, 40 Light Weapon, Dagger equipped<br/>
 
--  Matador [Common Talent] - Deal +20% more damage to human enemies with hyperarmor.
+-   Matador [Common Talent] - Deal +20% more damage to human enemies with hyperarmor.
 
 &emsp;&emsp; - Doesn't work on Non-Humanoid Monsters.<br/>
 &emsp;&emsp; - 요구사항: 20 Strength, 5 Agility<br/>
 
--  Mercy Kill [Common Talent] - When you flourish an enemy much weaker than you, you kill them instantly. Enemies that are greatly weaker than you die instantly from a single hit.
+-   Mercy Kill [Common Talent] - When you flourish an enemy much weaker than you, you kill them instantly. Enemies that are greatly weaker than you die instantly from a single hit.
 
 &emsp;&emsp; - 요구사항: Unbound Element or Weapon, or Kill any Boss.<br/>
 
--  One Handed Training [Common Priority Talent] - [Heavy Weapons] You can now wield heavy weapons one handed.
+-   One Handed Training [Common Priority Talent] - [Heavy Weapons] You can now wield heavy weapons one handed.
 
 &emsp;&emsp; - Grants you the ability to equip an offhand while one-handing<br/>
 &emsp;&emsp; - 요구사항: 40 Heavy Weapon<br/>
 
--  <RareTalent>Showstopper</RareTalent> [Rare Talent] - When an enemy would roll through one of your physical attacks, stomp the ground, dazing anyone nearby. Removes speed buffs from target upon landing.
+-   <RareTalent>Showstopper</RareTalent> [Rare Talent] - When an enemy would roll
+    through one of your physical attacks, stomp the ground, dazing anyone nearby.
+    Removes speed buffs from target upon landing.
 
 &emsp;&emsp; - 요구사항: 40 Strength<br/>
 
--  Successive Throw [Common Talent] [Dagger] When you successfully flourish an enemy, you throw out a dagger afterwards
+-   Successive Throw [Common Talent] [Dagger] When you successfully flourish an enemy, you throw out a dagger afterwards
 
 &emsp;&emsp; - 요구사항: 35 Light Weapon<br/>
 
--  Warrior's Swing [Common Talent] - [Heavy Weapons] Reduces incoming damage if hit during Heavy swing hyperarmor.
+-   Warrior's Swing [Common Talent] - [Heavy Weapons] Reduces incoming damage if hit during Heavy swing hyperarmor.
 
 &emsp;&emsp; - 요구사항: 30 Heavy Weapon,<br/><br/>
 
@@ -2885,7 +3086,7 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;**"A whisper in the dark."**<br/>
 
--  Haunted Gale [Common Talent] - Every 3 hits landed by perfectly casted Galebreathe mantras will cause the target to be quickly struck by a phantom of wind. (+5 Elemental Intensity)
+-   Haunted Gale [Common Talent] - Every 3 hits landed by perfectly casted Galebreathe mantras will cause the target to be quickly struck by a phantom of wind. (+5 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 40 Galebreathe, Power 8<br/>
 &emsp;&emsp; - 3 hits landed is reduced to 2 if Gale Wisp is active.<br/>
@@ -2893,49 +3094,70 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 ## <u>Windrunner</u>
 
--  Agility Unbounded [Common Talent] - You have gained the ability to surpass your limits and train your agility to its fullest.
+-   Agility Unbounded [Common Talent] - You have gained the ability to surpass your limits and train your agility to its fullest.
 
 &emsp;&emsp; - 요구사항: 75 Agility<br/><br/>
 
 ## <Oath><u>Oath</u></Oath>
 
--  <Oath>Oath: Arcwarder</Oath> - You vow to be a shield for your comrades, to wear your regalia with pride and serve the greater collective. From each according to their ability, to each according to their needs.
+-   <Oath>Oath: Arcwarder</Oath> - You vow to be a shield for your comrades, to wear
+    your regalia with pride and serve the greater collective. From each according
+    to their ability, to each according to their needs.
 
 &emsp;&emsp; - 요구사항: 20 Fortitude, 20 Flamecharm, 20 Thundercall. Complete Alpha's quest.<br/>
 
--  <Oath>Oath: Oathless</Oath> - You vow to never be bound to any oath; to live your life free of restraint. If free will is an illusion, why not make it a convincing one? (+2 Wildcard Mantra Slots, +15% Oath Resistance, +10 Health)
+-   <Oath>Oath: Oathless</Oath> - You vow to never be bound to any oath; to live
+    your life free of restraint. If free will is an illusion, why not make it a convincing
+    one? (+2 Wildcard Mantra Slots, +15% Oath Resistance, +10 Health)
 
 &emsp;&emsp; - 요구사항: Talk to a Girl in cave near Miner's Landing docks.<br/>
 
--  <Oath>Oath: Blindseer</Oath> - You vow to not let the horrors of the world to pierce your tightly fashioned blindfold. Everything is simply as we choose to percieve it. (+10 Sanity, +1 Support Mantra Slot, +1 Wildcard Mantra Slot)
+-   <Oath>Oath: Blindseer</Oath> - You vow to not let the horrors of the world to
+    pierce your tightly fashioned blindfold. Everything is simply as we choose to
+    percieve it. (+10 Sanity, +1 Support Mantra Slot, +1 Wildcard Mantra Slot)
 
 &emsp;&emsp; - 요구사항: 40 Willpower, all 3 Mental Fortress talent, Blindfold and read the inscriptions in The Temple of the Forgotten Flame.<br/>
 
--  <Oath>Oath: Dawnwalker</Oath> - You vow to forever reach towards the brilliant Light. There's no shadow that your radiance cannot expunge. (+2 Combat Mantra Slots)
+-   <Oath>Oath: Dawnwalker</Oath> - You vow to forever reach towards the brilliant
+    Light. There's no shadow that your radiance cannot expunge. (+2 Combat Mantra
+    Slots)
 
 &emsp;&emsp; - 요구사항: Have 30 Kyrsan Medalions and speak to Klaris.<br/>
 
--  <Oath>Oath: Visionshaper</Oath> - You vow to only see that which you see. Reality itself is malleable, pliable to your deft hands. (+1 Support Mantra Slot, +2 Combat Mantra Slots)
+-   <Oath>Oath: Visionshaper</Oath> - You vow to only see that which you see. Reality
+    itself is malleable, pliable to your deft hands. (+1 Support Mantra Slot, +2
+    Combat Mantra Slots)
 
 &emsp;&emsp; - 요구사항: 50 Charisma, Complete Aelita's Encounter, Bring a Dark Feather to Surge.<br/>
 
--  <Oath>Oath: Linkstrider</Oath> - You vow to give up your own life for the sake of others. Stepping out of the fray, you become a foundation of your allies' strength. (+2 Support Mantra Slots, +1 Wildcard Mantra Slot)
+-   <Oath>Oath: Linkstrider</Oath> - You vow to give up your own life for the sake
+    of others. Stepping out of the fray, you become a foundation of your allies'
+    strength. (+2 Support Mantra Slots, +1 Wildcard Mantra Slot)
 
 &emsp;&emsp; - 요구사항: Sacrifice 4 players with oaths in The Entropy Catalyst.<br/>
 
--  <Oath>Oath: Jetstriker</Oath> - You vow to flow with the song itself, drifting across where the trails may take you. If the song permeates everything, then let it be your conduit, and you its master. (+1 Wildcard Mantra, +1 Mobility Mantra, +8 Passive Agility)
+-   <Oath>Oath: Jetstriker</Oath> - You vow to flow with the song itself, drifting
+    across where the trails may take you. If the song permeates everything, then
+    let it be your conduit, and you its master. (+1 Wildcard Mantra, +1 Mobility
+    Mantra, +8 Passive Agility)
 
 &emsp;&emsp; - 요구사항: 50 agility and beat Alirian in race.<br/>
 
--  <Oath>Oath: Starkindred</Oath> - You vow to feel the knowledge of all that is, all at once. Your heart beats with the world itself, as the Stars above watch over you. (+2 Combat Mantra Slots, +8 Health)
+-   <Oath>Oath: Starkindred</Oath> - You vow to feel the knowledge of all that is,
+    all at once. Your heart beats with the world itself, as the Stars above watch
+    over you. (+2 Combat Mantra Slots, +8 Health)
 
 &emsp;&emsp; - 요구사항: 40 strength, 1 player grip, talk to Samael in Derelict Church (Songseeker Wilds) and kill Iblis, The Fallen Angel then return to Samael.<br/>
 
--  <Oath>Oath: Silentheart</Oath> - You vow to reject the Worlds of the song, denying yourself of mantras in pursuit of your own path to true strength, no matter the cost. ( +10 Health, +5 Posture)
+-   <Oath>Oath: Silentheart</Oath> - You vow to reject the Worlds of the song, denying
+    yourself of mantras in pursuit of your own path to true strength, no matter the
+    cost. ( +10 Health, +5 Posture)
 
 &emsp;&emsp; - 요구사항: 40 Strength, 40 Agility OR 40 Charisma, 75 Weapon, be attunement-less, get gripped by any attunement user, go to Beloved Zofia and talk to The Dreadstar.<br/>
 
--  <Oath>Oath: Contractor</Oath> - Your heart is forever now eternally tied to Zi'eer, the 4th Prophet of the Ministry. You swear to serve under his will, no matter the cost.
+-   <Oath>Oath: Contractor</Oath> - Your heart is forever now eternally tied to Zi'eer,
+    the 4th Prophet of the Ministry. You swear to serve under his will, no matter
+    the cost.
 
 &emsp;&emsp; - Ministry Reputation, learn what happened from Yun'Shul then return to Lord Regent.<br/><br/>
 
@@ -2943,80 +3165,83 @@ These Talents are meant to reap the reward of your latest hunt or trick your ene
 
 &emsp;&emsp;**"Uh..."**<br/>
 
--  Anxious Guard [Common Talent] - Hitting an enemies block causes their parry window to be lowered for a short duration.
+-   Anxious Guard [Common Talent] - Hitting an enemies block causes their parry window to be lowered for a short duration.
 
 &emsp;&emsp; - 요구사항: Power 10<br/>
 
--  Armor Conserver [Common Talent] - You lose 15% less armor when hit.
+-   Armor Conserver [Common Talent] - You lose 15% less armor when hit.
 
 &emsp;&emsp; - 요구사항: Power 8<br/>
 &emsp;&emsp; - Does not affect Natural Armor from Exoskeleton and Chitin<br/>
 
--  Berserker [Common Talent. Fortitude] - Knocking an enemy grants you 20% damage resistance for 15 seconds. (+10 Carry Load)
+-   Berserker [Common Talent. Fortitude] - Knocking an enemy grants you 20% damage resistance for 15 seconds. (+10 Carry Load)
 
 &emsp;&emsp; - 요구사항: 35 Fortitude, 30 Strength<br/>
 
--  Blighted Song [Common Talent, Shadowcast Exclusive] Attaching your Shadow Chains to enemies disables yours and the enemy's ability to cast mantras. You take reduced damage from enemies while this is applied.
+-   Blighted Song [Common Talent, Shadowcast Exclusive] Attaching your Shadow Chains to enemies disables yours and the enemy's ability to cast mantras. You take reduced damage from enemies while this is applied.
 
 &emsp;&emsp; - 요구사항: Shadow Chains<br/>
 
--  Blinded [Common Talent] - Your vision is obscured by something. Somehow, you feel safer. You remember the warmth of your youth. (+20 Sanity)
+-   Blinded [Common Talent] - Your vision is obscured by something. Somehow, you feel safer. You remember the warmth of your youth. (+20 Sanity)
 
 &emsp;&emsp; - Create a dark blueish fog around you (simulating blindness).<br/>
 &emsp;&emsp; - While the Blindseer Oath grant full vision even with a blindfold, the Talent still works.<br/>
 &emsp;&emsp; - The talent grants immunity to the Flame Blind mantra.<br/>
 &emsp;&emsp; - The face equipment "Blindfold" have this talent.<br/>
 
--  Full Reset [Common Talent] - Knocking an enemy resets your resonance cooldowns. This effect has a 60 second cooldown.
+-   Full Reset [Common Talent] - Knocking an enemy resets your resonance cooldowns. This effect has a 60 second cooldown.
 
 &emsp;&emsp; - 요구사항: Power 16, Obtain resonance<br/>
 
--  Gourmand [Common Talent] - Your hunger and thirst gain from eating increased. (+2 Carry Load, +1 Posture)
+-   Gourmand [Common Talent] - Your hunger and thirst gain from eating increased. (+2 Carry Load, +1 Posture)
 
 &emsp;&emsp; - 요구사항: Power 5<br/>
 
--  Heavy Haul [Common Talent, Fortitude] - Enemies who carry you move significantly slower.
+-   Heavy Haul [Common Talent, Fortitude] - Enemies who carry you move significantly slower.
 
 &emsp;&emsp; - 요구사항: 15 Strength<br/>
 
--  <RareTalent>Impervious Slumber</RareTalent> [Rare Talent] - Getting hit while knocked no longer resets your time knocked.
+-   <RareTalent>Impervious Slumber</RareTalent> [Rare Talent] - Getting hit while
+    knocked no longer resets your time knocked.
 
 &emsp;&emsp; - 요구사항: 35 Fortitude<br/>
 
--  Lightweight [Common Talent] - Move faster when your armor runs out of durability. (+3 Passive Agility)
+-   Lightweight [Common Talent] - Move faster when your armor runs out of durability. (+3 Passive Agility)
 
 &emsp;&emsp; - When your Armor is at 0%, movement speed is increased by 25%.<br/>
 
--  Martyr [Common Talent] - Enemies gain less health and posture when knocking you.
+-   Martyr [Common Talent] - Enemies gain less health and posture when knocking you.
 
 &emsp;&emsp; - Enemies who knock you restore only half of the posture and health they would normally obtain (50% -> 25%).<br/>
 &emsp;&emsp; - If the enemy have the talent Replenishing Knockout, both talents negate each other, resulting in a normal health pack.<br/>
 &emsp;&emsp; - 요구사항: Power 3<br/>
 
--  Polite Awakening [Common Talent] - Recover 15% of your max health after getting up from being downed. (Only Procs when below 20% HP) (+1 Passive Agility)
+-   Polite Awakening [Common Talent] - Recover 15% of your max health after getting up from being downed. (Only Procs when below 20% HP) (+1 Passive Agility)
 
 &emsp;&emsp; - 요구사항: Power 1<br/>
 
--  Ready or Not [Common Talent] - The first attack to hit you while out of combat has its damage cut in half.
+-   Ready or Not [Common Talent] - The first attack to hit you while out of combat has its damage cut in half.
 
 &emsp;&emsp; - 요구사항: Power 1, 20 Fortitude<br/>
 
--  Replenishing Knockout [Common Talent] - You gain more health and posture from downing enemies.
+-   Replenishing Knockout [Common Talent] - You gain more health and posture from downing enemies.
 
 &emsp;&emsp; - Knocking enemies will replenish 1.5x more of your health and posture (50% -> 75%).<br/>
 &emsp;&emsp; - If the target have the talent Martyr, both talents negate each other, resulting in a normal health pack.<br/>
 &emsp;&emsp; - 요구사항: Power 3<br/>
 
--  <RareTalent>Return to the Dark Ages</RareTalent> [Rare Talent] - Your mantra damage is cut by 20%, but your incoming mantra damage is cut by 20% too. (+5 Health)
+-   <RareTalent>Return to the Dark Ages</RareTalent> [Rare Talent] - Your mantra
+    damage is cut by 20%, but your incoming mantra damage is cut by 20% too. (+5
+    Health)
 
 &emsp;&emsp; - Also reduces burn damage received and dealt by 20%.<br/>
 &emsp;&emsp; - 요구사항: Power 10<br/>
 &emsp;&emsp; - 반대: Everchanging Aegis<br/>
 
--  Speed Emission [Common Talent] - Gain a slight speed boost after landing a vent.
+-   Speed Emission [Common Talent] - Gain a slight speed boost after landing a vent.
 
 &emsp;&emsp; - 요구사항: 25 Agility<br/>
 
--  Pack Mule [Common Talent] - The max quantity for food you can hold is increased by 5. (+1 Carry Load)
+-   Pack Mule [Common Talent] - The max quantity for food you can hold is increased by 5. (+1 Carry Load)
 
 &emsp;&emsp; - 요구사항: 5 Fortitude.<br/>

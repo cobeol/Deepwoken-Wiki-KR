@@ -29,7 +29,6 @@ const config: Config = {
         defaultLocale: "kr",
         locales: ["kr"],
     },
-
     scripts: [
         {
             src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4633932086986290",
@@ -56,6 +55,11 @@ const config: Config = {
     ],
 
     themeConfig: {
+        algolia: {
+            appId: "0HPESYC1D4",
+            apiKey: "ed5a8b10675abebd03c602f102c4d191",
+            indexName: "deepwoken_wiki",
+        },
         metadata: [
             {
                 name: "keywords",
@@ -84,10 +88,14 @@ const config: Config = {
                     position: "left",
                 },
                 {
-                    type: "doc",
-                    docId: "talents/index",
-                    label: "Talents",
+                    label: "Character",
                     position: "left",
+                    items: [
+                        {
+                            to: "talents",
+                            label: "Talents",
+                        },
+                    ],
                 },
                 {
                     href: "https://github.com/cobeol/Deepwoken-Wiki-KR",

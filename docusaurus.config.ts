@@ -10,24 +10,16 @@ const copyrightYear = currentYear !== 2024 ? `2024-${currentYear}` : "2024";
 const config: Config = {
     title: "Deepwoken Wiki",
     favicon: "img/deepwoken.ico",
-
-    // Set the production url of your site here
+    
     url: "https://deepwoken.netlify.app",
-    // Set the /<baseUrl>/ pathname under which your site is served
-    // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: "/",
 
-    // GitHub pages deployment config.
-    // If you aren't using GitHub pages, you don't need these.
-    organizationName: "facebook", // Usually your GitHub org/user name.
-    projectName: "docusaurus", // Usually your repo name.
+    organizationName: "cobeol",
+    projectName: "Deepwoken-Wiki-KR",
 
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
 
-    // Even if you don't use internationalization, you can use this field to set
-    // useful metadata like html lang. For example, if your site is Chinese, you
-    // may want to replace "en" with "zh-Hans".
     i18n: {
         defaultLocale: "kr",
         locales: ["kr"],
@@ -95,8 +87,38 @@ const config: Config = {
                     position: "left",
                     items: [
                         {
+                            to: "races",
+                            label: "Races",
+                        },
+                        {
+                            to: "attunement",
+                            label: "Attunement",
+                        },
+                        {
+                            to: "attributes",
+                            label: "Attributes",
+                        },
+                    ],
+                },
+                {
+                    label: "Skills",
+                    position: "left",
+                    items: [
+                        {
                             to: "talents",
                             label: "Talents",
+                        },
+                        {
+                            to: "mantras",
+                            label: "Mantras",
+                        },
+                        {
+                            to: "oaths",
+                            label: "Oaths",
+                        },
+                        {
+                            to: "resonance",
+                            label: "Resonance",
                         },
                     ],
                 },

@@ -4,6 +4,9 @@ import type * as Preset from "@docusaurus/preset-classic";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
+const currentYear = new Date().getFullYear();
+const copyrightYear = currentYear !== 2024 ? `2024-${currentYear}` : "2024";
+
 const config: Config = {
     title: "Deepwoken Wiki",
     favicon: "img/deepwoken.ico",
@@ -58,7 +61,7 @@ const config: Config = {
         algolia: {
             appId: "S0I9APG2B7",
             apiKey: "fb8d593111dfad0cae297c66c08cc346",
-            indexName: "deepwoken_wiki",    
+            indexName: "deepwoken_wiki",
         },
         metadata: [
             {
@@ -113,6 +116,11 @@ const config: Config = {
             defaultMode: "dark",
             disableSwitch: true,
             respectPrefersColorScheme: false,
+        },
+        footer: {
+            style: "dark",
+            links: [],
+            copyright: `Copyright © ${copyrightYear} <a href="https://github.com/cobeol">코벌</a>. Licensed under CC BY-SA 4.0. <a href="https://deepwoken.fandom.com/wiki/Rules">(Referenced Docs)<a>`,
         },
     } satisfies Preset.ThemeConfig,
 };

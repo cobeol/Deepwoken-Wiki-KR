@@ -5,7 +5,7 @@ import styles from "./HomeCard.module.css";
 
 export default function HomeCard({ children }) {
     let home_style = {
-        marginBottom: "20px",
+        marginBottom: "0px",
     };
     return (
         <div className={styles.wrapper}>

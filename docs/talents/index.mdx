@@ -1,7 +1,10 @@
 ---
+title: "Talents"
 slug: /talents
 hide_table_of_contents: true
 ---
+
+import Link from "@docusaurus/Link";
 
 export const RareTalent = ({ children }) => (
     <span
@@ -69,7 +72,7 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 -   미스틱 문구로 찾기: 그룹에 관련된 [미스틱](/mystic) 문구로 그룹 검색을 대체 할 수 있습니다.<br/>
     (Ex: I skulk in alleyways, looking for my next prize)
 
-<br />  
+<br />{" "}
 
 ## Talents
 
@@ -83,7 +86,7 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp; - 속도 버프를 받으면 눈이 붉게 빛이 납니다.<br/>
 &emsp;&emsp; - 요구사항: 5 Agility<br/>
-&emsp;&emsp; - 보스를 죽이면 속도가 엄청나게 향상됩니다. [Tested]<br/>
+&emsp;&emsp; - 보스를 죽이면 속도가 엄청나게 향상됩니다.<br/>
 
 -   Kick Off [Common Talent, Agility] - 낮은 곳에서 떨어지면 낙뎀을 받지 않고 첫 번째 벽 점프가 높게 뛰어집니다. 벽을 넘으면 이속이 증가합니다. (+6 Passive Agility)
 
@@ -693,60 +696,52 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp;**"I feed on the souls of my enemies."**<br/>
 
--   Dark God [Common Talent, Shadowcast Exclusive] If a Shadowcast mantra would drain your opponent's Ether to 0, drain from their Tempo instead and increase your Tempo. (+1 Elemental Intensity)
+-   Dark God [Common Talent, Shadowcast Exclusive] 어둠 만트라로 맞춘 상대의 에테르가 남아있지 않다면 템포를 훔칠 수 있습니다. (+1 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 20 Shadowcast<br/>
 
--   Dark Hours [Shadowcast Exclusive] Shadowcast mantras deal more damage at night. (+4 Elemental Intensity)
+-   Dark Hours [Shadowcast Exclusive] 어둠 만트라가 밤에 더 많은 피해를 줍니다. (+4 Elemental Intensity)
 
-&emsp;&emsp; - Shadowcast mantras deal 20% more damage at night (XX:50-XX:10).<br/>
+&emsp;&emsp; - 20% 증가합니다. (XX:50-XX:10).<br/>
 &emsp;&emsp; - 요구사항: 35 Shadowcast<br/>
 
--   Dark Replenishment [Shadowcast Exclusive] Knocking out an enemy in combat restores a portion of your ether.
+-   Dark Replenishment [Shadowcast Exclusive] 전투에서 적을 쓰러뜨리면 에테르의 일부가 회복됩니다.
 
 &emsp;&emsp; - 요구사항: 50 Shadowcast, 25 Intelligence, Dark God<br/>
 
--   <RareTalent>Dark Rift</RareTalent> [Rare Talent, Shadowcast Exclusive] Enter
-    a rifted state when you successfully dodge, where you can't be damaged until
-    its duration ends. Can be cancelled with feinting or attacking. (+4 Elemental
-    Intensity)
+-   <RareTalent>Dark Rift</RareTalent> [Rare Talent, Shadowcast Exclusive] 회피에
+    성공하면 균열 상태가 되어 지속 시간이 끝날 때까지 피해를 입을 수 없습니다. 페인팅이나
+    공격으로 취소할 수 있습니다. (+4 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 60 Shadowcast, Dark Hours<br/>
-&emsp;&emsp; - You hover with shadowy particles while the rifted state is active.<br/>
-&emsp;&emsp; - This ability last for 2 seconds and goes on a 20 second cooldown when it activates.<br/>
+&emsp;&emsp; - 균열 상태가 활성화된 동안 그림자 입자와 함께 마우스를 맴돌게 됩니다.<br/>
+&emsp;&emsp; - 이 능력은 2초 동안 지속되며 활성화되면 20초의 재사용 대기시간이 발생합니다.<br/>
 
--   Dark Synergy [Shadowcast Exclusive] Engulf your enemy in shadows when flourishing them. (+1 Elemental Intensity)
+-   Dark Synergy [Shadowcast Exclusive] 적을 밀치면 그림자에 휩싸이게 합니다. (+1 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 45 Shadowcast, Dark God<br/>
 
--   Overwhelming Drain [Shadowcast Exclusive] If multiple enemies are hit by your Shadow Eruption, they are dazed. ( )
+-   Overwhelming Drain [Shadowcast Exclusive] Shadow Eruption에 적중한 적 여러 명이 멍해집니다.
 
 &emsp;&emsp; - 요구사항: Shadow Eruption<br/>
 
--   Shadow Overflow [Shadowcast Exclusive] Extra ether stolen with mantras are exerted as dark energy, damaging and absorbing ether from those nearby. (+3 Elemental Intensity)
+-   Shadow Overflow [Shadowcast Exclusive] 만트라로 훔친 여분의 에테르는 암흑 에너지로 작용하여 근처에 있는 에테르를 손상시키고 흡수합니다. (+3 Elemental Intensity)
 
 &emsp;&emsp; - 요구사항: 55 Shadowcast, Dark God<br/>
-&emsp;&emsp; - Deal damage around you whenever you steal ether.<br/><br/>
+&emsp;&emsp; - 에테르를 훔칠 때마다 주변에 피해를 줍니다.<br/><br/>
 
 ### <Oath><u>Dawnwalker</u></Oath>
 
 -   <UnlockableTalent>
-        Absolute Radiance [Unlockable Talent, <Oath>Dawnwalker</Oath> Exclusive]
-        - Dealing damage with Dawnwalker mantras briefly makes you immune to all
-        elemental effects for a short period.
+        Absolute Radiance [Unlockable Talent, <Oath>Dawnwalker</Oath> Exclusive] - Dawnwalker 만트라로 피해를 입히면 짧은 시간 동안 모든 원소 효과에 면역이 됩니다.
     </UnlockableTalent>
 
 -   <UnlockableTalent>
-        Protagonist Syndrome [Unlockable Talent, <Oath>Dawnwalker</Oath>{" "}
-        Exclusive] - The grasp of shadow is meaningless in the face of your
-        blinding light. Your Dawnwalker mantras are empowered after getting hit
-        by Shadowcast.
+        Protagonist Syndrome [Unlockable Talent, <Oath>Dawnwalker</Oath> Exclusive] - Shadowcast에 맞은 후 Dawnwalker 만트라가 강화됩니다.
     </UnlockableTalent>
 
 -   <UnlockableTalent>
-        Luminous Flash [Unlockable Talent, <Oath>Dawnwalker</Oath> Exclusive] -
-        After dealing a certain amount of damage in Absolute Radiance, gain a
-        chance to empower your strikes with pure light.
+        Luminous Flash [Unlockable Talent, <Oath>Dawnwalker</Oath> Exclusive] - Absolute Radiance 상태에서 많은 피해를 입히면 타격이 강화됩니다.
     </UnlockableTalent>
 
 ### <u>Death Speaker</u>
@@ -763,23 +758,16 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 ### <u>Deepwoken</u>
 
--   Depths Connection [Character Exclusive] - Your interaction with The Depths allows you to easily draw Ether from the surrounding air.
+-   Depths Connection [Character Exclusive] - The Depths와의 상호 작용을 통해 주변 공기에서 에테르를 쉽게 끌어올 수 있습니다.
 
-&emsp;&emsp; - Increase your ether regen.<br/>
-&emsp;&emsp; - 요구사항: Escape from The Depths once.<br/>
+&emsp;&emsp; - 에테르 재생 증가<br/>
+&emsp;&emsp; - 요구사항: 뎁스 한 번 탈출.<br/>
 
--   Spell Shout [Character Exclusive] - You will now shout your mantra name upon cast.
+-   Spell Shout [Character Exclusive] - 이제 시전 시, 만트라 이름을 외치게 됩니다.
 
-&emsp;&emsp; - The player will say the name of the mantra they cast in a chat bubble. E.G casting Fire Blade will make the player say "Fire Blade!"<br/>
-&emsp;&emsp; - Renamed mantras will use the new name. Casting Adrenaline Surge renamed to Speed Boost will say "Speed Boost!".<br/>
-&emsp;&emsp; - Mantra names are auto formatted so that caps are forced at the start of every word and cannot be elsewhere. Numbers also cannot be used. Casting a mantra named "64 palms" will say "Palms!".<br/>
-&emsp;&emsp; - If a mantra name gets moderated by the chat (######), the shout will default to the original name of the mantra.<br/>
-&emsp;&emsp; - You can toggle spell shout visibility by typing '/e shout' into chat. This setting is per-slot. If you have spell shout visibility disabled, you won't see anyone's spell shouts<br/>
-&emsp;&emsp; - IMPORTANT: Make sure to not use offensive names or slurs for your mantras. This can result in moderation action taken against you.<br/>
-&emsp;&emsp; - Offensive includes mentions to Race, Gender, Sexual Preference and Religion.<br/>
-&emsp;&emsp; - 요구사항: Obtaining the Talent from Valikor
+&emsp;&emsp; - 요구사항:  Valikor 종족
 
--   The Sound from Below [Character Exclusive] - You can hear it pounding in your head. The sound that comes from beneath the waves. Will you respond?
+-   The Sound from Below [Character Exclusive] - 머리 속에 파도 아래에서 들려오는 소리 들립니다. 당신은 응답할 것입니까?
 
 &emsp;&emsp; - 요구사항: Power 2.<br/><br/>
 
@@ -787,76 +775,64 @@ _**[Ctrl + F]를 눌러 "페이지 검색"을 활성화하여 원하는 재능 �
 
 &emsp;&emsp;**"I seek the qualities of Doomsday Engine"**<br/>
 
--   Frozen Web [Common Talent, Dual attunement] - Landing a critical with a Static Link on your opponent applies Chilled.
+-   Frozen Web [Common Talent, Dual attunement] - 상대방에게 Static Link로 치명타를 입히면 상대방에게 Chilled 효과가 적용됩니다.
 
 &emsp;&emsp; - 요구사항: Static Link, 40 Frostdraw, 40 Thundercall<br/>
-&emsp;&emsp; - Applies chill for 6 seconds<br/>
-&emsp;&emsp; - Applies bottom freeze<br/><br/>
+&emsp;&emsp; - 6초 간 작용<br/><br/>
 
 ### <u>Duelist</u>
 
 &emsp;&emsp;**"I am a competent duelist."**<br/>
 
--   <RareTalent>Concussion</RareTalent> [Rare Talent] - Enemies you flourish into
-    walls have their vision altered for a short duration and are dazed longer than
-    usual. (+8 Carry Load)
+-   <RareTalent>Concussion</RareTalent> [Rare Talent] - 밀쳐져 벽에 부딪힌 적들은 짧은 시간 동안 시야가 안 보이며 더 오래 멍해집니다. (+8 Carry Load)
 
 &emsp;&emsp; - 요구사항: 20 Strength, 15 Fortitude<br/>
 
--   Concussive Force [Common Talent] - Enemies you knocked remain downed longer than usual. (+9 Carry Load)
+-   Concussive Force [Common Talent] - 기절시킨 적들은 평소보다 오랫동안 기절 상태로 남아 있습니다. (+9 Carry Load)
 
-&emsp;&emsp; - Enemies remain knocked for 15 seconds instead of 10.<br/>
+&emsp;&emsp; - 10초 기절 -> 15초 기절.<br/>
 &emsp;&emsp; - 요구사항: 15 Strength<br/>
-&emsp;&emsp; - The head equipment "Blackleaf Helm" and "Gladiator Helmet" have this talent.<br/>
 
--   Duelist's Dance [Common Talent] - Parrying an opponent gives you 25% more posture back. (+2 Posture, +4 Carry Load)
+-   Duelist's Dance [Common Talent] - 패링을 성공하면 자세를 25% 더 돌려받습니다. (+2 Posture, +4 Carry Load)
 
 &emsp;&emsp; - 요구사항: 20 Strength<br/>
 
--   Precise Swing [Common Talent] - After landing a critical your next light attack will chip past your opponent's block. (+9 Carry Load, +1 Passive Agility)
+-   Precise Swing [Common Talent] - 치명타가 적중하면 다음 공격이 상대의 블록을 뚫고 지나갑니다. (+9 Carry Load, +1 Passive Agility)
 
-&emsp;&emsp; - If your critical hits a block, this talent will not work, nor will it work if you break the block with a critical (if your critical only consists of 1 hit)<br/>
+&emsp;&emsp; - 치명타가 블록에 막히면 작동하지 않습니다.<br/>
 &emsp;&emsp; - 요구사항: 25 Strength, 15 Agility<br/>
-&emsp;&emsp; - The head equipment "Phalanx Helmet" has this talent.<br/>
 
--   <RareTalent>Spine Cutter</RareTalent> [Rare Talent] - Hitting an enemy in the
-    back after a roll cancel will initiate a second slash that deals your weapon's
-    raw damage. ( +6 Carry Load, +2 Passive Agility)
+-   <RareTalent>Spine Cutter</RareTalent> [Rare Talent] - 회피 성공 후, 적의 뒤를 공격하면 기본 데미지를 입히는 공격이 나갑니다. (+6 Carry Load, +2 Passive Agility)
 
-&emsp;&emsp; - Deals true damage.<br/>
-&emsp;&emsp; - You deal damage equivalent to 100% of your base damage, unaffected by any modifiers, essentially dealing another fresh hit for free.<br/>
-&emsp;&emsp; - Can proc from some physical mantras<br/>
+&emsp;&emsp; - 고정 데미지<br/>
 &emsp;&emsp; - 요구사항: 20 Strength, 25 Agility<br/>
 
--   Steady Nerves [Common Talent, Agility] - You dance from toe to toe - successful dodges restore posture. (+7 Carry Load, +2 Passive Agility)
+-   Steady Nerves [Common Talent, Agility] - 발가락부터 발끝까지 춤을 춥니다. (+7 Carry Load, +2 Passive Agility)
 
-&emsp;&emsp; - Restore 5% Posture on a successful dodge.<br/>
+&emsp;&emsp; - 회피 성공 후, 자세를 5% 회복합니다.<br/>
 &emsp;&emsp; - 요구사항: 15 Strength, 45 Agility.<br/>
 
--   Strong Hold [Common Talent] - When above half health and two-handing, posture damage taken is reduced by 20%. (+9 Carry Load, +1 Passive Agility)
+-   Strong Hold [Common Talent] - 체력이 절반 이상이고 양손을 사용하는 경우, 받는 자세 피해가 20% 감소합니다. (+9 Carry Load, +1 Passive Agility)
 
 &emsp;&emsp; - 요구사항: 30 Strength, 30 Medium Weapon<br/>
-&emsp;&emsp; - The head equipments "Authority Helm" and "Bulwark Helm" have this talent.<br/>
 
--   <RareTalent>Strong Stern</RareTalent> [Rare Talent] - The duration you are dazed
-    from wall bangs is cut in half (+9 Carry Load)
+-   <RareTalent>Strong Stern</RareTalent> [Rare Talent] - 벽에 의해 멍해지는 시간이 절반으로 단축됩니다. (+9 Carry Load)
 
 &emsp;&emsp; - 요구사항: 15 Strength, 25 Fortitude<br/>
 
--   <RareTalent>Tap Dancer</RareTalent> [Rare Talent, Agility] - Roll immediately
-    after a roll-cancel no longer puts your roll on a longer cooldown. (+1 Passive
+-   <RareTalent>Tap Dancer</RareTalent> [Rare Talent, Agility] - 회피 취소 후, 다시 회피를 해도 회피 쿨타임이 증가하지 않습니다. (+1 Passive
     Agility)
 
-&emsp;&emsp; - Negate the extra half a second cooldown added to the roll following a roll-cancel.<br/>
+&emsp;&emsp; - 0.5초의 추가 쿨타임이 무시됩니다.<br/>
 &emsp;&emsp; - 요구사항: 60 Agility<br/><br/>
 
 ### <u>Duelist Flame</u>
 
 &emsp;&emsp;**"My flame fights for me."**<br/>
 
--   Concussive Flash [Common Talent, Flamecharm Exclusive] - Your blinding light now concusses foes. (+10 Carry Load, +3 Elemental Intensity)
+-   Concussive Flash [Common Talent, Flamecharm Exclusive] - 눈부신 빛이 이제 적에게 충격을 줍니다. (+10 Carry Load, +3 Elemental Intensity)
 
-&emsp;&emsp; - People blinded by Blinding Flame are Dazed for 2 seconds.<br/>
+&emsp;&emsp; - 빛으로 눈이 먼 사람은 2초 동안 멍해집니다.<br/>
 &emsp;&emsp; - 요구사항: Flame Blind, 30 Flamecharm, 25 Strength<br/>
 
 ### <u>Elementalist</u>

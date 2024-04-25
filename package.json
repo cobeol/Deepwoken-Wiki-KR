@@ -1,7 +1,7 @@
 {
-    "name": "Deepwoken_Wiki_KR",
+    "name": "deepwoken_wiki_kr",
     "description": "딥워큰 위키 번역 프로젝트",
-    "version": "1.7.2b-1",
+    "version": "1.7.2b-2",
     "private": true,
     "scripts": {
         "docusaurus": "docusaurus",

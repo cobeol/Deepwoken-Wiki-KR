@@ -1,6 +1,155 @@
 ---
+title: "Mantras"
 slug: /mantras
 hide_table_of_contents: true
 ---
 
+import Link from "@docusaurus/Link";
+
+export const RareTalent = ({ children }) => (
+    <span
+        style={{
+            color: "#f2727f",
+        }}
+    >
+        <i>{children}</i>
+    </span>
+);
+
 # Mantras
+
+## 설명
+
+만트라는 에테르를 사용하는 능력으로, 딥워큰의 마법 시스템입니다. <br/>
+레벨업을 하거나 <Link to="/locations/Isle_of_Vigils">Isle of Vigils</Link>에 있는 일회용 <Link to="/quest">Kelsius 퀘스트</Link>를 이용하여 만트라를 얻을 수 있습니다.
+
+## 종류
+
+만트라는 기본적을 최대 6개를 장착할 수 있으며, <Link to="/oaths">맹세</Link>나 <RareTalent>Neuroplasticity</RareTalent>와 같은 <Link to="/talents">탤런트</Link>를 이용하여 추가로 장착할 수 있습니다.
+
+-   Combat Mantra (3) - 상대방에게 피해를 주는 것이 주목적인 만트라입니다.
+-   Support Mantras (1) - 치유, 이동 및 모든 종유의 범위가 가능한 만트라입니다.
+-   Mobility Mantra (1) - 이동에 특화된 만트라. 더 빠르게 가거나 높이 오르게 해줍니다.
+-   Wildcard Mantra (1) - Combat, Support, Mobility 제한 상관 없이 추가로 장착할 수 있는 슬롯입니다.
+
+## 전투 사용법
+
+### Perfect Casting
+
+퍼펙트 캐스팅은 별다른 능력이 존재하지 않고 단지 일부 재능을 활성화합니다. <br/>
+사용 방법은 만트라를 사용한 후, 바로 M1 클릭을 하면 됩니다.
+
+### Mantra Cancelling
+
+만트라 취소는 사용 후 즉시 M1 + M2를 눌러할 수 있습니다. <br/>
+취소하면 쿨타임은 초기화되지만, 에테르는 소모됩니다.
+
+### Ranged Mantra
+
+Ranged Mantra Resistance, Green is no scaling while red is where ranged resistance scaling starts and ends, past that, full resistance is applied.
+Ranged Mantra Resistance; Standing from the center of the green circle, their is no scaling while red is where ranged resistance scaling starts and ends, past that, full resistance is applied.
+
+Ranged Mantras are any Mantra that can deal damage from at least 30 studs away, these Mantras have their damage fall off, reaching fully ranged resistance past 60 studs, Certain enemies like Scion do not have this resistance while other enemies such as the Megalodaunts do have ranged resistance. Humanoid mobs such as the Bandit Leader can roll and block ranged attacks, but this does not apply to most monster mobs like the Megalodaunt that cannot block or roll.
+
+## 만트라 종류
+
+관련 스텟이 높을수록 만트라의 등장 확률이 증가합니다. 또, 등급이 높은 만트라는 높은 스텟을 요구합니다.
+
+### <Link to="/attunement/flamecharm">Flamecharm Mantras</Link>
+
+크고 위협적인 화염 기반 주문입니다.
+
+-   넓은 범위 <br/>
+-   근거리 <br/>
+-   높은 딜량 <br/>
+-   <Link to="/attunement/shadowcast">어둠 만트라</Link>와 혼합하여 어둠불.
+
+### <Link to="/attunement/thundercall">Thundercall Mantras</Link>
+
+빠른 시전, 접근과 짧은 쿨타임으로 우위를 점할 수 있습니다.
+
+-   다인 전투에서 좋음 <br/>
+-   근거리, 중거리
+-   낮은 PVE 선호도 <br/>
+-   기본 피해는 가장 높지만 스케일링은 가장 낮습니다.
+
+### <Link to="/attunement/frostdraw">Frostdraw Mantras</Link>
+
+얼음으로 적을 얼리고 얼음 지형을 만드는 등 지형을 더 쉽게 탐색하고 유리하게 만들 수 있습니다
+
+-   PVE 선호 <br/>
+-   근거리, 중거리 <br/>
+-   "Ice Skate"는 이동에 굉장히 유용합니다. <br/>
+-   약간의 쿨타임이 존재합니다.
+
+### <Link to="/attunement/galebreathe">Galebreathe Mantras</Link>
+
+거의 모든 방면에 특화된 속성입니다.
+
+-   이동에 집중된 스킬들 <br/>
+-   모든 사거리 <br/>
+
+### <Link to="/attunement/shadowcast">Shadowcast Mantras</Link>
+
+스킬을 맞추면 적의 에테르를 흡수해 내 에테르로 만듭니다.
+
+-   적을 고정하는데 좋습니다. <br/>
+-   다른 만트라와 섞으면 효율이 좋습니다. <br/>
+-   중간 사거리 특화 <br/>
+-   <Link to="/attunement/flamecharm">화염 만트라</Link>와 혼합하여 어둠불
+
+### <Link to="/attunement/ironsing">Ironsing Mantras</Link>
+
+가장 넓은 범위의 만트라이며, 상대가 실수하면 큰 데미지를 받습니다.
+
+-   유리한 만트라를 적용하여 단거리와 장거리 모두 좋습니다.
+
+### <Link to="/attunement/hybrid">Hybrid Mantras</Link>
+
+여러 조율 속성에서 필요한 수준에 도달하면 얻을 수 있으며, 여러 원소 효과의 기능을 혼합할 수 있는 기회를 제공합니다.
+
+-   일반적으로 높은 스텟 요구치가 필요합니다.
+
+### <Link to="/attunement/attunement-less">Physical Mantras</Link>
+
+원소 만트라와는 다르게 무속성으로 스텟과 관련된 만트라입니다. (Ex: 힘, 내구, 민첩, 카리스마) <br/>
+힘과 무기 숙련은 공격과 관련 있고, 그 외 내구나 카리스마는 방어에 집중되어있습니다
+
+### <Link to="/attunement/monster_mantras">Monster Mantras</Link>
+
+캐슬 라이트의 NPC에게 몬스터 부위를 제출하면 얻을 수 있는 만트라입니다. <br/>
+NPC가 생성되도록 하려면 레이어 2의 2층에 있는 "Strange Diver"와 대화하세요. <br/>
+그 후 NPC는 Castle Light의 도서관에 생성됩니다. 이것들은 몬스터의 능력들을 기반으로 만들어집니다.
+
+### <Link to="/oaths">Oath Mantras</Link>
+
+맹세와 관련된 만트라입니다. 이 만트라들은 레벨을 올릴 수 있는 트레이너는 없지만, 독창적인 스킬이 이를 보완합니다.
+
+## <Link to="/mantras/modifiers">Modifying Mantras</Link>
+
+만트라를 수정하려면 모닥불에 앉아 장착한 만트라를 인벤으로 불러와야 합니다. <br/>
+그 후, 만트라 테이블에 만트라를 놓고 여러 수정자를 이용해 수정할 수 있습니다.
+
+만트라 테이블에 만트라를 올려놓고 원하는 이름을 말하면 만트라를 변경할 수도 있습니다.
+
+또한, 대부분의 만트라 수정자는 에테르 비용을 증가시킵니다. <br/>
+Deep Gems으로도 만트라 수정이 가능하며 이를 이용하려면 모닥불에서 추가하면 됩니다.
+
+## Upgrading Mantras
+
+<Link to="/attunement/trainners">원소 트레이너</Link>한테 말을 걸어 만트라를
+업그레이드 할 수 있습니다. <br />
+또한, 업그레이드 마다 요구 스텟과 노트가 필요합니다.
+
+-   Level 1: Novice
+-   Level 2: Adept (20+) [100 Notes]
+-   Level 3: Expert (40+) [200 Notes]
+-   Level 4: Master (60+) [300 Notes]
+-   Level 5: Legendary (80+) [400 Notes]
+
+각 만트라 레벨은 ​​수정자의 피해와 효과에 약 20%의 부스트를 제공하며 일부 만트라는 레벨 5에서 Thunder Kick이 즉시 가드 브레이크가 되는 것과 같은 다른 효과를 갖습니다.
+
+## Elemental Intensity
+
+원소 강도는 주변 환경에 영향을 미치는 능력입니다. 만트라의 강도가 충분히 높으면 특정 물체를 부술 수 있습니다. <br/>
+예를 들어, 더 강렬한 <Link to="/attunement/flamecharm">화염 만트라</Link>는 금속을 녹일 수 있습니다.

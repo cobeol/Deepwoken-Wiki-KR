@@ -1,0 +1,12 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    /*  : center;
+    align-items: center; */
+}
+
+.wrapper > div {
+    width: auto;
+    max-width: 95vw;
+    height: auto;
+}

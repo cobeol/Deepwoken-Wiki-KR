@@ -4,4 +4,81 @@ slug: /attunement
 hide_table_of_contents: true
 ---
 
-# Attunement
+import CardContainer from "@site/src/components/CardContainer.tsx";
+import ImageCard from "@site/src/components/ImageCard.tsx";
+import ImageText from "@site/src/components/ImageText.tsx";
+import Wrapper from "@site/src/components/Wrapper.tsx";
+import Link from "@docusaurus/Link";
+
+# Attunements
+
+## 개요
+
+플레이어가 캐릭터 생성 시 선택하거나 트레이너를 통해 게임에서 얻을 수 있는 마법의 형태입니다. <br/>
+0포인트로는 조율을 얻을 수 없습니다.
+
+캐릭터를 처음 생성할 때, 선택할 수 있는 기본 조율은 4개이며, 추가로 월드에서 2개의 만트라를 해금할 수 있습니다. <br/>
+추가로 해금하는 만트라는 한 번 해금하면 이후 조율 선택 칸에 추가됩니다.
+
+조율은 캐릭 생성에서 최대 2개로 시작할 수 있으며 1개는 10, 2개는 4 6으로 나눠가집니다. <br/>
+Attunement-less를 선택하면 조율이 존재하지 않기에 모닥불에서 사용 가능한 무료 포인트 10개를 가집니다.
+
+캐릭 생성 이후, 추가로 조율을 얻으려면 원소 트레이너에게 각각의 기본 재료 2개를 주면 얻을 수 있습니다.
+(단, 강철 만트라는 더 많은 재료가 필요합니다)
+
+-   Flamecharm = <Link to="/items/etc/Dying_Ember">DyingEmber</Link> x2
+-   Thundercall = <Link to="/items/etc/Spark_Gland">Spark Gland</Link> x2
+-   Frostdraw = <Link to="/items/etc/Frigid_Prism">Frigid Prism</Link> x2
+-   Galebreathe = <Link to="/items/etc/Gale_Stone">Gale Stone</Link> x2
+-   Shadowcast = <Link to="/items/etc/Umbral_Obsidian">Umbral Obsidian</Link> x2
+-   Ironsing = 바위, 석탄을 제외한 모든 광물.
+
+스텟을 찍으면 취소할 수 없는 것처럼 배운 만트라는 취소가 불가능합니다.
+
+## 기본 조율
+
+아래 조율들은 처음 해금된 조율들로 처음 캐릭 생성에서 한 조율을 고르면 이후 다른 조율들은 캐릭 생성 조율 선택창에서 사라집니다. <br/>
+하지만, "Random"을 선택하여 다시 해금할 수 있습니다.
+
+<Wrapper justifyContent={"start"} alignItems={"start"}>
+    <CardContainer col={5} row={1} style={undefined}>
+        <ImageCard img={"attunement-less"} url={"/attunement/Attunement-less"}>
+            <ImageText content={"Attunement-less"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"flamecharm"} url={"/attunement/Flamecharm"}>
+            <ImageText content={"Flamecharm"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"frostdraw"} url={"/attunement/Frostdraw"}>
+            <ImageText content={"Frostdraw"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"thundercall"} url={"/attunement/Thundercall"}>
+            <ImageText content={"Thundercall"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"galebreathe"} url={"/attunement/Galebreathe"}>
+            <ImageText content={"Galebreathe"} top={"120%"} />
+        </ImageCard>
+    </CardContainer>
+</Wrapper>
+
+<br/>
+<br/>
+
+## 해금 조율
+
+해당 조율은 퀘스트를 통하여 해금할 수 있습니다.
+
+<Wrapper justifyContent={"start"} alignItems={"start"}>
+    <CardContainer col={2} row={1} style={undefined}>
+        <ImageCard img={"shadowcast"} url={"/attunement/Shadowcast"}>
+            <ImageText content={"Shadowcast"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"ironsing"} url={"/attunement/Ironsing"}>
+            <ImageText content={"Ironsing"} top={"120%"} />
+        </ImageCard>
+    </CardContainer>
+</Wrapper>

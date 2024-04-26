@@ -1,4 +1,4 @@
-.cardmain {
+/* .cardmain {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -40,17 +40,22 @@
 
 .cardmain > *:hover {
     text-decoration: none !important;
-}
+} */
 
 .flex {
     flex-grow: 1;
 }
 
+.imageCard {
+    position: relative;
+    padding: 0 0.2rem;
+}
+
 .project {
     display: flex;
     border-radius: 6px;
-    padding: var(--ifm-global-spacing);
-    margin: 12px;
+    padding: 0;
+    margin: 0px;
     align-items: center;
 }
 
@@ -62,22 +67,15 @@
     text-align: center;
 }
 
-.projectGitHub {
-    color: white;
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
-    font-weight: bold;
-}
-
 .project a:hover {
     text-decoration: none;
 }
 
-.project a:hover .projectGitHub, .project a:hover p {
+.project a:hover span {
     color: var(--ifm-link-color);
 }
 
-.projects {
+/* .projects {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,4 +86,4 @@
     max-width: 650px;
     padding-bottom: 8em;
     padding-top: 0;
-}
+} */

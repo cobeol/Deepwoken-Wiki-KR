@@ -4,24 +4,80 @@ slug: /
 hide_table_of_contents: true
 ---
 
-import HomeCard from '@site/src/components/HomeCard.tsx'
+import CardContainer from "@site/src/components/CardContainer.tsx";
+import ImageCard from "@site/src/components/ImageCard.tsx";
+import ImageText from "@site/src/components/ImageText.tsx";
+import Wrapper from "@site/src/components/Wrapper.tsx";
 import Link from "@docusaurus/Link";
 
-<br/>
+<br />
 
-<h1 style={{textAlign: 'center'}}>
-<Link to="https://deepwoken.netlify.app/">Deepwoken Wiki KR</Link>
+<h1 style={{ textAlign: "center" }}>
+    <Link to="https://deepwoken.netlify.app/">Deepwoken Wiki KR</Link>
 </h1>
 
-<p style={{textAlign: 'center', fontSize: '1.2rem'}}>
-<Link to="https://deepwoken.fandom.com/wiki/Deepwoken_Wiki">딥워큰 위키</Link>에 있던 문서와 
-<Link to="https://www.roblox.com/games/4111023553/Deepwoken">딥워큰</Link>의 정보를 한국어로 번역한 문서입니다. 
-(+ <Link to="https://github.com/monun-docs/monun-docs">참고 코드</Link>) <br/>
-현재 혼자 작업중입니다.... 많은 참여바랍니다.
+<p style={{ textAlign: "center", fontSize: "1.2rem" }}>
+    <Link to="https://deepwoken.fandom.com/wiki/Deepwoken_Wiki">
+        딥워큰 위키
+    </Link>
+    에 있던 문서와
+    <Link to="https://www.roblox.com/games/4111023553/Deepwoken">딥워큰</Link>의
+    정보를 한국어로 번역한 문서입니다. (+{" "}
+    <Link to="https://github.com/monun-docs/monun-docs">참고 코드</Link>) <br />
+    현재 혼자 작업중입니다.... 많은 참여바랍니다.
 </p>
 
-<br/>
-<br/>
+<br />
+<br />
 
-<HomeCard>
-</HomeCard>
+<Wrapper justifyContent={"center"} alignItems={"center"}>
+    <CardContainer col={6} row={2} style={undefined}>
+        <ImageCard img={"talents"} url={"talents/"}>
+            <ImageText content={"Talents"} top={"80%"} />
+        </ImageCard>
+
+        <ImageCard img={"mantras"} url={"mantras/"}>
+            <ImageText content={"Mantras"} top={"80%"} />
+        </ImageCard>
+
+        <ImageCard img={"attunement"} url={"attunement/"}>
+            <ImageText content={"Aattunements"} top={"80%"} />
+        </ImageCard>
+
+        <ImageCard img={"oaths"} url={"oaths/"}>
+            <ImageText content={"Oaths"} top={"80%"} />
+        </ImageCard>
+
+        <ImageCard img={"resonance"} url={"resonance/"}>
+            <ImageText content={"Resonance"} top={"80%"} />
+        </ImageCard>
+
+        <ImageCard img={"attributes"} url={"attributes/"}>
+            <ImageText content={"Attributes"} top={"80%"} />
+        </ImageCard>
+
+        <ImageCard img={"races"} url={"races/"}>
+            <ImageText content={"Races"} top={"80%"} />
+        </ImageCard>
+
+        <ImageCard img={"equipment"} url={"equipment/"}>
+            <ImageText content={"Equipment"} top={"80%"} />
+        </ImageCard>
+
+        <ImageCard img={"weapons"} url={"weapons/"}>
+            <ImageText content={"Weapons"} top={"80%"} />
+        </ImageCard>
+
+        <ImageCard img={"enchantments"} url={"enchantments/"}>
+            <ImageText content={"Enchantments"} top={"80%"} />
+        </ImageCard>
+
+        <ImageCard img={"fishing"} url={"fishing/"}>
+            <ImageText content={"Fishing"} top={"80%"} />
+        </ImageCard>
+
+        <ImageCard img={"alchemy"} url={"alchemy/"}>
+            <ImageText content={"Alchemy"} top={"80%"} />
+        </ImageCard>
+    </CardContainer>
+</Wrapper>

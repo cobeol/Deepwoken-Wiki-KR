@@ -10,7 +10,9 @@ const copyrightYear = currentYear !== 2024 ? `2024-${currentYear}` : "2024";
 const config: Config = {
     title: "Deepwoken Wiki",
     favicon: "img/deepwoken.ico",
-    
+
+    staticDirectories: ["public", "static"],
+
     url: "https://deepwoken.netlify.app",
     baseUrl: "/",
 

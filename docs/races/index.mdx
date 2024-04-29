@@ -2,6 +2,216 @@
 title: "Races"
 slug: /races
 hide_table_of_contents: true
+keywords: [딥워큰 종족, deepwoken race]
 ---
 
+import CardContainer from "@site/src/components/CardContainer.tsx";
+import ImageCard from "@site/src/components/ImageCard.tsx";
+import ImageText from "@site/src/components/ImageText.tsx";
+import Wrapper from "@site/src/components/Wrapper.tsx";
+import Link from "@docusaurus/Link";
+
+export const ColorText = ({ children, color }) => (
+    <span
+        style={{
+            color: color,
+        }}
+    >
+        {children}
+    </span>
+);
+
 # Races
+
+종족은 기본 스텟과 <Link to="/talents#innate">고유 재능</Link>을 얻는 딥워큰의 요소입니다.<br/>
+슬롯 생성 시, 종족이 정해지며 이를 바꾸려먼 150로벅스를 내야합니다. <ColorText color="#CD0C22"><b>(추천하지 않습니다. 슬롯 구매는 200로벅스, 종족 리롤은 150로벅스)</b></ColorText>
+
+-   기본 스텟은 두 종류의 스텟을 각각 2씩 올려줍니다.
+-   하지만, 이는 대부분의 빌드에서 의미를 가지지 않습니다. (물론 일부 빌드는 종족이 중요할 수도 있습니다)
+
+## 해금 가능 종족
+
+종족 리롤이나 슬롯 구매로 해금할 수 있는 종족들입니다.  
+
+<table style={{ display: "table", margin: "0 auto" }}>
+    <thead>
+        <tr>
+            <th style={{ textAlign: "center" }}>종족</th>
+            <th style={{ textAlign: "center" }}>확률</th>
+            <th style={{ textAlign: "center" }}>　　　　</th>
+            <th style={{ textAlign: "center" }}>종족</th>
+            <th style={{ textAlign: "center" }}>확률</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style={{ textAlign: "center" }}>Capra</td>
+            <td style={{ textAlign: "center" }}>2.2%</td>
+            <td style={{ textAlign: "center" }}>　　　　</td>
+            <td style={{ textAlign: "center" }}>Vesperian</td>
+            <td style={{ textAlign: "center" }}>6.7%</td>
+        </tr>
+        <tr>
+            <td style={{ textAlign: "center" }}>Ganymede</td>
+            <td style={{ textAlign: "center" }}>2.2%</td>
+            <td style={{ textAlign: "center" }}>　　　　</td>
+            <td style={{ textAlign: "center" }}>Gremor</td>
+            <td style={{ textAlign: "center" }}>13.3%</td>
+        </tr>
+        <tr>
+            <td style={{ textAlign: "center" }}>Tiran</td>
+            <td style={{ textAlign: "center" }}>2.2%</td>
+            <td style={{ textAlign: "center" }}>　　　　</td>
+            <td style={{ textAlign: "center" }}>Canor</td>
+            <td style={{ textAlign: "center" }}>15.6%</td>
+        </tr>
+        <tr>
+            <td style={{ textAlign: "center" }}>Chrysid</td>
+            <td style={{ textAlign: "center" }}>4.4</td>
+            <td style={{ textAlign: "center" }}>　　　　</td>
+            <td style={{ textAlign: "center" }}>Adret</td>
+            <td style={{ textAlign: "center" }}>17.8%</td>
+        </tr>
+        <tr>
+            <td style={{ textAlign: "center" }}>Felinor</td>
+            <td style={{ textAlign: "center" }}>8.9%</td>
+            <td style={{ textAlign: "center" }}>　　　　</td>
+            <td style={{ textAlign: "center" }}>Celtor</td>
+            <td style={{ textAlign: "center" }}>17.8%</td>
+        </tr>
+        <tr>
+            <td style={{ textAlign: "center" }}>Khan</td>
+            <td style={{ textAlign: "center" }}>8.9%</td>
+            <td style={{ textAlign: "center" }}>　　　　</td>
+            <td style={{ textAlign: "center" }}>Etrean</td>
+            <td style={{ textAlign: "center" }}>17.8%</td>
+        </tr>
+    </tbody>
+</table>
+
+<br/>
+<br/>
+
+<Wrapper justifyContent={"center"} alignItems={"center"}>
+    <CardContainer col={6} row={1} style={undefined}>
+        <ImageCard img={"Adret"} url={"/races/Adret"}>
+            <ImageText content={"Adret"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"Canor"} url={"/races/Canor"}>
+            <ImageText content={"Canor"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"Capra"} url={"/races/Capra"}>
+            <ImageText content={"Capra"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"Celtor"} url={"/races/Celtor"}>
+            <ImageText content={"Celtor"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"Chrysid"} url={"/races/Chrysid"}>
+            <ImageText content={"Chrysid"} top={"120%"} />
+        </ImageCard>
+        <ImageCard img={"Etrean"} url={"/races/Etrean"}>
+            <ImageText content={"Etrean"} top={"120%"} />
+        </ImageCard>
+    </CardContainer>
+
+</Wrapper>
+
+<br />
+<br />
+
+<Wrapper justifyContent={"center"} alignItems={"center"}>
+    <CardContainer col={6} row={1} style={undefined}>
+        <ImageCard img={"Felinor"} url={"/races/Felinor"}>
+            <ImageText content={"Felinor"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"Ganymede"} url={"/races/Ganymede"}>
+            <ImageText content={"Ganymede"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"Gremor"} url={"/races/Gremor"}>
+            <ImageText content={"Gremor"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"Khan"} url={"/races/Khan"}>
+            <ImageText content={"Khan"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"Tiran"} url={"/races/Tiran"}>
+            <ImageText content={"Tiran"} top={"120%"} />
+        </ImageCard>
+        <ImageCard img={"Vesperian"} url={"/races/Vesperian"}>
+            <ImageText content={"Vesperian"} top={"120%"} />
+        </ImageCard>
+    </CardContainer>
+
+</Wrapper>
+
+<br />
+<br />
+<br />
+
+## 해금 불가능 종족
+
+이 종족들은 딥워큰 개발자들이 일부 유명인들에게 준 종족입니다.
+
+<Wrapper justifyContent={"center"} alignItems={"center"}>
+    <CardContainer col={6} row={1} style={undefined}>
+        <ImageCard img={"Lightborn"} url={"/races/Lightborn"}>
+            <ImageText content={"Lightborn"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"Heliodar"} url={"/races/Heliodar"}>
+            <ImageText content={"Heliodar"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"Drakkard"} url={"/races/Drakkard"}>
+            <ImageText content={"Drakkard"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"Auroran"} url={"/races/Auroran"}>
+            <ImageText content={"Auroran"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"Aberrant_Capra"} url={"/races/Aberrant_Capra"}>
+            <ImageText content={"Aberrant Capra"} top={"120%"} />
+        </ImageCard>
+        <ImageCard img={"Primal_Vesperian"} url={"/races/Primal_Vesperian"}>
+            <ImageText content={"Primal Vesperian"} top={"120%"} />
+        </ImageCard>
+    </CardContainer>
+
+</Wrapper>
+
+<br />
+<br />
+<br />
+
+## NPC 종족
+
+NPC 전용 종족으로 아무도 얻을 수 없습니다.
+
+<Wrapper justifyContent={"center"} alignItems={"center"}>
+    <CardContainer col={4} row={1} style={undefined}>
+        <ImageCard img={"Krulian"} url={"/races/Krulian"}>
+            <ImageText content={"Krulian"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"Celestial"} url={"/races/Celestial"}>
+            <ImageText content={"Celestial"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"Kyrsgarde"} url={"/races/Kyrsgarde"}>
+            <ImageText content={"Kyrsgarde"} top={"120%"} />
+        </ImageCard>
+
+        <ImageCard img={"Human"} url={"/races/Human"}>
+            <ImageText content={"Human"} top={"120%"} />
+        </ImageCard>
+    </CardContainer>
+
+</Wrapper>

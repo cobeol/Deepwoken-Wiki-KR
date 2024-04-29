@@ -70,6 +70,26 @@ const config: Config = {
                 name: "google-site-verification",
                 content: "FPh5qZ9UrLBw6l0Z5KJX_bLHYrsYcmpStp9BWeDHWGA",
             },
+            {
+                name: "og:type",
+                content: "website",
+            },
+            {
+                name: "description",
+                content: "딥워큰 한국어 위키입니다",
+            },
+            {
+                name: "og:url",
+                content: "https://deepwoken.netlify.app/",
+            },
+            {
+                name: "twitter:title",
+                content: "딥워큰 위키 KR",
+            },
+            {
+                name: "twitter:description",
+                content: "딥워큰 한국어 위키입니다",
+            },
         ],
         navbar: {
             title: "Deepwoken Wiki KR",
@@ -147,6 +167,21 @@ const config: Config = {
             copyright: `Copyright © ${copyrightYear} <a href="https://github.com/cobeol">코벌</a>. Licensed under CC BY-SA 4.0. <a href="https://deepwoken.fandom.com/wiki/Rules">(Referenced Docs)<a>`,
         },
     } satisfies Preset.ThemeConfig,
+
+    headTags: [
+        {
+            tagName: "script",
+            attributes: {
+                type: "application/ld+json",
+            },
+            innerHTML: JSON.stringify({
+                "@context": "https://schema.org/",
+                "@type": "Organization",
+                name: "딥워큰 위키 KR",
+                url: "https://deepwoken.netlify.app/",
+            }),
+        },
+    ],
 };
 
 export default config;

@@ -2,6 +2,7 @@
 title: "Item"
 slug: /items
 hide_table_of_contents: true
+keywords: [ 딥워큰 아이템, deepwoken item ]
 ---
 
 # Item

@@ -1,7 +1,7 @@
 {
     "name": "deepwoken_wiki_kr",
     "description": "딥워큰 위키 번역 프로젝트",
-    "version": "v1.0.1-alpha4",
+    "version": "v1.0.2-alpha",
     "private": true,
     "scripts": {
         "docusaurus": "docusaurus",

@@ -7,6 +7,16 @@ keywords: [딥워큰 스텟, deepwoken attributes]
 
 import Link from "@docusaurus/Link";
 
+export const ColorText = ({ children, color }) => (
+    <span
+        style={{
+            color: color,
+        }}
+    >
+        {children}
+    </span>
+);
+
 # Attributes
 
 스텟은 기본적으로 75스텟까지 올릴 수 있으며, 75를 찍은 후 <Link to="/attributes/unbound">스텟 해방</Link>을 통해 100까지 찍을 수 있습니다. (종족 특성으로 찍힌 스텟은 포함되지 않음)
@@ -56,7 +66,7 @@ import Link from "@docusaurus/Link";
 
 -   달리기, 슬라이딩, 구르기, 회피 등으로 숙련도를 얻을 수 잇습니다.
 
-### Intelligence (지능)
+### Intelligence (지능) 
 
 -   에테르가 증가합니다.
 
@@ -83,4 +93,26 @@ import Link from "@docusaurus/Link";
 
 ## 무기 스텟
 
+무기의 스케일링으로 인한 추가 피해를 증가시킵니다. <br/>
+<Link to="/quest/Lost_Sibling">잃어버린 형제</Link> 퀘스트를 완료하고 <Link to="/NPCs/Evengarde_Rest">마에스트로</Link>한테 말을 걸거나 보스를 잡아 한계 돌파가 가능합니다.
+
+- Weapons -> <Link to="/items/training/Weapons_Manual">Weapons Manual</Link> 읽기
+
+### Weapons
+
+- 무기의 스케일링 데미지를 증가시킵니다. (스텟 종류의 맞는 무기만 증가)
+- 올리고 싶은 종류의 무기를 들고 적을 베거나 공격을 패링하여 숙련도를 얻을 수 있습니다.
+
 ## 조율 스텟
+
+- <ColorText color="#DB4455">Flamecharm</ColorText> -> <Link to="/items/training/Hearthgem">Hearthgem</Link> 사용
+- <ColorText color="#4B89DC">Frostdraw</ColorText> -> <Link to="/items/training/Gale_Kata">Gale Kata</Link> 사용
+- <ColorText color="#F6BB43">Thundercall</ColorText> -> <Link to="/items/training/Self-Conducting_Loop">Self-Conducting Loop</Link> 사용
+- <ColorText color="#8CC051">Galebreathe</ColorText> -> <Link to="/items/training/Hemafrost">Hemafrost</Link> 사용
+- <ColorText color="#967BDC">Shadowcast</ColorText> -> <Link to="/items/training/Pure_Heart">Pure Heart</Link> 사용
+- <ColorText color="#AAB2BD">Ironsing</ColorText> -> <Link to="/items/training/Ferrofluid">Ferrofluid</Link> 사용
+
+### Attunements
+
+- 해당 조율 만트라의 스케일링 데미지를 증가시킵니다.
+- 올리고 싶은 조율에 관련된 만트라로 적을 공격하면 숙련도를 얻을 수 있습니다.
